@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://7uedx3qj6so3"]
 
 [ext_resource type="Texture2D" uid="uid://d34ttnsb7ox0m" path="res://icon.svg" id="1_rcex7"]
+[ext_resource type="Script" uid="uid://c8yfeic4hv76r" path="res://scenes/ingredient.gd" id="2_ssx0k"]
 
 [node name="Ingredient" type="Sprite2D" unique_id=816768367]
 modulate = Color(1, 0, 0, 1)
 texture = ExtResource("1_rcex7")
+script = ExtResource("2_ssx0k")

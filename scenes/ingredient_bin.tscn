@@ -7,3 +7,4 @@
 scale = Vector2(1, 3)
 texture = ExtResource("1_u1s5e")
 script = ExtResource("1_fausm")
+ingredient_type = null

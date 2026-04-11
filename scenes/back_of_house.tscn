@@ -2,11 +2,48 @@
 
 [ext_resource type="Script" uid="uid://bm5soup6vcox8" path="res://scenes/back_of_house.gd" id="1_io6l6"]
 [ext_resource type="PackedScene" uid="uid://djw1an2ysxeog" path="res://scenes/ingredient_bin.tscn" id="1_of34b"]
+[ext_resource type="PackedScene" uid="uid://bsowfk6i20w6x" path="res://scenes/tool.tscn" id="3_2ukpx"]
+
+[sub_resource type="Theme" id="Theme_2ukpx"]
+default_font_size = 42
 
 [node name="BackOfHouse" type="Node" unique_id=45676339]
 script = ExtResource("1_io6l6")
 
 [node name="IngredientBin" parent="." unique_id=825669269 instance=ExtResource("1_of34b")]
 position = Vector2(1203, 581)
+ingredient_type = "Type 1"
 
-[connection signal="clicked" from="IngredientBin" to="." method="_on_ingredient_bin_clicked"]
+[node name="IngredientBin2" parent="." unique_id=109695236 instance=ExtResource("1_of34b")]
+position = Vector2(1547, 579)
+ingredient_type = "Type 2"
+
+[node name="Tool" parent="." unique_id=555176367 instance=ExtResource("3_2ukpx")]
+position = Vector2(472, 729)
+
+[node name="Label" type="Label" parent="." unique_id=1597802341]
+offset_left = 387.0
+offset_top = 814.0
+offset_right = 614.0
+offset_bottom = 868.0
+theme = SubResource("Theme_2ukpx")
+text = "Cauldron"
+
+[node name="Label3" type="Label" parent="." unique_id=1208340031]
+offset_left = 1485.0
+offset_top = 783.0
+offset_right = 1605.0
+offset_bottom = 841.0
+theme = SubResource("Theme_2ukpx")
+text = "Bin 2"
+
+[node name="Label2" type="Label" parent="." unique_id=1425078915]
+offset_left = 1148.0
+offset_top = 787.0
+offset_right = 1263.0
+offset_bottom = 845.0
+theme = SubResource("Theme_2ukpx")
+text = "Bin 1"
+
+[connection signal="pressed" from="IngredientBin" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="placed" from="Tool" to="." method="_on_tool_placed"]
