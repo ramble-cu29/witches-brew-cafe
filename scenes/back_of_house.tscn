@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://baor5av7b38w8"]
+
+[ext_resource type="Script" uid="uid://bm5soup6vcox8" path="res://scenes/back_of_house.gd" id="1_io6l6"]
+[ext_resource type="PackedScene" uid="uid://djw1an2ysxeog" path="res://scenes/ingredient_bin.tscn" id="1_of34b"]
+
+[node name="BackOfHouse" type="Node" unique_id=45676339]
+script = ExtResource("1_io6l6")
+
+[node name="IngredientBin" parent="." unique_id=825669269 instance=ExtResource("1_of34b")]
+position = Vector2(1203, 581)
+
+[connection signal="clicked" from="IngredientBin" to="." method="_on_ingredient_bin_clicked"]

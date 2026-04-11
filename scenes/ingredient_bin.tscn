@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://djw1an2ysxeog"]
+
+[ext_resource type="Script" uid="uid://enwkirylyb43" path="res://scenes/ingredient_bin.gd" id="1_fausm"]
+[ext_resource type="Texture2D" uid="uid://d34ttnsb7ox0m" path="res://icon.svg" id="1_u1s5e"]
+
+[node name="IngredientBin" type="Sprite2D" unique_id=825669269]
+scale = Vector2(1, 3)
+texture = ExtResource("1_u1s5e")
+script = ExtResource("1_fausm")
