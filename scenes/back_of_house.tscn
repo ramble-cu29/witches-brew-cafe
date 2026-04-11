@@ -12,11 +12,11 @@ script = ExtResource("1_io6l6")
 
 [node name="IngredientBin" parent="." unique_id=825669269 instance=ExtResource("1_of34b")]
 position = Vector2(1203, 581)
-ingredient_type = "Type 1"
+ingredient_type = "leaf"
 
 [node name="IngredientBin2" parent="." unique_id=109695236 instance=ExtResource("1_of34b")]
 position = Vector2(1547, 579)
-ingredient_type = "Type 2"
+ingredient_type = "flower"
 
 [node name="Tool" parent="." unique_id=555176367 instance=ExtResource("3_2ukpx")]
 position = Vector2(472, 729)
@@ -46,4 +46,5 @@ theme = SubResource("Theme_2ukpx")
 text = "Bin 1"
 
 [connection signal="pressed" from="IngredientBin" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="IngredientBin2" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="placed" from="Tool" to="." method="_on_tool_placed"]

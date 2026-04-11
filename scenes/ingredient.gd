@@ -10,5 +10,3 @@ func _process(delta: float) -> void:
 	if vec > Vector2(0.01, 0.01):
 		vec = vec.normalized() * delta * SPEED
 		position += vec
-	
-	
