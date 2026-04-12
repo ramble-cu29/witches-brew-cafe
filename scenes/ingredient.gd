@@ -1,6 +1,9 @@
 extends Sprite2D
 
+
 const SPEED: int = 2000
+
+
 
 func _process(delta: float) -> void:
 	global_position = get_viewport().get_mouse_position()

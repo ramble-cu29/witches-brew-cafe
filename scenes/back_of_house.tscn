@@ -2,49 +2,207 @@
 
 [ext_resource type="Script" uid="uid://bm5soup6vcox8" path="res://scenes/back_of_house.gd" id="1_io6l6"]
 [ext_resource type="PackedScene" uid="uid://djw1an2ysxeog" path="res://scenes/ingredient_bin.tscn" id="1_of34b"]
+[ext_resource type="Texture2D" uid="uid://b2dd1c08cvymn" path="res://art/boh/background_boh.jpg" id="2_rv63m"]
 [ext_resource type="PackedScene" uid="uid://bsowfk6i20w6x" path="res://scenes/tool.tscn" id="3_2ukpx"]
-
-[sub_resource type="Theme" id="Theme_2ukpx"]
-default_font_size = 42
+[ext_resource type="Theme" uid="uid://l7m6kwciibo0" path="res://theme.tres" id="4_damgc"]
 
 [node name="BackOfHouse" type="Node" unique_id=45676339]
 script = ExtResource("1_io6l6")
 
-[node name="IngredientBin" parent="." unique_id=825669269 instance=ExtResource("1_of34b")]
-position = Vector2(1203, 581)
-ingredient_type = "leaf"
+[node name="Background" type="Sprite2D" parent="." unique_id=1984211532]
+position = Vector2(960, 540)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("2_rv63m")
 
-[node name="IngredientBin2" parent="." unique_id=109695236 instance=ExtResource("1_of34b")]
-position = Vector2(1547, 579)
-ingredient_type = "flower"
+[node name="Cauldron" parent="." unique_id=555176367 instance=ExtResource("3_2ukpx")]
+position = Vector2(678, 919)
 
-[node name="Tool" parent="." unique_id=555176367 instance=ExtResource("3_2ukpx")]
-position = Vector2(472, 729)
+[node name="GUI" type="Control" parent="." unique_id=919230612]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="Label" type="Label" parent="." unique_id=1597802341]
-offset_left = 387.0
-offset_top = 814.0
-offset_right = 614.0
-offset_bottom = 868.0
-theme = SubResource("Theme_2ukpx")
+[node name="Button" type="Button" parent="GUI" unique_id=12919459]
+layout_mode = 0
+offset_left = 589.0
+offset_top = 697.0
+offset_right = 853.0
+offset_bottom = 796.0
+theme = ExtResource("4_damgc")
+text = "Finish recipe"
+
+[node name="Button2" type="Button" parent="GUI" unique_id=994928799]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 575.0
+offset_right = 887.0
+offset_bottom = 668.0
+theme = ExtResource("4_damgc")
+text = "Get new recipe"
+
+[node name="Labels" type="Control" parent="GUI" unique_id=1308656595]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="GUI/Labels" unique_id=1597802341]
+layout_mode = 0
+offset_left = 568.0
+offset_top = 1001.0
+offset_right = 795.0
+offset_bottom = 1059.0
+theme = ExtResource("4_damgc")
 text = "Cauldron"
 
-[node name="Label3" type="Label" parent="." unique_id=1208340031]
-offset_left = 1485.0
-offset_top = 783.0
-offset_right = 1605.0
-offset_bottom = 841.0
-theme = SubResource("Theme_2ukpx")
-text = "Bin 2"
+[node name="Label2" type="Label" parent="GUI/Labels" unique_id=1425078915]
+layout_mode = 0
+offset_left = 629.0
+offset_top = 496.0
+offset_right = 855.0
+offset_bottom = 554.0
+theme = ExtResource("4_damgc")
+text = "Strawberry"
 
-[node name="Label2" type="Label" parent="." unique_id=1425078915]
-offset_left = 1148.0
-offset_top = 787.0
-offset_right = 1263.0
-offset_bottom = 845.0
-theme = SubResource("Theme_2ukpx")
-text = "Bin 1"
+[node name="Label3" type="Label" parent="GUI/Labels" unique_id=1208340031]
+layout_mode = 0
+offset_left = 890.0
+offset_top = 499.0
+offset_right = 1089.0
+offset_bottom = 557.0
+theme = ExtResource("4_damgc")
+text = "Blueberry"
 
-[connection signal="pressed" from="IngredientBin" to="." method="_on_ingredient_bin_pressed"]
-[connection signal="pressed" from="IngredientBin2" to="." method="_on_ingredient_bin_pressed"]
-[connection signal="placed" from="Tool" to="." method="_on_tool_placed"]
+[node name="Label4" type="Label" parent="GUI/Labels" unique_id=240612862]
+layout_mode = 0
+offset_left = 1753.0
+offset_top = 989.0
+offset_right = 1876.0
+offset_bottom = 1047.0
+theme = ExtResource("4_damgc")
+text = "Beans"
+
+[node name="Label5" type="Label" parent="GUI/Labels" unique_id=232837316]
+layout_mode = 0
+offset_left = 1465.0
+offset_top = 987.0
+offset_right = 1654.0
+offset_bottom = 1045.0
+theme = ExtResource("4_damgc")
+text = "Lavender"
+
+[node name="Label6" type="Label" parent="GUI/Labels" unique_id=1158551593]
+layout_mode = 0
+offset_left = 1198.0
+offset_top = 989.0
+offset_right = 1409.0
+offset_bottom = 1047.0
+theme = ExtResource("4_damgc")
+text = "Spearmint"
+
+[node name="Label7" type="Label" parent="GUI/Labels" unique_id=1164510297]
+layout_mode = 0
+offset_left = 951.0
+offset_top = 998.0
+offset_right = 1159.0
+offset_bottom = 1056.0
+theme = ExtResource("4_damgc")
+text = "Cinnamon"
+
+[node name="Label8" type="Label" parent="GUI/Labels" unique_id=877453939]
+layout_mode = 0
+offset_left = 1132.0
+offset_top = 491.0
+offset_right = 1339.0
+offset_bottom = 549.0
+theme = ExtResource("4_damgc")
+text = "Raspberry"
+
+[node name="Label9" type="Label" parent="GUI/Labels" unique_id=1911299287]
+layout_mode = 0
+offset_left = 1429.0
+offset_top = 498.0
+offset_right = 1565.0
+offset_bottom = 556.0
+theme = ExtResource("4_damgc")
+text = "Cherry"
+
+[node name="Label10" type="Label" parent="GUI/Labels" unique_id=695783884]
+layout_mode = 0
+offset_left = 1719.0
+offset_top = 489.0
+offset_right = 1918.0
+offset_bottom = 547.0
+theme = ExtResource("4_damgc")
+text = "Rose"
+
+[node name="Panel" type="Panel" parent="GUI" unique_id=1210580505]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 272.0
+offset_right = 478.0
+offset_bottom = 927.0
+
+[node name="RecipeLabel" type="Label" parent="GUI/Panel" unique_id=763714291]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 1.0
+offset_right = 399.0
+offset_bottom = 574.0
+theme = ExtResource("4_damgc")
+text = "Recipe:
+Beans
+Raspberry
+Cherry
+Rose"
+
+[node name="IngredientBins" type="Node2D" parent="." unique_id=1181412459]
+
+[node name="Strawberry" parent="IngredientBins" unique_id=825669269 instance=ExtResource("1_of34b")]
+position = Vector2(716, 309)
+ingredient_type = 1
+
+[node name="Blueberry" parent="IngredientBins" unique_id=109695236 instance=ExtResource("1_of34b")]
+position = Vector2(998, 298)
+ingredient_type = 2
+
+[node name="Raspberry" parent="IngredientBins" unique_id=1220025282 instance=ExtResource("1_of34b")]
+position = Vector2(1248, 290)
+ingredient_type = 3
+
+[node name="Cherry" parent="IngredientBins" unique_id=1573519153 instance=ExtResource("1_of34b")]
+position = Vector2(1505, 296)
+ingredient_type = 4
+
+[node name="Rose" parent="IngredientBins" unique_id=998767632 instance=ExtResource("1_of34b")]
+position = Vector2(1776, 288)
+ingredient_type = 5
+
+[node name="Cinnamon" parent="IngredientBins" unique_id=932060408 instance=ExtResource("1_of34b")]
+position = Vector2(1047, 803)
+ingredient_type = 6
+
+[node name="Spearmint" parent="IngredientBins" unique_id=2026950560 instance=ExtResource("1_of34b")]
+position = Vector2(1290, 798.00006)
+ingredient_type = 7
+
+[node name="Lavender" parent="IngredientBins" unique_id=1318816990 instance=ExtResource("1_of34b")]
+position = Vector2(1559, 799)
+ingredient_type = 8
+
+[node name="Beans" parent="IngredientBins" unique_id=1307152230 instance=ExtResource("1_of34b")]
+position = Vector2(1808, 801.00006)
+ingredient_type = 9
+
+[connection signal="placed" from="Cauldron" to="." method="_on_tool_placed"]
+[connection signal="button_up" from="GUI/Button" to="." method="_on_button_button_up"]
+[connection signal="button_up" from="GUI/Button2" to="." method="_on_button_2_button_up"]
+[connection signal="pressed" from="IngredientBins/Strawberry" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="IngredientBins/Blueberry" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="IngredientBins/Raspberry" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="IngredientBins/Cherry" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="IngredientBins/Rose" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="IngredientBins/Cinnamon" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="IngredientBins/Spearmint" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="IngredientBins/Lavender" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="IngredientBins/Beans" to="." method="_on_ingredient_bin_pressed"]
