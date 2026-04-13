@@ -11,28 +11,34 @@
 [ext_resource type="Texture2D" uid="uid://cj87w66u4s1kk" path="res://art/boh/espresso_machine.png" id="7_30dfs"]
 [ext_resource type="AudioStream" uid="uid://cc4cxd3d7j6fy" path="res://art/Witches Brew Cafe v1.mp3" id="8_ekrsm"]
 [ext_resource type="Theme" uid="uid://c7fehh1qho7pt" path="res://gui_theme.tres" id="8_fkpoj"]
+[ext_resource type="Texture2D" uid="uid://bftkn7i3dcma2" path="res://art/boh/cauldron_normal.png" id="11_ltld3"]
 [ext_resource type="Texture2D" uid="uid://cwtxqlxw6j5b1" path="res://art/boh/mortar.png" id="12_2q3yk"]
 [ext_resource type="Texture2D" uid="uid://bjs20nryxjbs3" path="res://art/boh/pestle.png" id="13_ltld3"]
 [ext_resource type="Texture2D" uid="uid://dxiru5o6ywdk6" path="res://art/boh/mortar_bottom.png" id="15_wn065"]
 
+[sub_resource type="CanvasTexture" id="CanvasTexture_wn065"]
+diffuse_texture = ExtResource("6_nd1li")
+normal_texture = ExtResource("11_ltld3")
+
 [sub_resource type="Animation" id="Animation_2q3yk"]
-length = 0.001
+length = 3.6
+step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Pestle:position")
+tracks/0/path = NodePath("Mortar/Pestle:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1479, 821)]
+"values": [Vector2(56, -35)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Pestle:rotation")
+tracks/1/path = NodePath("Mortar/Pestle:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -44,31 +50,31 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_ltld3"]
 resource_name = "mortar_and_pestle"
-length = 1.1
+length = 3.6
 step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Pestle:rotation")
-tracks/0/interp = 2
+tracks/0/path = NodePath("Mortar/Pestle:position")
+tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.0999999, 1.2, 1.3, 1.4, 1.4999999, 1.6, 1.7, 1.8000001, 1.9, 2, 2.1, 2.1999998, 2.2999997, 2.4, 2.5, 2.6, 2.6999998, 2.8000002, 2.9, 3, 3.1, 3.2000003, 3.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0, -0.8552113]
+"values": [Vector2(56, -35), Vector2(-1, -204), Vector2(46, -64), Vector2(6, -206), Vector2(-46, -66), Vector2(-1, -206), Vector2(46, -64), Vector2(6, -206), Vector2(-46, -66), Vector2(-1, -206), Vector2(46, -64), Vector2(6, -206), Vector2(-46, -66), Vector2(-1, -206), Vector2(46, -64), Vector2(6, -206), Vector2(-46, -66), Vector2(-1, -206), Vector2(46, -64), Vector2(6, -206), Vector2(-46, -66), Vector2(-1, -206), Vector2(46, -64), Vector2(6, -206), Vector2(-46, -66), Vector2(-1, -206), Vector2(46, -64), Vector2(6, -206), Vector2(-46, -66), Vector2(-1, -206), Vector2(56, -35)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Pestle:position")
-tracks/1/interp = 2
+tracks/1/path = NodePath("Mortar/Pestle:rotation")
+tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.5, 0.6, 0.69979113, 0.8, 0.8997911, 0.99999994, 1.0999999),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.4, 3.2, 3.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(1479, 821), Vector2(1425.9999, 690.9999), Vector2(1429.9999, 807.9999), Vector2(1427.9999, 702.99994), Vector2(1456.9999, 803.99994), Vector2(1427.9999, 702.99994), Vector2(1456.9999, 803.99994), Vector2(1434, 656.99994), Vector2(1379, 809.00006)]
+"values": [0.0, -0.8552113, -0.8552113, 0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_21p5d"]
@@ -86,7 +92,7 @@ texture = ExtResource("2_damgc")
 metadata/_edit_lock_ = true
 
 [node name="Beans" parent="." unique_id=1307152230 instance=ExtResource("1_of34b")]
-position = Vector2(1758, 854)
+position = Vector2(1762, 656)
 scale = Vector2(1, 1)
 texture = ExtResource("5_80lrq")
 ingredient_type = 9
@@ -101,7 +107,7 @@ theme_override_colors/font_color = Color(0.3557383, 0.20420495, 0.017422946, 1)
 text = "Coffee Beans"
 
 [node name="IngredientRack" type="Sprite2D" parent="." unique_id=1215840954]
-position = Vector2(798, 274)
+position = Vector2(820, 288)
 texture = ExtResource("4_nd1li")
 
 [node name="IngredientBins" type="Node2D" parent="IngredientRack" unique_id=1181412459]
@@ -244,7 +250,8 @@ theme_override_colors/font_color = Color(0.3557383, 0.20420495, 0.017422946, 1)
 text = "Rose Petals"
 
 [node name="EspressoMachine" type="Sprite2D" parent="." unique_id=2069213395]
-position = Vector2(1548, 271)
+light_mask = 2
+position = Vector2(1556, 259)
 texture = ExtResource("7_30dfs")
 
 [node name="GUI" type="Control" parent="." unique_id=919230612]
@@ -292,32 +299,36 @@ Cherry
 Rose"
 
 [node name="Cauldron" parent="." unique_id=555176367 instance=ExtResource("3_2ukpx")]
-position = Vector2(860, 761)
-texture = ExtResource("6_nd1li")
+position = Vector2(784, 823)
+texture = SubResource("CanvasTexture_wn065")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=921020015]
 stream = ExtResource("8_ekrsm")
 
 [node name="Mortar" type="Sprite2D" parent="." unique_id=1663867063]
-position = Vector2(1433, 874)
+position = Vector2(1333, 883)
 texture = ExtResource("12_2q3yk")
 
-[node name="Pestle" type="Sprite2D" parent="." unique_id=1655578716]
-position = Vector2(1479, 821)
-texture = ExtResource("13_ltld3")
-
-[node name="MortarBottom" type="Sprite2D" parent="." unique_id=55249500]
-position = Vector2(1427, 904)
+[node name="MortarBottom" type="Sprite2D" parent="Mortar" unique_id=55249500]
+z_index = 1
+position = Vector2(-6, 30)
 texture = ExtResource("15_wn065")
 
-[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1335164325]
-modulate = Color(1, 1, 1, 0)
-z_index = 4
-position = Vector2(2521, 773)
-polygon = PackedVector2Array(-7, 5, 12, 5, 38, 4, 63, 0, 76, -2, 90, -6, 105, -10, 119, -14, 130, -21, 138, -29, 143, -36, 145, -42, 165, -42, 165, 161, -176, 160, -174, -42, -153, -42, -150, -34, -145, -28, -139, -22, -133, -17, -123, -13, -112, -10, -99, -6, -86, -4, -68, 0, -49, 2, -33, 3)
+[node name="Pestle" type="Sprite2D" parent="Mortar" unique_id=1655578716]
+position = Vector2(56, -35)
+texture = ExtResource("13_ltld3")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1211670601]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Mortar" unique_id=1211670601]
+root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_21p5d")
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="." unique_id=1806031907]
+visible = false
+editor_only = true
+energy = 0.29
+blend_mode = 1
+shadow_enabled = true
+height = 0.27
 
 [connection signal="pressed" from="Beans" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="IngredientRack/IngredientBins/Strawberry" to="." method="_on_ingredient_bin_pressed"]
