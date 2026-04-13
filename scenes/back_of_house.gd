@@ -35,11 +35,6 @@ func _on_ingredient_bin_pressed() -> void:
 	ingredient.global_position = get_viewport().get_mouse_position()
 	ingredient.texture = load(Globals.INGR_FILES[Globals.ingredient_type_global])
 
-
-func _on_tool_placed() -> void:
-	print(str(Globals.ingredient_type_global) + " placed!")
-
-
 func _on_button_button_up() -> void:
 	print("The recipe followed was: " + str(Globals.recipe_record))
 	print("The recipe you needed to follow was: " + str(recipe))
@@ -53,6 +48,10 @@ func _on_button_2_button_up() -> void:
 	$GUI/Panel/RecipeLabel.text = "Recipe:"
 	print(Globals.Ingredients.size())
 	print(Globals.Ingredients.keys()[randi() % Globals.Ingredients.size()])
-	for i: int in range(4):
-		var ingr:String = Globals.Ingredients.keys()[randi() % Globals.Ingredients.size()]
-		$GUI/Panel/RecipeLabel.text += ingr
+	#for i: int in range(4):
+		#var ingr:String = Globals.Ingredients.keys()[randi() % Globals.Ingredients.size()]
+		#$GUI/Panel/RecipeLabel.text += 
+
+
+func _on_cauldron_placed() -> void:
+	print(str(Globals.ingredient_type_global) + " placed!")

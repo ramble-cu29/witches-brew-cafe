@@ -16,16 +16,24 @@ enum Ingredients {
 	BEANS,
 }
 
+enum Actions {
+	NULL,
+	INGREDIENT_PLACED,
+	INGREDIENT_GROUND,
+	ESPRESSO_DISPENSED,
+	HOTWATER_DISPENSED
+}
+
 const INGR_FILES: Dictionary[Ingredients, String] = {
-	Ingredients.STRAWBERRY: "res://art/programmer_art/strawberry.png",
-	Ingredients.BLUEBERRY: "res://art/programmer_art/blueberry.jpg",
-	Ingredients.RASPBERRY: "res://art/programmer_art/raspberry.jpg",
-	Ingredients.CHERRY: "res://art/programmer_art/cherry.png",
-	Ingredients.ROSE: "res://art/programmer_art/rose.jpg",
-	Ingredients.CINNAMON: "res://art/programmer_art/cinnamon.png",
-	Ingredients.SPEARMINT: "res://art/programmer_art/spearmint.jpg",
-	Ingredients.LAVENDER: "res://art/programmer_art/lavender.jpg",
-	Ingredients.BEANS: "res://art/programmer_art/beans.jpg",
+	Ingredients.STRAWBERRY: "res://art/boh/strawberry.png",
+	Ingredients.BLUEBERRY: "res://art/boh/blueberry.png",
+	Ingredients.RASPBERRY: "res://art/boh/raspberry.png",
+	Ingredients.CHERRY: "res://art/boh/cherry.png",
+	Ingredients.ROSE: "res://art/boh/rose.png",
+	Ingredients.CINNAMON: "res://art/boh/cinnamon.png",
+	Ingredients.SPEARMINT: "res://art/boh/spearmint.png",
+	Ingredients.LAVENDER: "res://art/boh/lavender.png",
+	Ingredients.BEANS: "res://art/boh/beans.png",
 }
 
 var recipe_record: Array = []
