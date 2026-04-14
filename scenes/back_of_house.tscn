@@ -7,6 +7,7 @@
 [ext_resource type="Theme" uid="uid://l7m6kwciibo0" path="res://theme.tres" id="4_damgc"]
 [ext_resource type="Texture2D" uid="uid://ctf7vckb1afg8" path="res://art/boh/ingredient_rack.png" id="4_nd1li"]
 [ext_resource type="Texture2D" uid="uid://diifumssjpmug" path="res://art/boh/beans_jar.png" id="5_80lrq"]
+[ext_resource type="Texture2D" uid="uid://dqcxbhdtop4hf" path="res://art/boh/tea_jar.png" id="6_21p5d"]
 [ext_resource type="Texture2D" uid="uid://nxely068hvmo" path="res://art/boh/cauldron.png" id="6_nd1li"]
 [ext_resource type="Texture2D" uid="uid://cj87w66u4s1kk" path="res://art/boh/espresso_machine.png" id="7_30dfs"]
 [ext_resource type="AudioStream" uid="uid://cc4cxd3d7j6fy" path="res://art/Witches Brew Cafe v1.mp3" id="8_ekrsm"]
@@ -14,11 +15,471 @@
 [ext_resource type="Texture2D" uid="uid://bftkn7i3dcma2" path="res://art/boh/cauldron_normal.png" id="11_ltld3"]
 [ext_resource type="Texture2D" uid="uid://cwtxqlxw6j5b1" path="res://art/boh/mortar.png" id="12_2q3yk"]
 [ext_resource type="Texture2D" uid="uid://bjs20nryxjbs3" path="res://art/boh/pestle.png" id="13_ltld3"]
+[ext_resource type="Script" uid="uid://couyr8wlv74al" path="res://scenes/mortar.gd" id="15_bnb44"]
 [ext_resource type="Texture2D" uid="uid://dxiru5o6ywdk6" path="res://art/boh/mortar_bottom.png" id="15_wn065"]
+[ext_resource type="Texture2D" uid="uid://bv0toiwvbsevo" path="res://art/animations/Blueberry animation/1.png" id="17_jje3m"]
+[ext_resource type="Texture2D" uid="uid://b2j2orxrcdv2q" path="res://art/animations/Blueberry animation/2.png" id="18_bnb44"]
+[ext_resource type="Texture2D" uid="uid://7cepw0ivvhdh" path="res://art/animations/Blueberry animation/3.png" id="19_ex7wc"]
+[ext_resource type="Texture2D" uid="uid://bl31ucq7cd204" path="res://art/animations/Blueberry animation/4.png" id="20_8yoy0"]
+[ext_resource type="Texture2D" uid="uid://55f0nqgjphqf" path="res://art/animations/Blueberry animation/5.png" id="21_t78ih"]
+[ext_resource type="Texture2D" uid="uid://c8k374vxm67i1" path="res://art/animations/Blueberry animation/6.png" id="22_p5bfc"]
+[ext_resource type="Texture2D" uid="uid://csdslnyl5pce7" path="res://art/animations/Blueberry animation/7.png" id="23_yqjsq"]
+[ext_resource type="Texture2D" uid="uid://cynnanw562jyu" path="res://art/animations/Blueberry animation/8.png" id="24_wb23n"]
+[ext_resource type="Texture2D" uid="uid://2md484lw5aqs" path="res://art/animations/Blueberry animation/9.png" id="25_akp21"]
+[ext_resource type="Texture2D" uid="uid://dyp56aeoqnccl" path="res://art/animations/Blueberry animation/10.png" id="26_72cht"]
+[ext_resource type="Texture2D" uid="uid://bp2png3gbb5t" path="res://art/animations/Cherry animation/1.png" id="26_jgwrg"]
+[ext_resource type="Texture2D" uid="uid://bg3j5m6kn5v7n" path="res://art/animations/Cherry animation/2.png" id="27_0le2n"]
+[ext_resource type="Texture2D" uid="uid://cgwksstk5v6ax" path="res://art/animations/Cherry animation/3.png" id="28_q070u"]
+[ext_resource type="Texture2D" uid="uid://trhh47fnycnh" path="res://art/animations/Cherry animation/4.png" id="29_oy0ww"]
+[ext_resource type="Texture2D" uid="uid://6e5u22r18ko0" path="res://art/animations/Cherry animation/5.png" id="30_ggbhr"]
+[ext_resource type="Texture2D" uid="uid://d1dvbq0magdba" path="res://art/animations/Cherry animation/6.png" id="31_l6coo"]
+[ext_resource type="Texture2D" uid="uid://cu5k6pd2o878s" path="res://art/animations/Cherry animation/7.png" id="32_gtywu"]
+[ext_resource type="Texture2D" uid="uid://dpwdgc27lhn5d" path="res://art/animations/Cherry animation/8.png" id="33_f0itl"]
+[ext_resource type="Texture2D" uid="uid://8cqc0bgcwnmc" path="res://art/animations/Cherry animation/9.png" id="34_jk583"]
+[ext_resource type="Texture2D" uid="uid://casl0e7tjnkrd" path="res://art/animations/Cherry animation/10.png" id="35_pkcfp"]
+[ext_resource type="Texture2D" uid="uid://drjvppuhqky1j" path="res://art/animations/Cinnamon animation /1.png" id="36_modyp"]
+[ext_resource type="Texture2D" uid="uid://bcbav7ulmum11" path="res://art/animations/Cinnamon animation /2.png" id="37_emdtn"]
+[ext_resource type="Texture2D" uid="uid://dmws5avmuhr" path="res://art/animations/Cinnamon animation /3.png" id="38_5qfp7"]
+[ext_resource type="Texture2D" uid="uid://6wpcl6tavtx5" path="res://art/animations/Cinnamon animation /4.png" id="39_84nid"]
+[ext_resource type="Texture2D" uid="uid://bp1m5pi7odvit" path="res://art/animations/Cinnamon animation /5.png" id="40_gb475"]
+[ext_resource type="Texture2D" uid="uid://b0lh8s11gipgh" path="res://art/animations/Cinnamon animation /6.png" id="41_2nifm"]
+[ext_resource type="Texture2D" uid="uid://tmpfvv5klfg3" path="res://art/animations/Cinnamon animation /7.png" id="42_ri6o4"]
+[ext_resource type="Texture2D" uid="uid://c123vhlwlh1m0" path="res://art/animations/Cinnamon animation /8.png" id="43_2ero8"]
+[ext_resource type="Texture2D" uid="uid://7v6gox3eou4y" path="res://art/animations/Cinnamon animation /9.png" id="44_l41w6"]
+[ext_resource type="Texture2D" uid="uid://bakh7lgp1yja5" path="res://art/animations/Cinnamon animation /10.png" id="45_wujim"]
+[ext_resource type="Texture2D" uid="uid://b22ppo17a11wn" path="res://art/animations/Coffee beans animation/1.png" id="46_wlgjh"]
+[ext_resource type="Texture2D" uid="uid://cufjlo0r2fnqq" path="res://art/animations/Coffee beans animation/2.png" id="47_vps6e"]
+[ext_resource type="Texture2D" uid="uid://4322evknhor3" path="res://art/animations/Coffee beans animation/3.png" id="48_eevi7"]
+[ext_resource type="Texture2D" uid="uid://3d31lkc4457n" path="res://art/animations/Coffee beans animation/4.png" id="49_y5568"]
+[ext_resource type="Texture2D" uid="uid://b7lbdcucl7uit" path="res://art/animations/Coffee beans animation/5.png" id="50_w3ptr"]
+[ext_resource type="Texture2D" uid="uid://ghmcqjaw0fs5" path="res://art/animations/Coffee beans animation/6.png" id="51_apjfa"]
+[ext_resource type="Texture2D" uid="uid://bjyjf3wafwbp0" path="res://art/animations/Coffee beans animation/7.png" id="52_nlqnh"]
+[ext_resource type="Texture2D" uid="uid://dtwrf7h54vt0u" path="res://art/animations/Coffee beans animation/8.png" id="53_cbgpi"]
+[ext_resource type="Texture2D" uid="uid://bhqutuwdelvbv" path="res://art/animations/Coffee beans animation/9.png" id="54_2jny8"]
+[ext_resource type="Texture2D" uid="uid://d076m2lpr08r1" path="res://art/animations/Coffee beans animation/10.png" id="55_ewxd8"]
+[ext_resource type="Texture2D" uid="uid://dfdmp2sjuosp7" path="res://art/animations/Raspberry animation/1.png" id="56_k8j5u"]
+[ext_resource type="Texture2D" uid="uid://dcnu6osl0hd34" path="res://art/animations/Lavender animation/1.png" id="56_modyp"]
+[ext_resource type="Texture2D" uid="uid://dhlxw6401m6y0" path="res://art/animations/Lavender animation/2.png" id="57_emdtn"]
+[ext_resource type="Texture2D" uid="uid://dncfpkkd4h8bm" path="res://art/animations/Raspberry animation/2.png" id="57_hymgb"]
+[ext_resource type="Texture2D" uid="uid://b8oidg0ntvlpj" path="res://art/animations/Lavender animation/3.png" id="58_5qfp7"]
+[ext_resource type="Texture2D" uid="uid://bictjhrc5x0kw" path="res://art/animations/Raspberry animation/3.png" id="58_uy1us"]
+[ext_resource type="Texture2D" uid="uid://udn2bxbxssbv" path="res://art/animations/Raspberry animation/4.png" id="59_8qlrx"]
+[ext_resource type="Texture2D" uid="uid://c1u3tslmlmv31" path="res://art/animations/Lavender animation/4.png" id="59_84nid"]
+[ext_resource type="Texture2D" uid="uid://bwwilcpmsw46s" path="res://art/animations/Raspberry animation/5.png" id="60_8idyw"]
+[ext_resource type="Texture2D" uid="uid://btblnbeq4qypy" path="res://art/animations/Lavender animation/5.png" id="60_gb475"]
+[ext_resource type="Texture2D" uid="uid://bqbhxdtvo063t" path="res://art/animations/Raspberry animation/6.png" id="61_2anqc"]
+[ext_resource type="Texture2D" uid="uid://bflco8ow8kjfm" path="res://art/animations/Lavender animation/6.png" id="61_2nifm"]
+[ext_resource type="Texture2D" uid="uid://drh4uevc1788j" path="res://art/animations/Lavender animation/7.png" id="62_ri6o4"]
+[ext_resource type="Texture2D" uid="uid://0vetitnwa6hh" path="res://art/animations/Raspberry animation/7.png" id="62_u520v"]
+[ext_resource type="Texture2D" uid="uid://m44r130xj05g" path="res://art/animations/Lavender animation/8.png" id="63_2ero8"]
+[ext_resource type="Texture2D" uid="uid://cgk6gje7xh6fu" path="res://art/animations/Raspberry animation/8.png" id="63_vylts"]
+[ext_resource type="Texture2D" uid="uid://dw1ggemc8gsd4" path="res://art/animations/Raspberry animation/9.png" id="64_08q6q"]
+[ext_resource type="Texture2D" uid="uid://g17igu7gyo4" path="res://art/animations/Lavender animation/9.png" id="64_l41w6"]
+[ext_resource type="Texture2D" uid="uid://cxrveysdvy7fr" path="res://art/animations/Raspberry animation/10.png" id="65_dhpby"]
+[ext_resource type="Texture2D" uid="uid://c1lduea0jmg4y" path="res://art/animations/Lavender animation/10.png" id="65_wujim"]
+[ext_resource type="Texture2D" uid="uid://c02ywji5mp5vn" path="res://art/animations/Rose petal animation/1.png" id="66_c1s3g"]
+[ext_resource type="Texture2D" uid="uid://cbgexyikymu84" path="res://art/animations/Rose petal animation/2.png" id="67_jsd5l"]
+[ext_resource type="Texture2D" uid="uid://6nq7nk1fmyp5" path="res://art/animations/Rose petal animation/3.png" id="68_3gfaf"]
+[ext_resource type="Texture2D" uid="uid://bho0tpn1sb8gk" path="res://art/animations/Rose petal animation/4.png" id="69_itlej"]
+[ext_resource type="Texture2D" uid="uid://c7d4h1xwitplq" path="res://art/animations/Rose petal animation/5.png" id="70_7iyom"]
+[ext_resource type="Texture2D" uid="uid://bosjr0eww1fjp" path="res://art/animations/Rose petal animation/6.png" id="71_niyy2"]
+[ext_resource type="Texture2D" uid="uid://cdoyc46m6ti0g" path="res://art/animations/Rose petal animation/7.png" id="72_mmt38"]
+[ext_resource type="Texture2D" uid="uid://cgglmpjy6d71t" path="res://art/animations/Rose petal animation/8.png" id="73_tenoy"]
+[ext_resource type="Texture2D" uid="uid://c6hidyaffbogk" path="res://art/animations/Rose petal animation/9.png" id="74_qfy5t"]
+[ext_resource type="Texture2D" uid="uid://7rbbb3rh1cr4" path="res://art/animations/Rose petal animation/10.png" id="75_pqhwo"]
+[ext_resource type="Texture2D" uid="uid://wn0oe5voajkv" path="res://art/animations/Spearmint animation/1.png" id="76_2tp3j"]
+[ext_resource type="Texture2D" uid="uid://bycea6hpnf5f1" path="res://art/animations/Spearmint animation/2.png" id="77_yf68p"]
+[ext_resource type="Texture2D" uid="uid://ceye32yy7fx7f" path="res://art/animations/Spearmint animation/3.png" id="78_re38p"]
+[ext_resource type="Texture2D" uid="uid://dhlaiyq51y3q3" path="res://art/animations/Spearmint animation/4.png" id="79_8gqa4"]
+[ext_resource type="Texture2D" uid="uid://56f2a5ybo3rt" path="res://art/animations/Spearmint animation/5.png" id="80_tjbrh"]
+[ext_resource type="Texture2D" uid="uid://cboqvlsny8ryr" path="res://art/animations/Spearmint animation/6.png" id="81_kmg1f"]
+[ext_resource type="Texture2D" uid="uid://bf8q4jc1e6pil" path="res://art/animations/Spearmint animation/7.png" id="82_etexm"]
+[ext_resource type="Texture2D" uid="uid://c6jyxcqymu4v8" path="res://art/animations/Spearmint animation/8.png" id="83_sp3ea"]
+[ext_resource type="Texture2D" uid="uid://bm4s33geortoo" path="res://art/animations/Spearmint animation/9.png" id="84_udhpb"]
+[ext_resource type="Texture2D" uid="uid://byxyq7y6syy6p" path="res://art/animations/Spearmint animation/10.png" id="85_5nhge"]
+[ext_resource type="Texture2D" uid="uid://og7uvuj31oyr" path="res://art/animations/Strawberry animation/1.png" id="86_rybrr"]
+[ext_resource type="Texture2D" uid="uid://c6x7f5gdem6ii" path="res://art/animations/Strawberry animation/2.png" id="87_jdpkn"]
+[ext_resource type="Texture2D" uid="uid://boefu40eqcoof" path="res://art/animations/Strawberry animation/3.png" id="88_hjdmq"]
+[ext_resource type="Texture2D" uid="uid://dfxu350xl1fgy" path="res://art/animations/Strawberry animation/4.png" id="89_trgou"]
+[ext_resource type="Texture2D" uid="uid://oaln4vfgfecb" path="res://art/animations/Strawberry animation/5.png" id="90_ubkd4"]
+[ext_resource type="Texture2D" uid="uid://c4v0562yoyxjw" path="res://art/animations/Strawberry animation/6.png" id="91_66qhf"]
+[ext_resource type="Texture2D" uid="uid://xeepx6l54s0f" path="res://art/animations/Strawberry animation/7.png" id="92_lnbc5"]
+[ext_resource type="Texture2D" uid="uid://cxfqhgexlkbkh" path="res://art/animations/Strawberry animation/8.png" id="93_j8i8d"]
+[ext_resource type="Texture2D" uid="uid://0dhdjlxsjw00" path="res://art/animations/Strawberry animation/9.png" id="94_pm73c"]
+[ext_resource type="Texture2D" uid="uid://dsf3s8y2me7m0" path="res://art/animations/Strawberry animation/10.png" id="95_on6rf"]
+[ext_resource type="Texture2D" uid="uid://b8si84wtnt7x1" path="res://art/animations/Tea leaves/1.png" id="96_qct0w"]
+[ext_resource type="Texture2D" uid="uid://b5fkkkwwjv4c" path="res://art/animations/Tea leaves/2.png" id="97_bv2ni"]
+[ext_resource type="Texture2D" uid="uid://ubemt38top1t" path="res://art/animations/Tea leaves/3.png" id="98_0la3x"]
+[ext_resource type="Texture2D" uid="uid://cxo3ag3ra1ptu" path="res://art/animations/Tea leaves/4.png" id="99_cxoef"]
+[ext_resource type="Texture2D" uid="uid://cptoo6ca1wga8" path="res://art/animations/Tea leaves/5.png" id="100_q83go"]
+[ext_resource type="Texture2D" uid="uid://byp0ovfkhhxcx" path="res://art/animations/Tea leaves/6.png" id="101_squ3p"]
+[ext_resource type="Texture2D" uid="uid://civ3njdild135" path="res://art/animations/Tea leaves/7.png" id="102_f2iyf"]
+[ext_resource type="Texture2D" uid="uid://cxywnrr4gvqlq" path="res://art/animations/Tea leaves/8.png" id="103_rrm4d"]
+[ext_resource type="Texture2D" uid="uid://du2st8j1udob0" path="res://art/animations/Tea leaves/9.png" id="104_wb312"]
+[ext_resource type="Texture2D" uid="uid://c5hafhuhkym8" path="res://art/animations/Tea leaves/10.png" id="105_gjagn"]
+[ext_resource type="Script" uid="uid://cvgh54k6y3gse" path="res://scenes/pestle.gd" id="117_emdtn"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_wn065"]
 diffuse_texture = ExtResource("6_nd1li")
 normal_texture = ExtResource("11_ltld3")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fifae"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46_wlgjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_vps6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_eevi7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_y5568")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_w3ptr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_apjfa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_nlqnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_cbgpi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_2jny8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_ewxd8")
+}],
+"loop": true,
+"name": &"beans",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_jje3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bnb44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ex7wc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_8yoy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_t78ih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_p5bfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_yqjsq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_wb23n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_akp21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_72cht")
+}],
+"loop": false,
+"name": &"blueberry",
+"speed": 2.86
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_jgwrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_0le2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_q070u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_oy0ww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ggbhr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_l6coo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_gtywu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_f0itl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_jk583")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_pkcfp")
+}],
+"loop": true,
+"name": &"cherry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_modyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_emdtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_5qfp7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_84nid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_gb475")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_2nifm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_ri6o4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_2ero8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_l41w6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_wujim")
+}],
+"loop": true,
+"name": &"cinnamon",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56_modyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_emdtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_5qfp7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_84nid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_gb475")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_2nifm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_ri6o4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_2ero8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_l41w6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_wujim")
+}],
+"loop": true,
+"name": &"lavender",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56_k8j5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_hymgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_uy1us")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_8qlrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_8idyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_2anqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_u520v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_vylts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_08q6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_dhpby")
+}],
+"loop": true,
+"name": &"raspberry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("66_c1s3g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_jsd5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_3gfaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_itlej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_7iyom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_niyy2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_mmt38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_tenoy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_qfy5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_pqhwo")
+}],
+"loop": true,
+"name": &"rose",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("76_2tp3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_yf68p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_re38p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_8gqa4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_tjbrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_kmg1f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_etexm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_sp3ea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_udhpb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_5nhge")
+}],
+"loop": true,
+"name": &"spearmint",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("86_rybrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_jdpkn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_hjdmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_trgou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_ubkd4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_66qhf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_lnbc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_j8i8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_pm73c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_on6rf")
+}],
+"loop": true,
+"name": &"strawberry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("96_qct0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_bv2ni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_0la3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_cxoef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_q83go")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_squ3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_f2iyf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_rrm4d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_wb312")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_gjagn")
+}],
+"loop": true,
+"name": &"tea",
+"speed": 5.0
+}]
 
 [sub_resource type="Animation" id="Animation_2q3yk"]
 length = 3.6
@@ -47,11 +508,23 @@ tracks/1/keys = {
 "update": 0,
 "values": [0.0]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Mortar/MortarIngredient:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [9]
+}
 
 [sub_resource type="Animation" id="Animation_ltld3"]
 resource_name = "mortar_and_pestle"
 length = 3.6
-step = 0.1
+step = 0.01
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -76,6 +549,18 @@ tracks/1/keys = {
 "update": 0,
 "values": [0.0, -0.8552113, -0.8552113, 0.0]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Mortar/MortarIngredient:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.36, 0.72, 1.08, 1.44, 1.8, 2.16, 2.52, 2.88, 3.24, 3.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_21p5d"]
 _data = {
@@ -91,13 +576,13 @@ position = Vector2(960, 540)
 texture = ExtResource("2_damgc")
 metadata/_edit_lock_ = true
 
-[node name="Beans" parent="." unique_id=1307152230 instance=ExtResource("1_of34b")]
-position = Vector2(1762, 656)
+[node name="CoffeeJar" parent="." unique_id=1307152230 instance=ExtResource("1_of34b")]
+position = Vector2(1726, 662)
 scale = Vector2(1, 1)
 texture = ExtResource("5_80lrq")
-ingredient_type = 9
+ingredient_type = "beans"
 
-[node name="LabelBeans" type="Label" parent="Beans" unique_id=240612862]
+[node name="LabelBeans" type="Label" parent="CoffeeJar" unique_id=240612862]
 offset_left = -78.0
 offset_top = 5.0
 offset_right = 77.0
@@ -106,6 +591,21 @@ theme = ExtResource("8_fkpoj")
 theme_override_colors/font_color = Color(0.3557383, 0.20420495, 0.017422946, 1)
 text = "Coffee Beans"
 
+[node name="TeaJar" parent="." unique_id=825669269 instance=ExtResource("1_of34b")]
+position = Vector2(1723, 922)
+scale = Vector2(1, 1)
+texture = ExtResource("6_21p5d")
+ingredient_type = "tea"
+
+[node name="LabelTea" type="Label" parent="TeaJar" unique_id=357192135]
+offset_left = -58.0
+offset_top = 4.0
+offset_right = 61.0
+offset_bottom = 35.0
+theme = ExtResource("8_fkpoj")
+theme_override_colors/font_color = Color(0.3557383, 0.20420495, 0.017422946, 1)
+text = "Tea Leaves"
+
 [node name="IngredientRack" type="Sprite2D" parent="." unique_id=1215840954]
 position = Vector2(820, 288)
 texture = ExtResource("4_nd1li")
@@ -113,53 +613,53 @@ texture = ExtResource("4_nd1li")
 [node name="IngredientBins" type="Node2D" parent="IngredientRack" unique_id=1181412459]
 position = Vector2(-738, -270)
 
-[node name="Strawberry" parent="IngredientRack/IngredientBins" unique_id=825669269 instance=ExtResource("1_of34b")]
+[node name="Strawberry" parent="IngredientRack/IngredientBins" unique_id=1390076831 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(493, 317.5)
 scale = Vector2(1.15625, 1.6640627)
-ingredient_type = 1
+ingredient_type = "strawberry"
 
 [node name="Blueberry" parent="IngredientRack/IngredientBins" unique_id=109695236 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(663.99994, 319)
 scale = Vector2(1.156, 1.664)
-ingredient_type = 2
+ingredient_type = "blueberry"
 
 [node name="Raspberry" parent="IngredientRack/IngredientBins" unique_id=1220025282 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(825, 322.00003)
 scale = Vector2(1.156, 1.664)
-ingredient_type = 3
+ingredient_type = "raspberry"
 
 [node name="Cherry" parent="IngredientRack/IngredientBins" unique_id=1573519153 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(989, 320.00003)
 scale = Vector2(1.156, 1.664)
-ingredient_type = 4
+ingredient_type = "cherry"
 
 [node name="Rose" parent="IngredientRack/IngredientBins" unique_id=998767632 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(524.5, 74.000015)
 scale = Vector2(1.0390627, 0.8125001)
-ingredient_type = 5
+ingredient_type = "rose"
 
 [node name="Cinnamon" parent="IngredientRack/IngredientBins" unique_id=932060408 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(671.5, 73.49999)
 scale = Vector2(1.0703125, 0.80468744)
-ingredient_type = 6
+ingredient_type = "cinnamon"
 
 [node name="Spearmint" parent="IngredientRack/IngredientBins" unique_id=2026950560 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(820, 74.99999)
 scale = Vector2(1.0390627, 0.8125)
-ingredient_type = 7
+ingredient_type = "spearmint"
 
 [node name="Lavender" parent="IngredientRack/IngredientBins" unique_id=1318816990 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(972.75, 75.50001)
 scale = Vector2(1.0664064, 0.80468756)
-ingredient_type = 8
+ingredient_type = "lavender"
 
 [node name="Labels" type="Control" parent="IngredientRack" unique_id=1308656595]
 layout_mode = 3
@@ -262,19 +762,19 @@ offset_bottom = 40.0
 
 [node name="Button" type="Button" parent="GUI" unique_id=12919459]
 layout_mode = 0
-offset_left = 1693.0
-offset_top = 1430.0
-offset_right = 1957.0
-offset_bottom = 1529.0
+offset_left = 1104.0
+offset_top = 1259.0
+offset_right = 1368.0
+offset_bottom = 1358.0
 theme = ExtResource("4_damgc")
 text = "Finish recipe"
 
 [node name="Button2" type="Button" parent="GUI" unique_id=994928799]
 layout_mode = 0
-offset_left = 1934.0
-offset_top = 1133.0
-offset_right = 2245.0
-offset_bottom = 1226.0
+offset_left = 1075.0
+offset_top = 1403.0
+offset_right = 1386.0
+offset_bottom = 1496.0
 theme = ExtResource("4_damgc")
 text = "Get new recipe"
 
@@ -299,24 +799,32 @@ Cherry
 Rose"
 
 [node name="Cauldron" parent="." unique_id=555176367 instance=ExtResource("3_2ukpx")]
-position = Vector2(784, 823)
+position = Vector2(813, 819)
 texture = SubResource("CanvasTexture_wn065")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=921020015]
 stream = ExtResource("8_ekrsm")
 
 [node name="Mortar" type="Sprite2D" parent="." unique_id=1663867063]
-position = Vector2(1333, 883)
+position = Vector2(1373, 885)
 texture = ExtResource("12_2q3yk")
+script = ExtResource("15_bnb44")
 
-[node name="MortarBottom" type="Sprite2D" parent="Mortar" unique_id=55249500]
-z_index = 1
-position = Vector2(-6, 30)
-texture = ExtResource("15_wn065")
+[node name="MortarIngredient" type="AnimatedSprite2D" parent="Mortar" unique_id=1046241141]
+position = Vector2(-10.0000515, -9.999974)
+scale = Vector2(1.5159997, 1.0477767)
+sprite_frames = SubResource("SpriteFrames_fifae")
+animation = &"beans"
+frame = 9
 
 [node name="Pestle" type="Sprite2D" parent="Mortar" unique_id=1655578716]
 position = Vector2(56, -35)
 texture = ExtResource("13_ltld3")
+script = ExtResource("117_emdtn")
+
+[node name="MortarBottom" type="Sprite2D" parent="Mortar" unique_id=55249500]
+position = Vector2(-6, 30)
+texture = ExtResource("15_wn065")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Mortar" unique_id=1211670601]
 root_node = NodePath("../..")
@@ -330,7 +838,8 @@ blend_mode = 1
 shadow_enabled = true
 height = 0.27
 
-[connection signal="pressed" from="Beans" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="CoffeeJar" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="TeaJar" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="IngredientRack/IngredientBins/Strawberry" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="IngredientRack/IngredientBins/Blueberry" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="IngredientRack/IngredientBins/Raspberry" to="." method="_on_ingredient_bin_pressed"]
@@ -342,3 +851,4 @@ height = 0.27
 [connection signal="button_up" from="GUI/Button" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="GUI/Button2" to="." method="_on_button_2_button_up"]
 [connection signal="placed" from="Cauldron" to="." method="_on_cauldron_placed"]
+[connection signal="pestle" from="Mortar/Pestle" to="Mortar" method="_on_pestle_pestle"]

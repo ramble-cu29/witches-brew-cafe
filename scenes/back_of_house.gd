@@ -3,10 +3,9 @@ extends Node
 var ingredient: Node = preload("res://scenes/ingredient.tscn").instantiate()
 
 var recipe:Array = [
-	Globals.Ingredients.BEANS,
-	Globals.Ingredients.RASPBERRY,
-	Globals.Ingredients.CHERRY,
-	Globals.Ingredients.ROSE
+	"beans",
+	"raspberry",
+	"rose"
 ]
 
 # Called when the node enters the scene tree for the first time.
@@ -33,6 +32,7 @@ func _on_ingredient_bin_pressed() -> void:
 	add_child(ingredient)
 	Globals.ingredient_exists = true
 	ingredient.global_position = get_viewport().get_mouse_position()
+	print(Globals.ingredient_type_global)
 	ingredient.texture = load(Globals.INGR_FILES[Globals.ingredient_type_global])
 
 func _on_button_button_up() -> void:
@@ -46,12 +46,13 @@ func _on_button_button_up() -> void:
 func _on_button_2_button_up() -> void:
 	recipe.clear()
 	$GUI/Panel/RecipeLabel.text = "Recipe:"
-	print(Globals.Ingredients.size())
-	print(Globals.Ingredients.keys()[randi() % Globals.Ingredients.size()])
+	#print(Globals.Ingredients.size())
+	#print(Globals.Ingredients.keys()[randi() % Globals.Ingredients.size()])
 	#for i: int in range(4):
 		#var ingr:String = Globals.Ingredients.keys()[randi() % Globals.Ingredients.size()]
 		#$GUI/Panel/RecipeLabel.text += 
 
 
 func _on_cauldron_placed() -> void:
-	print(str(Globals.ingredient_type_global) + " placed!")
+	pass
+	#print(str(Globals.ingredient_type_global) + " placed!")
