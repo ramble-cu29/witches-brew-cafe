@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ubemt38top1t"
-path="res://.godot/imported/3.png-09fb8c37436fae15cda9ea51c4a27ed6.ctex"
+path="res://.godot/imported/3.png-529ecc728bf47ba4949e0c23fd40292a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/animations/Tea leaves/3.png"
-dest_files=["res://.godot/imported/3.png-09fb8c37436fae15cda9ea51c4a27ed6.ctex"]
+source_file="res://art/animations/Tea-leaves/3.png"
+dest_files=["res://.godot/imported/3.png-529ecc728bf47ba4949e0c23fd40292a.ctex"]
 
 [params]
 

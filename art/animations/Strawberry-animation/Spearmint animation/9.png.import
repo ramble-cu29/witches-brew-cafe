@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bm4s33geortoo"
-path="res://.godot/imported/9.png-9ce1f180ae93387adaaf3642130fa96e.ctex"
+path="res://.godot/imported/9.png-d6eb9eaaa49dbcd63fd5ed897fdeee15.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/animations/Spearmint animation/9.png"
-dest_files=["res://.godot/imported/9.png-9ce1f180ae93387adaaf3642130fa96e.ctex"]
+source_file="res://art/animations/Strawberry-animation/Spearmint animation/9.png"
+dest_files=["res://.godot/imported/9.png-d6eb9eaaa49dbcd63fd5ed897fdeee15.ctex"]
 
 [params]
 

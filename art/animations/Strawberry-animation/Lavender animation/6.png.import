@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bflco8ow8kjfm"
-path="res://.godot/imported/6.png-c81f77a3b34becdf2591636c30eee76e.ctex"
+path="res://.godot/imported/6.png-48bedc40c288a74c56e1d4901c3f30a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/animations/Lavender animation/6.png"
-dest_files=["res://.godot/imported/6.png-c81f77a3b34becdf2591636c30eee76e.ctex"]
+source_file="res://art/animations/Strawberry-animation/Lavender animation/6.png"
+dest_files=["res://.godot/imported/6.png-48bedc40c288a74c56e1d4901c3f30a0.ctex"]
 
 [params]
 

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dmikwicreikrg"
+path="res://.godot/imported/Witches Brew Cafe v2.mp3-610cd7a42d6d7bd76b7fe094298052e4.mp3str"
+
+[deps]
+
+source_file="res://audio/Witches Brew Cafe v2.mp3"
+dest_files=["res://.godot/imported/Witches Brew Cafe v2.mp3-610cd7a42d6d7bd76b7fe094298052e4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
