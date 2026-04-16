@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dqcxbhdtop4hf" path="res://art/boh/tea_jar.png" id="6_21p5d"]
 [ext_resource type="Texture2D" uid="uid://nxely068hvmo" path="res://art/boh/cauldron.png" id="6_nd1li"]
 [ext_resource type="Texture2D" uid="uid://cj87w66u4s1kk" path="res://art/boh/espresso_machine.png" id="7_30dfs"]
+[ext_resource type="AudioStream" uid="uid://d0byjt2pgagrl" path="res://audio/sfx/Lid 4 [2026-04-13 174648].wav" id="8_84nid"]
 [ext_resource type="Theme" uid="uid://c7fehh1qho7pt" path="res://gui_theme.tres" id="8_fkpoj"]
 [ext_resource type="Texture2D" uid="uid://bftkn7i3dcma2" path="res://art/boh/cauldron_normal.png" id="11_ltld3"]
 [ext_resource type="Texture2D" uid="uid://cwtxqlxw6j5b1" path="res://art/boh/mortar.png" id="12_2q3yk"]
@@ -117,6 +118,9 @@
 [ext_resource type="Texture2D" uid="uid://du2st8j1udob0" path="res://art/animations/Tea-leaves/9.png" id="104_wb312"]
 [ext_resource type="Texture2D" uid="uid://c5hafhuhkym8" path="res://art/animations/Tea-leaves/10.png" id="105_gjagn"]
 [ext_resource type="Script" uid="uid://cvgh54k6y3gse" path="res://scenes/pestle.gd" id="117_emdtn"]
+[ext_resource type="AudioStream" uid="uid://b53bwgub3nvpc" path="res://audio/sfx/Mortar And Pestle [2026-04-16 012048].wav" id="118_emdtn"]
+[ext_resource type="AudioStream" uid="uid://xli7bsclb55w" path="res://audio/sfx/Boiling Cauldron.wav" id="119_5qfp7"]
+[ext_resource type="AudioStream" uid="uid://36jts0cdhmk7" path="res://audio/sfx/IngDrop [2026-04-16 020826].wav" id="120_gb475"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_wn065"]
 diffuse_texture = ExtResource("6_nd1li")
@@ -590,6 +594,10 @@ theme = ExtResource("8_fkpoj")
 theme_override_colors/font_color = Color(0.3557383, 0.20420495, 0.017422946, 1)
 text = "Coffee Beans"
 
+[node name="Lid" type="AudioStreamPlayer" parent="CoffeeJar" unique_id=215312071]
+stream = ExtResource("8_84nid")
+bus = &"SFX"
+
 [node name="TeaJar" parent="." unique_id=825669269 instance=ExtResource("1_of34b")]
 position = Vector2(1723, 922)
 scale = Vector2(1, 1)
@@ -605,6 +613,10 @@ theme = ExtResource("8_fkpoj")
 theme_override_colors/font_color = Color(0.3557383, 0.20420495, 0.017422946, 1)
 text = "Tea Leaves"
 
+[node name="Lid" type="AudioStreamPlayer" parent="TeaJar" unique_id=1638518464]
+stream = ExtResource("8_84nid")
+bus = &"SFX"
+
 [node name="IngredientRack" type="Sprite2D" parent="." unique_id=1215840954]
 position = Vector2(820, 288)
 texture = ExtResource("4_nd1li")
@@ -618,11 +630,19 @@ position = Vector2(493, 317.5)
 scale = Vector2(1.15625, 1.6640627)
 ingredient_type = "strawberry"
 
+[node name="Lid" type="AudioStreamPlayer" parent="IngredientRack/IngredientBins/Strawberry" unique_id=307763048]
+stream = ExtResource("8_84nid")
+bus = &"SFX"
+
 [node name="Blueberry" parent="IngredientRack/IngredientBins" unique_id=109695236 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(663.99994, 319)
 scale = Vector2(1.156, 1.664)
 ingredient_type = "blueberry"
+
+[node name="Lid" type="AudioStreamPlayer" parent="IngredientRack/IngredientBins/Blueberry" unique_id=1570996486]
+stream = ExtResource("8_84nid")
+bus = &"SFX"
 
 [node name="Raspberry" parent="IngredientRack/IngredientBins" unique_id=1220025282 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
@@ -630,11 +650,19 @@ position = Vector2(825, 322.00003)
 scale = Vector2(1.156, 1.664)
 ingredient_type = "raspberry"
 
+[node name="Lid" type="AudioStreamPlayer" parent="IngredientRack/IngredientBins/Raspberry" unique_id=500113176]
+stream = ExtResource("8_84nid")
+bus = &"SFX"
+
 [node name="Cherry" parent="IngredientRack/IngredientBins" unique_id=1573519153 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(989, 320.00003)
 scale = Vector2(1.156, 1.664)
 ingredient_type = "cherry"
+
+[node name="Lid" type="AudioStreamPlayer" parent="IngredientRack/IngredientBins/Cherry" unique_id=227547717]
+stream = ExtResource("8_84nid")
+bus = &"SFX"
 
 [node name="Rose" parent="IngredientRack/IngredientBins" unique_id=998767632 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
@@ -642,11 +670,19 @@ position = Vector2(524.5, 74.000015)
 scale = Vector2(1.0390627, 0.8125001)
 ingredient_type = "rose"
 
+[node name="Lid" type="AudioStreamPlayer" parent="IngredientRack/IngredientBins/Rose" unique_id=1876949932]
+stream = ExtResource("8_84nid")
+bus = &"SFX"
+
 [node name="Cinnamon" parent="IngredientRack/IngredientBins" unique_id=932060408 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(671.5, 73.49999)
 scale = Vector2(1.0703125, 0.80468744)
 ingredient_type = "cinnamon"
+
+[node name="Lid" type="AudioStreamPlayer" parent="IngredientRack/IngredientBins/Cinnamon" unique_id=968632282]
+stream = ExtResource("8_84nid")
+bus = &"SFX"
 
 [node name="Spearmint" parent="IngredientRack/IngredientBins" unique_id=2026950560 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
@@ -654,11 +690,19 @@ position = Vector2(820, 74.99999)
 scale = Vector2(1.0390627, 0.8125)
 ingredient_type = "spearmint"
 
+[node name="Lid" type="AudioStreamPlayer" parent="IngredientRack/IngredientBins/Spearmint" unique_id=1326882401]
+stream = ExtResource("8_84nid")
+bus = &"SFX"
+
 [node name="Lavender" parent="IngredientRack/IngredientBins" unique_id=1318816990 instance=ExtResource("1_of34b")]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(972.75, 75.50001)
 scale = Vector2(1.0664064, 0.80468756)
 ingredient_type = "lavender"
+
+[node name="Lid" type="AudioStreamPlayer" parent="IngredientRack/IngredientBins/Lavender" unique_id=1043370559]
+stream = ExtResource("8_84nid")
+bus = &"SFX"
 
 [node name="Labels" type="Control" parent="IngredientRack" unique_id=1308656595]
 layout_mode = 3
@@ -826,6 +870,15 @@ texture = ExtResource("15_wn065")
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_21p5d")
 
+[node name="Grind" type="AudioStreamPlayer" parent="Mortar" unique_id=537063521]
+stream = ExtResource("118_emdtn")
+volume_db = 3.296
+bus = &"SFX"
+
+[node name="IngDrop" type="AudioStreamPlayer" parent="Mortar" unique_id=1404501223]
+stream = ExtResource("120_gb475")
+volume_db = 6.958
+
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="." unique_id=1806031907]
 visible = false
 editor_only = true
@@ -833,6 +886,10 @@ energy = 0.29
 blend_mode = 1
 shadow_enabled = true
 height = 0.27
+
+[node name="BoilingCauldron" type="AudioStreamPlayer" parent="." unique_id=688932083]
+stream = ExtResource("119_5qfp7")
+bus = &"Background Noise"
 
 [connection signal="pressed" from="CoffeeJar" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="TeaJar" to="." method="_on_ingredient_bin_pressed"]

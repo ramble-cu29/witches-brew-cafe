@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b53bwgub3nvpc"
+path="res://.godot/imported/Mortar And Pestle [2026-04-16 012048].wav-94f47ab124123a9b02c172404ad3a0d5.sample"
+
+[deps]
+
+source_file="res://audio/sfx/Mortar And Pestle [2026-04-16 012048].wav"
+dest_files=["res://.godot/imported/Mortar And Pestle [2026-04-16 012048].wav-94f47ab124123a9b02c172404ad3a0d5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
