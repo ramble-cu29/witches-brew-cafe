@@ -40,6 +40,8 @@ func _on_ingredient_bin_pressed() -> void:
 	ingredient.global_position = get_viewport().get_mouse_position()
 	print(Globals.ingredient_type_global)
 	ingredient.texture = load(Globals.INGR_FILES[Globals.ingredient_type_global])
+	$Lid.volume_db = 6
+	$Lid.play()
 
 func _on_button_button_up() -> void:
 	print("The recipe followed was: " + str(Globals.recipe_record))
