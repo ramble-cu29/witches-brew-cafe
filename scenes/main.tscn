@@ -1,7 +1,20 @@
 [gd_scene format=3 uid="uid://dcfj6j3b81sto"]
 
 [ext_resource type="PackedScene" uid="uid://baor5av7b38w8" path="res://scenes/back_of_house.tscn" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://6p3qtntqfxlt" path="res://scenes/mainscene.gd" id="1_sugp2"]
+[ext_resource type="AudioStream" uid="uid://dmikwicreikrg" path="res://audio/Witches Brew Cafe v2.mp3" id="3_jyhfs"]
+[ext_resource type="AudioStream" uid="uid://ppkpfx2iwku2" path="res://audio/Background Ambience.mp3" id="4_jyhfs"]
 
 [node name="Main" type="Node" unique_id=2085060788]
+script = ExtResource("1_sugp2")
 
 [node name="BackOfHouse" parent="." unique_id=45676339 instance=ExtResource("1_o5qli")]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=841255415]
+stream = ExtResource("3_jyhfs")
+bus = &"Music"
+
+[node name="BackgroundAmbience" type="AudioStreamPlayer" parent="." unique_id=1246978150]
+stream = ExtResource("4_jyhfs")
+bus = &"Background Noise"
+parameters/looping = true

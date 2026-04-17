@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtwrf7h54vt0u"
-path="res://.godot/imported/8.png-c02bffe7f845cf54a92e384780780afa.ctex"
+path="res://.godot/imported/8.png-491b8dd3bf26cb9cb8bc38d091ec89c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/animations/Coffee beans animation/8.png"
-dest_files=["res://.godot/imported/8.png-c02bffe7f845cf54a92e384780780afa.ctex"]
+source_file="res://art/animations/Strawberry-animation/Coffee beans animation/8.png"
+dest_files=["res://.godot/imported/8.png-491b8dd3bf26cb9cb8bc38d091ec89c7.ctex"]
 
 [params]
 

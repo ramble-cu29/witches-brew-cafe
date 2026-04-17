@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Witches Brew Cafe"
-run/main_scene="uid://baor5av7b38w8"
+run/main_scene="uid://dcfj6j3b81sto"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

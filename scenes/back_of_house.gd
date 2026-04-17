@@ -1,6 +1,10 @@
 extends Node
 
 var ingredient: Node = preload("res://scenes/ingredient.tscn").instantiate()
+@onready var boil: AudioStreamPlayer = $BoilingCauldron
+@export var boil_fade_in_seconds: float = 4.0
+@export var boil_target_volume_db: float = -9.7
+@export var boil_start_volume_db: float = -50.0
 
 var recipe:Array = [
 	"beans",
@@ -11,9 +15,11 @@ var recipe:Array = [
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
-
+	play_boil_loop()
+	
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 	
 # If the left mouse button is up and the ingredient is inside the tree, remove it from the 
@@ -56,3 +62,15 @@ func _on_button_2_button_up() -> void:
 func _on_cauldron_placed() -> void:
 	pass
 	#print(str(Globals.ingredient_type_global) + " placed!")
+
+func play_boil_loop() -> void:
+		boil.volume_db = boil_start_volume_db
+		boil.play()
+		var tween: Tween = create_tween()
+		tween.tween_property(
+			boil,
+			"volume_db",
+			boil_target_volume_db,
+			boil_fade_in_seconds
+		)
+		await boil.finished

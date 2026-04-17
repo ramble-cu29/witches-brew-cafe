@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ppkpfx2iwku2"
+path="res://.godot/imported/Background Ambience.mp3-b57190a5cf696a7cb3250c1bf19343db.mp3str"
+
+[deps]
+
+source_file="res://audio/Background Ambience.mp3"
+dest_files=["res://.godot/imported/Background Ambience.mp3-b57190a5cf696a7cb3250c1bf19343db.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bho0tpn1sb8gk"
-path="res://.godot/imported/4.png-591e46780cd8beef3385d988d253c999.ctex"
+path="res://.godot/imported/4.png-e6292156bec026d458368aeb9e80c7c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/animations/Rose petal animation/4.png"
-dest_files=["res://.godot/imported/4.png-591e46780cd8beef3385d988d253c999.ctex"]
+source_file="res://art/animations/Strawberry-animation/Rose petal animation/4.png"
+dest_files=["res://.godot/imported/4.png-e6292156bec026d458368aeb9e80c7c2.ctex"]
 
 [params]
 

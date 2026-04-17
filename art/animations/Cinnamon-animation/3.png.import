@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmws5avmuhr"
-path="res://.godot/imported/3.png-86cd067265ce1d43678106ac5f7bc7a6.ctex"
+path="res://.godot/imported/3.png-521b4bb4a0f27be04997a5141098417f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/animations/Cinnamon animation /3.png"
-dest_files=["res://.godot/imported/3.png-86cd067265ce1d43678106ac5f7bc7a6.ctex"]
+source_file="res://art/animations/Cinnamon-animation/3.png"
+dest_files=["res://.godot/imported/3.png-521b4bb4a0f27be04997a5141098417f.ctex"]
 
 [params]
 

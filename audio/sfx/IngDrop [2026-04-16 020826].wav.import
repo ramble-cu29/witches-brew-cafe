@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://36jts0cdhmk7"
+path="res://.godot/imported/IngDrop [2026-04-16 020826].wav-fadadd48357916cd79663868649adf95.sample"
+
+[deps]
+
+source_file="res://audio/sfx/IngDrop [2026-04-16 020826].wav"
+dest_files=["res://.godot/imported/IngDrop [2026-04-16 020826].wav-fadadd48357916cd79663868649adf95.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

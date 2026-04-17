@@ -11,6 +11,9 @@ func _input(event: InputEvent) -> void:
 				#print(Globals.ingredient_type_global)
 				Globals.ingredient_type_global = ingredient_type
 				pressed.emit()
+				$Lid.volume_db = 6
+				$Lid.play()
+				
 				
 
 		#elif event.button_index == MOUSE_BUTTON_LEFT and event.pressed == false:
