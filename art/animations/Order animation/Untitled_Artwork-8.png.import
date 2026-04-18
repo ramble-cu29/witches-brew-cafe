@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de4j0a04wykap"
-path="res://.godot/imported/foh_countertop.png-0236680d62149df9cb2dcb299352b60c.ctex"
+uid="uid://y4lrm5mpy52i"
+path="res://.godot/imported/Untitled_Artwork-8.png-14800502c6605b2ed6d97aeaf7861a27.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/staging_area/foh_countertop.png"
-dest_files=["res://.godot/imported/foh_countertop.png-0236680d62149df9cb2dcb299352b60c.ctex"]
+source_file="res://art/animations/Order animation/Untitled_Artwork-8.png"
+dest_files=["res://.godot/imported/Untitled_Artwork-8.png-14800502c6605b2ed6d97aeaf7861a27.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcst1jt6nwp7v"
-path="res://.godot/imported/black_cat.png-b7e21a05d92b5c5f4b83c22a12c78e96.ctex"
+uid="uid://dc0wnib3sk7c"
+path="res://.godot/imported/werewolf.png-c60def51a20b303068d69e42c53f78e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/staging_area/black_cat.png"
-dest_files=["res://.godot/imported/black_cat.png-b7e21a05d92b5c5f4b83c22a12c78e96.ctex"]
+source_file="res://art/foh/werewolf.png"
+dest_files=["res://.godot/imported/werewolf.png-c60def51a20b303068d69e42c53f78e3.ctex"]
 
 [params]
 

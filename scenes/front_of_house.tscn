@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://xn4aqof68fih"]
+
+[ext_resource type="Texture2D" uid="uid://bqfmecgq6dm2c" path="res://art/foh/foh_background.png" id="1_hmbi6"]
+[ext_resource type="Texture2D" uid="uid://b2afks2jx6jtg" path="res://art/foh/foh_countertop.png" id="2_cd6fm"]
+[ext_resource type="Texture2D" uid="uid://sk8e0bqvheo0" path="res://art/animations/Order animation/Untitled_Artwork-1.png" id="3_gukep"]
+[ext_resource type="Texture2D" uid="uid://bokr443sts1u3" path="res://art/animations/Order animation/Untitled_Artwork-2.png" id="4_vdful"]
+[ext_resource type="Texture2D" uid="uid://jsplq55c7541" path="res://art/animations/Order animation/Untitled_Artwork-3.png" id="5_2ryo0"]
+[ext_resource type="Texture2D" uid="uid://dls7v7yf7cram" path="res://art/animations/Order animation/Untitled_Artwork-4.png" id="6_pueel"]
+[ext_resource type="Texture2D" uid="uid://dteyjgr7tbbwp" path="res://art/animations/Order animation/Untitled_Artwork-5.png" id="7_1c1bw"]
+[ext_resource type="Texture2D" uid="uid://tv6alagccpjw" path="res://art/animations/Order animation/Untitled_Artwork-6.png" id="8_ywycc"]
+[ext_resource type="Texture2D" uid="uid://dg45wf3ywaeji" path="res://art/animations/Order animation/Untitled_Artwork-7.png" id="9_8iaf3"]
+[ext_resource type="Texture2D" uid="uid://y4lrm5mpy52i" path="res://art/animations/Order animation/Untitled_Artwork-8.png" id="10_1wi85"]
+[ext_resource type="Texture2D" uid="uid://cv37kya4hg5av" path="res://art/animations/Order animation/Untitled_Artwork-9.png" id="11_kp6rt"]
+[ext_resource type="Texture2D" uid="uid://da84hqgi1f2nv" path="res://art/animations/Order animation/Untitled_Artwork-10.png" id="12_afeii"]
+[ext_resource type="Texture2D" uid="uid://b4c0kvdeopx00" path="res://art/animations/Order animation/Untitled_Artwork-11.png" id="13_w5dop"]
+[ext_resource type="Texture2D" uid="uid://b3jsp42i3jmf5" path="res://art/animations/Order animation/Untitled_Artwork-12.png" id="14_agyvr"]
+[ext_resource type="Texture2D" uid="uid://cmahefet3du4s" path="res://art/foh/black_cat.png" id="15_724ge"]
+[ext_resource type="Texture2D" uid="uid://n8ya1qt8dmb0" path="res://art/animations/Typewriter animation/Untitled_Artwork-1.png" id="16_fv75l"]
+[ext_resource type="Texture2D" uid="uid://dplrf52w1dxvk" path="res://art/animations/Typewriter animation/Untitled_Artwork-2.png" id="17_j0hqd"]
+[ext_resource type="Texture2D" uid="uid://catx8pwfh4cg0" path="res://art/animations/Typewriter animation/Untitled_Artwork-3.png" id="18_6wbgx"]
+[ext_resource type="Texture2D" uid="uid://dqol4gu6f68mi" path="res://art/animations/Typewriter animation/Untitled_Artwork-4.png" id="19_we1ks"]
+[ext_resource type="Texture2D" uid="uid://dfuiyijr53kju" path="res://art/animations/Typewriter animation/Untitled_Artwork-5.png" id="20_ddgkd"]
+[ext_resource type="Texture2D" uid="uid://dh1ecles0bvgg" path="res://art/animations/Typewriter animation/Untitled_Artwork-6.png" id="21_7gqge"]
+[ext_resource type="Texture2D" uid="uid://cbyistkksscva" path="res://art/animations/Typewriter animation/Untitled_Artwork-7.png" id="22_qfn12"]
+[ext_resource type="Texture2D" uid="uid://c5xs5ex0kilmo" path="res://art/animations/Typewriter animation/Untitled_Artwork-8.png" id="23_vlm5v"]
+[ext_resource type="Texture2D" uid="uid://dph5ykfl67nsw" path="res://art/animations/Typewriter animation/Untitled_Artwork-9.png" id="24_5v4ct"]
+[ext_resource type="Texture2D" uid="uid://g1nxt1aoai8l" path="res://art/animations/Typewriter animation/Untitled_Artwork-10.png" id="25_4or88"]
+[ext_resource type="Texture2D" uid="uid://cdocexqkmtxuf" path="res://art/animations/Typewriter animation/Untitled_Artwork-11.png" id="26_roegs"]
+[ext_resource type="Texture2D" uid="uid://c5an26jj3oic2" path="res://art/animations/Typewriter animation/Untitled_Artwork-12.png" id="27_61agr"]
+[ext_resource type="Texture2D" uid="uid://dg57tnbpyrkov" path="res://art/animations/Typewriter animation/Untitled_Artwork-13.png" id="28_p7cx0"]
+[ext_resource type="Texture2D" uid="uid://d33r3tcbxfwke" path="res://art/animations/Typewriter animation/Untitled_Artwork-14.png" id="29_rgvcs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cdydr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_vdful")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2ryo0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pueel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1c1bw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ywycc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8iaf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1wi85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kp6rt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_afeii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_w5dop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_agyvr")
+}],
+"loop": true,
+"name": &"order",
+"speed": 9.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kcv5m"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_fv75l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_j0hqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_6wbgx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_we1ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ddgkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_7gqge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_qfn12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_vlm5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_5v4ct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_4or88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_roegs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_61agr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_p7cx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_rgvcs")
+}],
+"loop": true,
+"name": &"typewriter",
+"speed": 5.0
+}]
+
+[node name="FrontOfHouse" type="Node" unique_id=8609076]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=395465737]
+position = Vector2(960, 540)
+texture = ExtResource("1_hmbi6")
+
+[node name="Countertop" type="Sprite2D" parent="." unique_id=131925143]
+position = Vector2(959, 839)
+texture = ExtResource("2_cd6fm")
+
+[node name="Witch" type="Sprite2D" parent="." unique_id=1681774934]
+position = Vector2(380, 641)
+texture = ExtResource("3_gukep")
+
+[node name="Arm" type="AnimatedSprite2D" parent="Witch" unique_id=1163639410]
+sprite_frames = SubResource("SpriteFrames_cdydr")
+animation = &"order"
+frame = 1
+
+[node name="Cat" type="Sprite2D" parent="." unique_id=309916516]
+position = Vector2(1514, 722)
+texture = ExtResource("15_724ge")
+
+[node name="Typewriter" type="AnimatedSprite2D" parent="." unique_id=122659276]
+position = Vector2(702, 749)
+sprite_frames = SubResource("SpriteFrames_kcv5m")
+animation = &"typewriter"
+
+[node name="Customer" type="Sprite2D" parent="." unique_id=318607056]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8lumshtfg10s"
-path="res://.godot/imported/foh_background.png-40c12be851ba40a5d989d409cc8bbb19.ctex"
+uid="uid://cmahefet3du4s"
+path="res://.godot/imported/black_cat.png-b9f5a3db26d14e4e20bd74087fe74eb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/staging_area/foh_background.png"
-dest_files=["res://.godot/imported/foh_background.png-40c12be851ba40a5d989d409cc8bbb19.ctex"]
+source_file="res://art/foh/black_cat.png"
+dest_files=["res://.godot/imported/black_cat.png-b9f5a3db26d14e4e20bd74087fe74eb3.ctex"]
 
 [params]
 
