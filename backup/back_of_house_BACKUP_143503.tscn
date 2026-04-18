@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://baor5av7b38w8"]
+[gd_scene format=3 uid="uid://b4hvjfuv1vka"]
 
 [ext_resource type="Script" uid="uid://bm5soup6vcox8" path="res://scenes/back_of_house.gd" id="1_io6l6"]
 [ext_resource type="PackedScene" uid="uid://djw1an2ysxeog" path="res://scenes/ingredient_bin.tscn" id="1_of34b"]
@@ -65,7 +65,11 @@
 [ext_resource type="Texture2D" uid="uid://c123vhlwlh1m0" path="res://art/animations/Cinnamon-animation/8.png" id="43_2ero8"]
 [ext_resource type="Texture2D" uid="uid://7v6gox3eou4y" path="res://art/animations/Cinnamon-animation/9.png" id="44_l41w6"]
 [ext_resource type="Texture2D" uid="uid://bakh7lgp1yja5" path="res://art/animations/Cinnamon-animation/10.png" id="45_wujim"]
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://b22ppo17a11wn" path="res://art/animations/Coffee beans animation/1.png" id="46_wlgjh"]
+=======
+[ext_resource type="Texture2D" uid="uid://og7uvuj31oyr" path="res://art/animations/Strawberry-animation/1.png" id="46_wlgjh"]
+>>>>>>> cae0e07e736b857210dc7dacce4c71b395c410b2
 [ext_resource type="Texture2D" uid="uid://cufjlo0r2fnqq" path="res://art/animations/Coffee beans animation/2.png" id="47_vps6e"]
 [ext_resource type="Texture2D" uid="uid://4322evknhor3" path="res://art/animations/Coffee beans animation/3.png" id="48_eevi7"]
 [ext_resource type="Texture2D" uid="uid://3d31lkc4457n" path="res://art/animations/Coffee beans animation/4.png" id="49_y5568"]
@@ -207,6 +211,7 @@
 [ext_resource type="Texture2D" uid="uid://cwaam5137j8rg" path="res://art/animations/Water machine/Untitled_Artwork-15.png" id="205_isefr"]
 [ext_resource type="Texture2D" uid="uid://d3th2d7m8ieiq" path="res://art/animations/Water machine/Untitled_Artwork-16.png" id="206_s2vh5"]
 [ext_resource type="Texture2D" uid="uid://docjr3il1cqtu" path="res://art/animations/Water machine/Untitled_Artwork-17.png" id="207_4l87u"]
+
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q83go"]
 animations = [{
@@ -1263,20 +1268,6 @@ position = Vector2(249, 463)
 sprite_frames = SubResource("SpriteFrames_rybrr")
 animation = &"scrolling"
 
-[node name="Label" type="Label" parent="Scroll" unique_id=448147180]
-offset_left = -127.0
-offset_top = -108.0
-offset_right = 101.0
-offset_bottom = 367.0
-theme = ExtResource("8_fkpoj")
-theme_type_variation = &"HeaderLarge"
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "Latte
-with
-strawberries
-and cinnamon"
-
 [node name="Clock" type="Sprite2D" parent="." unique_id=1644356031]
 position = Vector2(239, 89)
 scale = Vector2(0.6, 0.6)
@@ -1295,8 +1286,7 @@ texture = ExtResource("144_5nhge")
 position = Vector2(1677, 308)
 sprite_frames = SubResource("SpriteFrames_wb312")
 animation = &"water"
-frame = 3
-frame_progress = 0.6699328
+frame_progress = 0.6697929
 
 [connection signal="pressed" from="CoffeeJar" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="TeaJar" to="." method="_on_ingredient_bin_pressed"]

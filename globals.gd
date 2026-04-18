@@ -2,6 +2,7 @@ extends Node
 
 var ingredient_exists:bool = false 
 var ingredient_type_global:String
+var current_recipe:Array
 
 enum Actions {
 	NULL,
@@ -16,13 +17,16 @@ const INGREDIENTS:Array[String] = [
 	"strawberry",
 	"blueberry",
 	"raspberry",
-	"cherry",
+	"cherry",	
 	"rose",
 	"cinnamon",
 	"spearmint",
 	"lavender",
 	"beans",
 	"tea",
+	"espresso",
+	"water",
+	"milk"
 ]
 
 const INGR_FILES: Dictionary = {
@@ -39,3 +43,22 @@ const INGR_FILES: Dictionary = {
 }
 
 var recipe_record: Array = []
+
+func recipe_builder() -> void:
+	var base_recipes: Dictionary = {
+		"red_eye": ["espresso", "beans"],
+		"americano": ["espresso", "water"],
+		"latte": ["espresso", "milk"],
+		"tea": ["tea", "water"],
+	}
+	var berries: Array = INGREDIENTS.slice(1, 5)
+	var witchy: Array = INGREDIENTS.slice(5, 9)
+
+	var recipe: Array = base_recipes["red_eye"]
+	
+	recipe.append(berries[randi() % 4])
+	recipe.append(witchy[randi() % 4])
+
+	current_recipe = recipe
+	
+	

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://baor5av7b38w8"]
+[gd_scene format=3 uid="uid://bioq4wfcfhkja"]
 
 [ext_resource type="Script" uid="uid://bm5soup6vcox8" path="res://scenes/back_of_house.gd" id="1_io6l6"]
 [ext_resource type="PackedScene" uid="uid://djw1an2ysxeog" path="res://scenes/ingredient_bin.tscn" id="1_of34b"]
@@ -65,7 +65,7 @@
 [ext_resource type="Texture2D" uid="uid://c123vhlwlh1m0" path="res://art/animations/Cinnamon-animation/8.png" id="43_2ero8"]
 [ext_resource type="Texture2D" uid="uid://7v6gox3eou4y" path="res://art/animations/Cinnamon-animation/9.png" id="44_l41w6"]
 [ext_resource type="Texture2D" uid="uid://bakh7lgp1yja5" path="res://art/animations/Cinnamon-animation/10.png" id="45_wujim"]
-[ext_resource type="Texture2D" uid="uid://b22ppo17a11wn" path="res://art/animations/Coffee beans animation/1.png" id="46_wlgjh"]
+[ext_resource type="Texture2D" uid="uid://og7uvuj31oyr" path="res://art/animations/Strawberry-animation/1.png" id="46_wlgjh"]
 [ext_resource type="Texture2D" uid="uid://cufjlo0r2fnqq" path="res://art/animations/Coffee beans animation/2.png" id="47_vps6e"]
 [ext_resource type="Texture2D" uid="uid://4322evknhor3" path="res://art/animations/Coffee beans animation/3.png" id="48_eevi7"]
 [ext_resource type="Texture2D" uid="uid://3d31lkc4457n" path="res://art/animations/Coffee beans animation/4.png" id="49_y5568"]
@@ -156,57 +156,13 @@
 [ext_resource type="Texture2D" uid="uid://eda70ug7ces5" path="res://art/animations/Scroll-animation/Untitled_Artwork-15.png" id="136_yf68p"]
 [ext_resource type="Texture2D" uid="uid://dvqgsm1b0oro4" path="res://art/animations/Scroll-animation/Untitled_Artwork-16.png" id="137_re38p"]
 [ext_resource type="Texture2D" uid="uid://bbpet32428lqs" path="res://art/animations/Scroll-animation/Untitled_Artwork-17.png" id="138_8gqa4"]
-[ext_resource type="Texture2D" uid="uid://do8jueu0nebk8" path="res://art/boh/Cauldron liquid/Untitled_Artwork-1.png" id="139_lnbc5"]
 [ext_resource type="Texture2D" uid="uid://4ocjf5rw6pcj" path="res://art/animations/Scroll-animation/Untitled_Artwork-18.png" id="139_tjbrh"]
-[ext_resource type="Texture2D" uid="uid://7700s16sionl" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-1.png" id="140_j8i8d"]
 [ext_resource type="Texture2D" uid="uid://d1biijkkkhtqw" path="res://art/animations/Scroll-animation/Untitled_Artwork-19.png" id="140_kmg1f"]
 [ext_resource type="Texture2D" uid="uid://cm6t2gacaejwk" path="res://art/animations/Scroll-animation/Untitled_Artwork-20.png" id="141_etexm"]
-[ext_resource type="Texture2D" uid="uid://dgyin10udafsm" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-2.png" id="141_pm73c"]
-[ext_resource type="Texture2D" uid="uid://gkou2toy5gr0" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-3.png" id="142_on6rf"]
 [ext_resource type="Texture2D" uid="uid://c0jqgmpbgjrjp" path="res://art/boh/Clock/clock_face.png" id="142_sp3ea"]
-[ext_resource type="Texture2D" uid="uid://d0pxyh50u4q32" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-4.png" id="143_qct0w"]
 [ext_resource type="Texture2D" uid="uid://c1openvisyyox" path="res://art/boh/Clock/clock_hour_hand.png" id="143_udhpb"]
 [ext_resource type="Texture2D" uid="uid://boftd58r35lav" path="res://art/boh/Clock/clock_minute_hand.png" id="144_5nhge"]
-[ext_resource type="Texture2D" uid="uid://cj0me4j3tngwq" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-5.png" id="144_bv2ni"]
-[ext_resource type="Texture2D" uid="uid://cmf82dl8qso4b" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-6.png" id="145_0la3x"]
-[ext_resource type="Texture2D" uid="uid://k0f1o5ab2cpq" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-7.png" id="146_cxoef"]
-[ext_resource type="Texture2D" uid="uid://bgsoab8hedicr" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-8.png" id="147_q83go"]
-[ext_resource type="Texture2D" uid="uid://gmgv02g7vehe" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-9.png" id="148_squ3p"]
-[ext_resource type="Texture2D" uid="uid://blmpwkc8jqjrx" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-10.png" id="149_f2iyf"]
-[ext_resource type="Texture2D" uid="uid://dqyhwblmjtis1" path="res://art/animations/ Milk animation/Untitled_Artwork-1.png" id="174_4uh6v"]
-[ext_resource type="Texture2D" uid="uid://dsnt8n61khoyg" path="res://art/animations/ Milk animation/Untitled_Artwork-2.png" id="175_f7anb"]
-[ext_resource type="Texture2D" uid="uid://3b3775m3f8jk" path="res://art/animations/ Milk animation/Untitled_Artwork-3.png" id="176_o3ioa"]
-[ext_resource type="Texture2D" uid="uid://ctv8caje1rmnb" path="res://art/animations/ Milk animation/Untitled_Artwork-4.png" id="177_trk36"]
-[ext_resource type="Texture2D" uid="uid://bo7wgepjwhe4v" path="res://art/animations/ Milk animation/Untitled_Artwork-5.png" id="178_aej4e"]
-[ext_resource type="Texture2D" uid="uid://c2srep62vdrti" path="res://art/animations/ Milk animation/Untitled_Artwork-6.png" id="179_pao8l"]
-[ext_resource type="Texture2D" uid="uid://drxpaguyefxdg" path="res://art/animations/ Milk animation/Untitled_Artwork-7.png" id="180_2wgy6"]
-[ext_resource type="Texture2D" uid="uid://chc7iss3pdhgv" path="res://art/animations/ Milk animation/Untitled_Artwork-8.png" id="181_46xk0"]
-[ext_resource type="Texture2D" uid="uid://6g5tbobbmsfd" path="res://art/animations/ Milk animation/Untitled_Artwork-9.png" id="182_vmvmo"]
-[ext_resource type="Texture2D" uid="uid://twd30s34h3wc" path="res://art/animations/ Milk animation/Untitled_Artwork-10.png" id="183_vhaaj"]
-[ext_resource type="Texture2D" uid="uid://dkey1ednhv68y" path="res://art/animations/ Milk animation/Untitled_Artwork-11.png" id="184_tb4xu"]
-[ext_resource type="Texture2D" uid="uid://cc8l2vpfmy7qs" path="res://art/animations/ Milk animation/Untitled_Artwork-12.png" id="185_ouakb"]
-[ext_resource type="Texture2D" uid="uid://54whu4yc7lj0" path="res://art/animations/ Milk animation/Untitled_Artwork-13.png" id="186_700wd"]
-[ext_resource type="Texture2D" uid="uid://bga2nx2mfrb15" path="res://art/animations/ Milk animation/Untitled_Artwork-14.png" id="187_iyach"]
-[ext_resource type="Texture2D" uid="uid://ctj50i72wv7f5" path="res://art/animations/ Milk animation/Untitled_Artwork-15.png" id="188_68mbr"]
-[ext_resource type="Texture2D" uid="uid://b5algspq4mhw4" path="res://art/animations/ Milk animation/Untitled_Artwork-16.png" id="189_ud83r"]
-[ext_resource type="Texture2D" uid="uid://ds6a7tkd686ff" path="res://art/animations/ Milk animation/Untitled_Artwork-17.png" id="190_osa8j"]
-[ext_resource type="Texture2D" uid="uid://bguv7kq2akliw" path="res://art/animations/ Milk animation/Untitled_Artwork-18.png" id="191_bdhr6"]
-[ext_resource type="Texture2D" uid="uid://cqm0a82rn5k8s" path="res://art/animations/ Milk animation/Untitled_Artwork-19.png" id="192_feyks"]
-[ext_resource type="Texture2D" uid="uid://b6f2l5ls2ryot" path="res://art/animations/Water machine/Untitled_Artwork-1.png" id="193_ud83r"]
-[ext_resource type="Texture2D" uid="uid://dft3yflrh320p" path="res://art/animations/Water machine/Untitled_Artwork-2.png" id="194_osa8j"]
-[ext_resource type="Texture2D" uid="uid://dpsctkra41a77" path="res://art/animations/Water machine/Untitled_Artwork-3.png" id="195_bdhr6"]
-[ext_resource type="Texture2D" uid="uid://bpanuaf3vabrh" path="res://art/animations/Water machine/Untitled_Artwork-4.png" id="196_feyks"]
-[ext_resource type="Texture2D" uid="uid://btr8ueifdcndp" path="res://art/animations/Water machine/Untitled_Artwork-5.png" id="197_s06r5"]
-[ext_resource type="Texture2D" uid="uid://434kspaytt0d" path="res://art/animations/Water machine/Untitled_Artwork-6.png" id="198_ia3ns"]
-[ext_resource type="Texture2D" uid="uid://brtjv1yyga7mf" path="res://art/animations/Water machine/Untitled_Artwork-7.png" id="199_k5ac0"]
-[ext_resource type="Texture2D" uid="uid://yn4pf53rgcd6" path="res://art/animations/Water machine/Untitled_Artwork-10.png" id="200_ersym"]
-[ext_resource type="Texture2D" uid="uid://b465oa7udmfbs" path="res://art/animations/Water machine/Untitled_Artwork-11.png" id="201_42sn8"]
-[ext_resource type="Texture2D" uid="uid://lba8k45yuod" path="res://art/animations/Water machine/Untitled_Artwork-12.png" id="202_pt7hd"]
-[ext_resource type="Texture2D" uid="uid://ce2rmycr5cm0o" path="res://art/animations/Water machine/Untitled_Artwork-13.png" id="203_gs2dg"]
-[ext_resource type="Texture2D" uid="uid://mkg4u7ni6u4a" path="res://art/animations/Water machine/Untitled_Artwork-14.png" id="204_dh6ad"]
-[ext_resource type="Texture2D" uid="uid://cwaam5137j8rg" path="res://art/animations/Water machine/Untitled_Artwork-15.png" id="205_isefr"]
-[ext_resource type="Texture2D" uid="uid://d3th2d7m8ieiq" path="res://art/animations/Water machine/Untitled_Artwork-16.png" id="206_s2vh5"]
-[ext_resource type="Texture2D" uid="uid://docjr3il1cqtu" path="res://art/animations/Water machine/Untitled_Artwork-17.png" id="207_4l87u"]
+
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q83go"]
 animations = [{
@@ -727,49 +683,6 @@ _data = {
 &"mortar_and_pestle": SubResource("Animation_ltld3")
 }
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_rrm4d"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("140_j8i8d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("141_pm73c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("142_on6rf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("143_qct0w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("144_bv2ni")
-}, {
-"duration": 1.0,
-"texture": ExtResource("145_0la3x")
-}, {
-"duration": 1.0,
-"texture": ExtResource("146_cxoef")
-}, {
-"duration": 1.0,
-"texture": ExtResource("147_q83go")
-}, {
-"duration": 1.0,
-"texture": ExtResource("148_squ3p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("149_f2iyf")
-}],
-"loop": true,
-"name": &"bubbles",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_rybrr"]
 animations = [{
 "frames": [],
@@ -843,126 +756,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_wb312"]
-animations = [{
-"frames": [],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("174_4uh6v")
-}, {
-"duration": 1.0,
-"texture": ExtResource("175_f7anb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("176_o3ioa")
-}, {
-"duration": 1.0,
-"texture": ExtResource("177_trk36")
-}, {
-"duration": 1.0,
-"texture": ExtResource("178_aej4e")
-}, {
-"duration": 1.0,
-"texture": ExtResource("179_pao8l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("180_2wgy6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("181_46xk0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("182_vmvmo")
-}, {
-"duration": 1.0,
-"texture": ExtResource("183_vhaaj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("184_tb4xu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("185_ouakb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("186_700wd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("187_iyach")
-}, {
-"duration": 1.0,
-"texture": ExtResource("188_68mbr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("189_ud83r")
-}, {
-"duration": 1.0,
-"texture": ExtResource("190_osa8j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("191_bdhr6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("192_feyks")
-}],
-"loop": true,
-"name": &"milk",
-"speed": 20.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("193_ud83r")
-}, {
-"duration": 1.0,
-"texture": ExtResource("194_osa8j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("195_bdhr6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("196_feyks")
-}, {
-"duration": 1.0,
-"texture": ExtResource("197_s06r5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("198_ia3ns")
-}, {
-"duration": 1.0,
-"texture": ExtResource("199_k5ac0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("200_ersym")
-}, {
-"duration": 1.0,
-"texture": ExtResource("201_42sn8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("202_pt7hd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("203_gs2dg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("204_dh6ad")
-}, {
-"duration": 1.0,
-"texture": ExtResource("205_isefr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("206_s2vh5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("207_4l87u")
-}],
-"loop": true,
-"name": &"water",
-"speed": 20.0
-}]
-
 [node name="BackOfHouse" type="Node" unique_id=45676339]
 script = ExtResource("1_io6l6")
 
@@ -972,7 +765,7 @@ texture = ExtResource("2_damgc")
 metadata/_edit_lock_ = true
 
 [node name="CoffeeJar" parent="." unique_id=1307152230 instance=ExtResource("1_of34b")]
-position = Vector2(1727, 683)
+position = Vector2(1726, 662)
 scale = Vector2(1, 1)
 texture = ExtResource("5_80lrq")
 ingredient_type = "beans"
@@ -991,7 +784,7 @@ stream = ExtResource("8_84nid")
 bus = &"SFX"
 
 [node name="TeaJar" parent="." unique_id=825669269 instance=ExtResource("1_of34b")]
-position = Vector2(1724, 938)
+position = Vector2(1723, 922)
 scale = Vector2(1, 1)
 texture = ExtResource("6_21p5d")
 ingredient_type = "tea"
@@ -1150,10 +943,10 @@ text = "Rose Petals"
 
 [node name="EspressoMachine" type="AnimatedSprite2D" parent="." unique_id=963389051]
 light_mask = 2
-position = Vector2(1394, 299)
+position = Vector2(1435, 299)
 sprite_frames = SubResource("SpriteFrames_q83go")
 animation = &"espresso"
-frame_progress = 0.63530517
+frame_progress = 0.7213554
 
 [node name="GUI" type="Control" parent="." unique_id=919230612]
 layout_mode = 3
@@ -1237,19 +1030,6 @@ bus = &"SFX"
 stream = ExtResource("120_gb475")
 volume_db = 6.958
 
-[node name="Liquid" type="Sprite2D" parent="Mortar" unique_id=2031024136]
-modulate = Color(0, 1, 0, 1)
-position = Vector2(-536, -237)
-texture = ExtResource("139_lnbc5")
-
-[node name="Bubbles" type="AnimatedSprite2D" parent="Mortar" unique_id=2101217209]
-position = Vector2(-524, -284)
-scale = Vector2(1.130808, 1.1944445)
-sprite_frames = SubResource("SpriteFrames_rrm4d")
-animation = &"bubbles"
-autoplay = "bubbles"
-frame_progress = 0.41733202
-
 [node name="BoilingCauldron" type="AudioStreamPlayer" parent="." unique_id=688932083]
 stream = ExtResource("119_5qfp7")
 bus = &"Background Noise"
@@ -1259,23 +1039,9 @@ stream = ExtResource("8_84nid")
 bus = &"SFX"
 
 [node name="Scroll" type="AnimatedSprite2D" parent="." unique_id=1755022971]
-position = Vector2(249, 463)
+position = Vector2(243, 544)
 sprite_frames = SubResource("SpriteFrames_rybrr")
 animation = &"scrolling"
-
-[node name="Label" type="Label" parent="Scroll" unique_id=448147180]
-offset_left = -127.0
-offset_top = -108.0
-offset_right = 101.0
-offset_bottom = 367.0
-theme = ExtResource("8_fkpoj")
-theme_type_variation = &"HeaderLarge"
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "Latte
-with
-strawberries
-and cinnamon"
 
 [node name="Clock" type="Sprite2D" parent="." unique_id=1644356031]
 position = Vector2(239, 89)
@@ -1290,13 +1056,6 @@ texture = ExtResource("143_udhpb")
 [node name="MinuteHand" type="Sprite2D" parent="Clock" unique_id=500566100]
 position = Vector2(-1, 1)
 texture = ExtResource("144_5nhge")
-
-[node name="LiquidMachine" type="AnimatedSprite2D" parent="." unique_id=1027388817]
-position = Vector2(1677, 308)
-sprite_frames = SubResource("SpriteFrames_wb312")
-animation = &"water"
-frame = 3
-frame_progress = 0.6699328
 
 [connection signal="pressed" from="CoffeeJar" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="TeaJar" to="." method="_on_ingredient_bin_pressed"]

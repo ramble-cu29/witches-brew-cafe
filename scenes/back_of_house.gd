@@ -16,11 +16,7 @@ var recipe:Array = [
 func _ready() -> void:
 	pass # Replace with function body.
 	play_boil_loop()
-	
-	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
-	pass
+	Globals.recipe_builder()
 	
 # If the left mouse button is up and the ingredient is inside the tree, remove it from the 
 # tree and set the flag ingredient_exists to false
