@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cbw464dxs1c1n"]
+
+[ext_resource type="Texture2D" uid="uid://c3pinndqursx1" path="res://art/boh/speech_bubble.png" id="1_x4eeu"]
+[ext_resource type="Texture2D" uid="uid://dpouskqkj6s2k" path="res://art/boh/beans.png" id="2_e1pub"]
+
+[node name="SpeechBubble" type="Sprite2D" unique_id=1207720410]
+texture = ExtResource("1_x4eeu")
+
+[node name="Ingredient1" type="Sprite2D" parent="." unique_id=772707100]
+position = Vector2(-256, -39)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_e1pub")
+
+[node name="Ingredient2" type="Sprite2D" parent="." unique_id=553379656]
+position = Vector2(-90, -38)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_e1pub")
+
+[node name="Ingredient3" type="Sprite2D" parent="." unique_id=384568714]
+position = Vector2(100, -40)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_e1pub")
+
+[node name="Ingredient4" type="Sprite2D" parent="." unique_id=786721950]
+position = Vector2(273, -38)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_e1pub")

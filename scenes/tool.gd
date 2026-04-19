@@ -24,6 +24,7 @@ func _process(delta: float) -> void:
 		1:
 			$Bubbles.play("bubbles")
 			play_boil_loop()
+			$Bubbles.modulate=Color("d37b2fff")
 			$Liquid.texture=load("res://art/boh/Cauldron-liquid/Untitled_Artwork-4.png")
 		2:
 			$Liquid.texture=load("res://art/boh/Cauldron-liquid/Untitled_Artwork-3.png")
@@ -32,12 +33,12 @@ func _process(delta: float) -> void:
 		_:
 			$Liquid.texture=load("res://art/boh/Cauldron-liquid/Untitled_Artwork-1.png")
 	
-	if "beans" in Globals.recipe_record:
-		$Liquid.modulate=Color(0.34,0.18,0.03,1)
-		$Bubbles.modulate=Color("d37b2fff")
-	elif "tea" in Globals.recipe_record:
+	if "tea" in Globals.recipe_record:
 		$Liquid.modulate=Color("1f2b20ff")
 		$Bubbles.modulate=Color("4d725dff")
+   elif "beans" in Globals.recipe_record:
+		$Liquid.modulate=Color(0.34,0.18,0.03,1)
+		$Bubbles.modulate=Color("d37b2fff")
 
 func play_boil_loop() -> void:
 		boil.volume_db = boil_start_volume_db
@@ -50,3 +51,8 @@ func play_boil_loop() -> void:
 			boil_fade_in_seconds
 		)
 		await boil.finished
+
+		
+		
+func clear_record() -> void:
+	Globals.recipe_record = []

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsadmy3oblp5p"
-path="res://.godot/imported/Untitled_Artwork-7.png-d25226a48de52f1e06fb84423eea1615.ctex"
+uid="uid://dvurxmm6abrrc"
+path="res://.godot/imported/ladle.png-4fc2317b366c07cbb6dfe121f45bca71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/boh/Cup-files/Untitled_Artwork-7.png"
-dest_files=["res://.godot/imported/Untitled_Artwork-7.png-d25226a48de52f1e06fb84423eea1615.ctex"]
+source_file="res://art/boh/ladle.png"
+dest_files=["res://.godot/imported/ladle.png-4fc2317b366c07cbb6dfe121f45bca71.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 extends Sprite2D
 
 signal mortar
-var first_time:bool=false
+var first_time:bool=true
 
 
 func _input(event: InputEvent) -> void:
@@ -14,8 +14,9 @@ func _input(event: InputEvent) -> void:
 				$MortarIngredient.animation = Globals.ingredient_type_global
 				#await $MortarIngredient.animation_finished()
 				print(str("Animation is " + $MortarIngredient.animation))
+				first_time=false
 		# If mortar is clicked
-		elif event.button_index == MOUSE_BUTTON_LEFT and event.pressed and is_pixel_opaque(get_local_mouse_position()):
+		elif event.button_index == MOUSE_BUTTON_LEFT and event.pressed and is_pixel_opaque(get_local_mouse_position()) and first_time == false:
 			if  Globals.mortared==false:
 				$AnimationPlayer.play("mortar_and_pestle")
 				$Grind.play()

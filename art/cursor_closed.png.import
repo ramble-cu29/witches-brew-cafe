@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dohf3g2h4hb1i"
-path="res://.godot/imported/ladle.png-1f91d057da3c116fce966200a2d062b1.ctex"
+uid="uid://b2vvcp3c43ucu"
+path="res://.godot/imported/cursor_closed.png-fca674fe55bd953ba0f464544e29ac06.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/staging_area/ladle.png"
-dest_files=["res://.godot/imported/ladle.png-1f91d057da3c116fce966200a2d062b1.ctex"]
+source_file="res://art/cursor_closed.png"
+dest_files=["res://.godot/imported/cursor_closed.png-fca674fe55bd953ba0f464544e29ac06.ctex"]
 
 [params]
 

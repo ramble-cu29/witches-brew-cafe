@@ -4,7 +4,6 @@ const SPEED: int = 2000
 
 func _process(delta: float) -> void:
 	global_position = get_viewport().get_mouse_position()
-	print(Globals.ingredient_type_global)
 	var vec: Vector2 = get_viewport().get_mouse_position() - self.position
 	
 	if vec > Vector2(0.01, 0.01):
