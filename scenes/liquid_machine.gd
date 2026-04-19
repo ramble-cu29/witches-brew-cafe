@@ -15,6 +15,7 @@ func _on_water_button_pressed() -> void:
 	play("water")
 	await animation_finished
 	Globals.liquid_filled = true
+	
 
 func _on_milk_button_pressed() -> void:
 	play("milk")

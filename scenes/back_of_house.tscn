@@ -7,134 +7,124 @@
 [ext_resource type="Texture2D" uid="uid://ctf7vckb1afg8" path="res://art/boh/ingredient_rack.png" id="4_nd1li"]
 [ext_resource type="Texture2D" uid="uid://diifumssjpmug" path="res://art/boh/beans_jar.png" id="5_80lrq"]
 [ext_resource type="Texture2D" uid="uid://dqcxbhdtop4hf" path="res://art/boh/tea_jar.png" id="6_21p5d"]
-[ext_resource type="Texture2D" uid="uid://nxely068hvmo" path="res://art/boh/cauldron.png" id="6_nd1li"]
 [ext_resource type="AudioStream" uid="uid://d0byjt2pgagrl" path="res://audio/sfx/Lid 4 [2026-04-13 174648].wav" id="8_84nid"]
 [ext_resource type="Theme" uid="uid://c7fehh1qho7pt" path="res://gui_theme.tres" id="8_fkpoj"]
-[ext_resource type="Texture2D" uid="uid://dmxfdwjqc5e4p" path="res://art/animations/Espresso-Animation/frame_0001.png" id="9_kmg1f"]
-[ext_resource type="Texture2D" uid="uid://dwtkc2csy8b2k" path="res://art/animations/Espresso-Animation/frame_0002.png" id="10_etexm"]
-[ext_resource type="Texture2D" uid="uid://bftkn7i3dcma2" path="res://art/boh/cauldron_normal.png" id="11_ltld3"]
-[ext_resource type="Texture2D" uid="uid://b22l8471mjjqi" path="res://art/animations/Espresso-Animation/frame_0003.png" id="11_sp3ea"]
+[ext_resource type="Texture2D" uid="uid://d287nvr2jv3f1" path="res://art/animations/Flame-animation/Cauldron.png" id="10_ud83r"]
 [ext_resource type="Texture2D" uid="uid://cwtxqlxw6j5b1" path="res://art/boh/mortar.png" id="12_2q3yk"]
-[ext_resource type="Texture2D" uid="uid://oivxf5jfwtbv" path="res://art/animations/Espresso-Animation/frame_0004.png" id="12_udhpb"]
-[ext_resource type="Texture2D" uid="uid://c1bkebyf70ju6" path="res://art/animations/Espresso-Animation/frame_0005.png" id="13_5nhge"]
 [ext_resource type="Texture2D" uid="uid://bjs20nryxjbs3" path="res://art/boh/pestle.png" id="13_ltld3"]
-[ext_resource type="Texture2D" uid="uid://tj7tcichtkhn" path="res://art/animations/Espresso-Animation/frame_0006.png" id="14_rybrr"]
+[ext_resource type="Texture2D" uid="uid://7700s16sionl" path="res://art/animations/Cauldron-bubbling/Untitled_Artwork-1.png" id="13_ud83r"]
+[ext_resource type="Texture2D" uid="uid://dgyin10udafsm" path="res://art/animations/Cauldron-bubbling/Untitled_Artwork-2.png" id="14_bdhr6"]
+[ext_resource type="Texture2D" uid="uid://b22ppo17a11wn" path="res://art/animations/Coffee-beans-animation/1.png" id="14_osa8j"]
+[ext_resource type="Texture2D" uid="uid://cufjlo0r2fnqq" path="res://art/animations/Coffee-beans-animation/2.png" id="15_bdhr6"]
 [ext_resource type="Script" uid="uid://couyr8wlv74al" path="res://scenes/mortar.gd" id="15_bnb44"]
-[ext_resource type="Texture2D" uid="uid://bd7uh2d4w8oxl" path="res://art/animations/Espresso-Animation/frame_0007.png" id="15_jdpkn"]
+[ext_resource type="Texture2D" uid="uid://gkou2toy5gr0" path="res://art/animations/Cauldron-bubbling/Untitled_Artwork-3.png" id="15_feyks"]
 [ext_resource type="Texture2D" uid="uid://dxiru5o6ywdk6" path="res://art/boh/mortar_bottom.png" id="15_wn065"]
-[ext_resource type="Texture2D" uid="uid://cjtepwccppucc" path="res://art/animations/Espresso-Animation/frame_0008.png" id="16_hjdmq"]
-[ext_resource type="Texture2D" uid="uid://bv0toiwvbsevo" path="res://art/animations/Blueberry animation/1.png" id="17_jje3m"]
-[ext_resource type="Texture2D" uid="uid://cx4kvw045uusa" path="res://art/animations/Espresso-Animation/frame_0009.png" id="17_trgou"]
-[ext_resource type="Texture2D" uid="uid://b2j2orxrcdv2q" path="res://art/animations/Blueberry animation/2.png" id="18_bnb44"]
-[ext_resource type="Texture2D" uid="uid://cp478a0sd6gw" path="res://art/animations/Espresso-Animation/frame_0010.png" id="18_ubkd4"]
-[ext_resource type="Texture2D" uid="uid://bgo08t4bknlub" path="res://art/animations/Espresso-Animation/frame_0011.png" id="19_66qhf"]
-[ext_resource type="Texture2D" uid="uid://7cepw0ivvhdh" path="res://art/animations/Blueberry animation/3.png" id="19_ex7wc"]
-[ext_resource type="Texture2D" uid="uid://bl31ucq7cd204" path="res://art/animations/Blueberry animation/4.png" id="20_8yoy0"]
-[ext_resource type="Texture2D" uid="uid://rkl7ftd2sp2r" path="res://art/animations/Espresso-Animation/frame_0012.png" id="20_lnbc5"]
-[ext_resource type="Texture2D" uid="uid://cb0b4d0yga2n4" path="res://art/animations/Espresso-Animation/frame_0013.png" id="21_j8i8d"]
-[ext_resource type="Texture2D" uid="uid://55f0nqgjphqf" path="res://art/animations/Blueberry animation/5.png" id="21_t78ih"]
-[ext_resource type="Texture2D" uid="uid://c8k374vxm67i1" path="res://art/animations/Blueberry animation/6.png" id="22_p5bfc"]
-[ext_resource type="Texture2D" uid="uid://ctbml2lm01qiy" path="res://art/animations/Espresso-Animation/frame_0014.png" id="22_pm73c"]
-[ext_resource type="Texture2D" uid="uid://2hodakbp81gn" path="res://art/animations/Espresso-Animation/frame_0015.png" id="23_on6rf"]
-[ext_resource type="Texture2D" uid="uid://csdslnyl5pce7" path="res://art/animations/Blueberry animation/7.png" id="23_yqjsq"]
-[ext_resource type="Texture2D" uid="uid://ukmbmfwq0ldq" path="res://art/animations/Espresso-Animation/frame_0016.png" id="24_qct0w"]
-[ext_resource type="Texture2D" uid="uid://cynnanw562jyu" path="res://art/animations/Blueberry animation/8.png" id="24_wb23n"]
-[ext_resource type="Texture2D" uid="uid://2md484lw5aqs" path="res://art/animations/Blueberry animation/9.png" id="25_akp21"]
-[ext_resource type="Texture2D" uid="uid://ciyykhdff1iwd" path="res://art/animations/Espresso-Animation/frame_0017.png" id="25_bv2ni"]
-[ext_resource type="Texture2D" uid="uid://dvrjq6ugec1gk" path="res://art/animations/Espresso-Animation/frame_0018.png" id="26_0la3x"]
-[ext_resource type="Texture2D" uid="uid://dyp56aeoqnccl" path="res://art/animations/Blueberry animation/10.png" id="26_72cht"]
-[ext_resource type="Texture2D" uid="uid://bp2png3gbb5t" path="res://art/animations/Cherry animation/1.png" id="26_jgwrg"]
-[ext_resource type="Texture2D" uid="uid://bg3j5m6kn5v7n" path="res://art/animations/Cherry animation/2.png" id="27_0le2n"]
-[ext_resource type="Texture2D" uid="uid://dyjhbcoocjdeh" path="res://art/animations/Espresso-Animation/frame_0019.png" id="27_cxoef"]
-[ext_resource type="Texture2D" uid="uid://cgwksstk5v6ax" path="res://art/animations/Cherry animation/3.png" id="28_q070u"]
-[ext_resource type="Texture2D" uid="uid://trhh47fnycnh" path="res://art/animations/Cherry animation/4.png" id="29_oy0ww"]
-[ext_resource type="Texture2D" uid="uid://6e5u22r18ko0" path="res://art/animations/Cherry animation/5.png" id="30_ggbhr"]
-[ext_resource type="Texture2D" uid="uid://d1dvbq0magdba" path="res://art/animations/Cherry animation/6.png" id="31_l6coo"]
-[ext_resource type="Texture2D" uid="uid://cu5k6pd2o878s" path="res://art/animations/Cherry animation/7.png" id="32_gtywu"]
-[ext_resource type="Texture2D" uid="uid://dpwdgc27lhn5d" path="res://art/animations/Cherry animation/8.png" id="33_f0itl"]
-[ext_resource type="Texture2D" uid="uid://8cqc0bgcwnmc" path="res://art/animations/Cherry animation/9.png" id="34_jk583"]
-[ext_resource type="Texture2D" uid="uid://casl0e7tjnkrd" path="res://art/animations/Cherry animation/10.png" id="35_pkcfp"]
+[ext_resource type="Texture2D" uid="uid://4322evknhor3" path="res://art/animations/Coffee-beans-animation/3.png" id="16_feyks"]
+[ext_resource type="Texture2D" uid="uid://d0pxyh50u4q32" path="res://art/animations/Cauldron-bubbling/Untitled_Artwork-4.png" id="16_s06r5"]
+[ext_resource type="Texture2D" uid="uid://cj0me4j3tngwq" path="res://art/animations/Cauldron-bubbling/Untitled_Artwork-5.png" id="17_ia3ns"]
+[ext_resource type="Texture2D" uid="uid://3d31lkc4457n" path="res://art/animations/Coffee-beans-animation/4.png" id="17_s06r5"]
+[ext_resource type="Texture2D" uid="uid://b7lbdcucl7uit" path="res://art/animations/Coffee-beans-animation/5.png" id="18_ia3ns"]
+[ext_resource type="Texture2D" uid="uid://cmf82dl8qso4b" path="res://art/animations/Cauldron-bubbling/Untitled_Artwork-6.png" id="18_k5ac0"]
+[ext_resource type="Texture2D" uid="uid://k0f1o5ab2cpq" path="res://art/animations/Cauldron-bubbling/Untitled_Artwork-7.png" id="19_ersym"]
+[ext_resource type="Texture2D" uid="uid://ghmcqjaw0fs5" path="res://art/animations/Coffee-beans-animation/6.png" id="19_k5ac0"]
+[ext_resource type="Texture2D" uid="uid://bgsoab8hedicr" path="res://art/animations/Cauldron-bubbling/Untitled_Artwork-8.png" id="20_42sn8"]
+[ext_resource type="Texture2D" uid="uid://bjyjf3wafwbp0" path="res://art/animations/Coffee-beans-animation/7.png" id="20_ersym"]
+[ext_resource type="Texture2D" uid="uid://dtwrf7h54vt0u" path="res://art/animations/Coffee-beans-animation/8.png" id="21_42sn8"]
+[ext_resource type="Texture2D" uid="uid://gmgv02g7vehe" path="res://art/animations/Cauldron-bubbling/Untitled_Artwork-9.png" id="21_pt7hd"]
+[ext_resource type="Texture2D" uid="uid://blmpwkc8jqjrx" path="res://art/animations/Cauldron-bubbling/Untitled_Artwork-10.png" id="22_gs2dg"]
+[ext_resource type="Texture2D" uid="uid://wkb7n3eld7rr" path="res://art/animations/Flame-animation/Empty cauldron back.png" id="22_osa8j"]
+[ext_resource type="Texture2D" uid="uid://bhqutuwdelvbv" path="res://art/animations/Coffee-beans-animation/9.png" id="22_pt7hd"]
+[ext_resource type="Texture2D" uid="uid://d076m2lpr08r1" path="res://art/animations/Coffee-beans-animation/10.png" id="23_gs2dg"]
+[ext_resource type="Texture2D" uid="uid://bv0toiwvbsevo" path="res://art/animations/Blueberry-animation/1.png" id="24_osa8j"]
+[ext_resource type="Texture2D" uid="uid://b2j2orxrcdv2q" path="res://art/animations/Blueberry-animation/2.png" id="25_bdhr6"]
+[ext_resource type="Texture2D" uid="uid://7cepw0ivvhdh" path="res://art/animations/Blueberry-animation/3.png" id="26_feyks"]
+[ext_resource type="Texture2D" uid="uid://bl31ucq7cd204" path="res://art/animations/Blueberry-animation/4.png" id="27_s06r5"]
+[ext_resource type="Texture2D" uid="uid://55f0nqgjphqf" path="res://art/animations/Blueberry-animation/5.png" id="28_ia3ns"]
+[ext_resource type="Texture2D" uid="uid://c8k374vxm67i1" path="res://art/animations/Blueberry-animation/6.png" id="29_k5ac0"]
+[ext_resource type="Texture2D" uid="uid://csdslnyl5pce7" path="res://art/animations/Blueberry-animation/7.png" id="30_ersym"]
+[ext_resource type="Texture2D" uid="uid://cynnanw562jyu" path="res://art/animations/Blueberry-animation/8.png" id="31_42sn8"]
+[ext_resource type="Texture2D" uid="uid://2md484lw5aqs" path="res://art/animations/Blueberry-animation/9.png" id="32_pt7hd"]
+[ext_resource type="Texture2D" uid="uid://dyp56aeoqnccl" path="res://art/animations/Blueberry-animation/10.png" id="33_gs2dg"]
+[ext_resource type="Texture2D" uid="uid://bp2png3gbb5t" path="res://art/animations/Cherry-animation/1.png" id="34_osa8j"]
+[ext_resource type="Texture2D" uid="uid://bg3j5m6kn5v7n" path="res://art/animations/Cherry-animation/2.png" id="35_bdhr6"]
+[ext_resource type="Texture2D" uid="uid://cgwksstk5v6ax" path="res://art/animations/Cherry-animation/3.png" id="36_feyks"]
 [ext_resource type="Texture2D" uid="uid://drjvppuhqky1j" path="res://art/animations/Cinnamon-animation/1.png" id="36_modyp"]
 [ext_resource type="Texture2D" uid="uid://bcbav7ulmum11" path="res://art/animations/Cinnamon-animation/2.png" id="37_emdtn"]
+[ext_resource type="Texture2D" uid="uid://trhh47fnycnh" path="res://art/animations/Cherry-animation/4.png" id="37_s06r5"]
 [ext_resource type="Texture2D" uid="uid://dmws5avmuhr" path="res://art/animations/Cinnamon-animation/3.png" id="38_5qfp7"]
+[ext_resource type="Texture2D" uid="uid://6e5u22r18ko0" path="res://art/animations/Cherry-animation/5.png" id="38_ia3ns"]
 [ext_resource type="Texture2D" uid="uid://6wpcl6tavtx5" path="res://art/animations/Cinnamon-animation/4.png" id="39_84nid"]
+[ext_resource type="Texture2D" uid="uid://d1dvbq0magdba" path="res://art/animations/Cherry-animation/6.png" id="39_k5ac0"]
+[ext_resource type="Texture2D" uid="uid://cu5k6pd2o878s" path="res://art/animations/Cherry-animation/7.png" id="40_ersym"]
 [ext_resource type="Texture2D" uid="uid://bp1m5pi7odvit" path="res://art/animations/Cinnamon-animation/5.png" id="40_gb475"]
 [ext_resource type="Texture2D" uid="uid://b0lh8s11gipgh" path="res://art/animations/Cinnamon-animation/6.png" id="41_2nifm"]
+[ext_resource type="Texture2D" uid="uid://dpwdgc27lhn5d" path="res://art/animations/Cherry-animation/8.png" id="41_42sn8"]
+[ext_resource type="Texture2D" uid="uid://8cqc0bgcwnmc" path="res://art/animations/Cherry-animation/9.png" id="42_pt7hd"]
 [ext_resource type="Texture2D" uid="uid://tmpfvv5klfg3" path="res://art/animations/Cinnamon-animation/7.png" id="42_ri6o4"]
 [ext_resource type="Texture2D" uid="uid://c123vhlwlh1m0" path="res://art/animations/Cinnamon-animation/8.png" id="43_2ero8"]
+[ext_resource type="Texture2D" uid="uid://casl0e7tjnkrd" path="res://art/animations/Cherry-animation/10.png" id="43_gs2dg"]
 [ext_resource type="Texture2D" uid="uid://7v6gox3eou4y" path="res://art/animations/Cinnamon-animation/9.png" id="44_l41w6"]
 [ext_resource type="Texture2D" uid="uid://bakh7lgp1yja5" path="res://art/animations/Cinnamon-animation/10.png" id="45_wujim"]
-[ext_resource type="Texture2D" uid="uid://b22ppo17a11wn" path="res://art/animations/Coffee beans animation/1.png" id="46_wlgjh"]
-[ext_resource type="Texture2D" uid="uid://cufjlo0r2fnqq" path="res://art/animations/Coffee beans animation/2.png" id="47_vps6e"]
-[ext_resource type="Texture2D" uid="uid://4322evknhor3" path="res://art/animations/Coffee beans animation/3.png" id="48_eevi7"]
-[ext_resource type="Texture2D" uid="uid://3d31lkc4457n" path="res://art/animations/Coffee beans animation/4.png" id="49_y5568"]
-[ext_resource type="Texture2D" uid="uid://b7lbdcucl7uit" path="res://art/animations/Coffee beans animation/5.png" id="50_w3ptr"]
-[ext_resource type="Texture2D" uid="uid://ghmcqjaw0fs5" path="res://art/animations/Coffee beans animation/6.png" id="51_apjfa"]
-[ext_resource type="Texture2D" uid="uid://bjyjf3wafwbp0" path="res://art/animations/Coffee beans animation/7.png" id="52_nlqnh"]
-[ext_resource type="Texture2D" uid="uid://dtwrf7h54vt0u" path="res://art/animations/Coffee beans animation/8.png" id="53_cbgpi"]
-[ext_resource type="Texture2D" uid="uid://bhqutuwdelvbv" path="res://art/animations/Coffee beans animation/9.png" id="54_2jny8"]
-[ext_resource type="Texture2D" uid="uid://d076m2lpr08r1" path="res://art/animations/Coffee beans animation/10.png" id="55_ewxd8"]
-[ext_resource type="Texture2D" uid="uid://dfdmp2sjuosp7" path="res://art/animations/Raspberry animation/1.png" id="56_k8j5u"]
-[ext_resource type="Texture2D" uid="uid://dcnu6osl0hd34" path="res://art/animations/Lavender animation/1.png" id="56_modyp"]
-[ext_resource type="Texture2D" uid="uid://dhlxw6401m6y0" path="res://art/animations/Lavender animation/2.png" id="57_emdtn"]
-[ext_resource type="Texture2D" uid="uid://dncfpkkd4h8bm" path="res://art/animations/Raspberry animation/2.png" id="57_hymgb"]
-[ext_resource type="Texture2D" uid="uid://b8oidg0ntvlpj" path="res://art/animations/Lavender animation/3.png" id="58_5qfp7"]
-[ext_resource type="Texture2D" uid="uid://bictjhrc5x0kw" path="res://art/animations/Raspberry animation/3.png" id="58_uy1us"]
-[ext_resource type="Texture2D" uid="uid://udn2bxbxssbv" path="res://art/animations/Raspberry animation/4.png" id="59_8qlrx"]
-[ext_resource type="Texture2D" uid="uid://c1u3tslmlmv31" path="res://art/animations/Lavender animation/4.png" id="59_84nid"]
-[ext_resource type="Texture2D" uid="uid://bwwilcpmsw46s" path="res://art/animations/Raspberry animation/5.png" id="60_8idyw"]
-[ext_resource type="Texture2D" uid="uid://btblnbeq4qypy" path="res://art/animations/Lavender animation/5.png" id="60_gb475"]
-[ext_resource type="Texture2D" uid="uid://bqbhxdtvo063t" path="res://art/animations/Raspberry animation/6.png" id="61_2anqc"]
-[ext_resource type="Texture2D" uid="uid://bflco8ow8kjfm" path="res://art/animations/Lavender animation/6.png" id="61_2nifm"]
-[ext_resource type="Texture2D" uid="uid://drh4uevc1788j" path="res://art/animations/Lavender animation/7.png" id="62_ri6o4"]
-[ext_resource type="Texture2D" uid="uid://0vetitnwa6hh" path="res://art/animations/Raspberry animation/7.png" id="62_u520v"]
-[ext_resource type="Texture2D" uid="uid://m44r130xj05g" path="res://art/animations/Lavender animation/8.png" id="63_2ero8"]
-[ext_resource type="Texture2D" uid="uid://cgk6gje7xh6fu" path="res://art/animations/Raspberry animation/8.png" id="63_vylts"]
-[ext_resource type="Texture2D" uid="uid://dw1ggemc8gsd4" path="res://art/animations/Raspberry animation/9.png" id="64_08q6q"]
-[ext_resource type="Texture2D" uid="uid://g17igu7gyo4" path="res://art/animations/Lavender animation/9.png" id="64_l41w6"]
-[ext_resource type="Texture2D" uid="uid://cxrveysdvy7fr" path="res://art/animations/Raspberry animation/10.png" id="65_dhpby"]
-[ext_resource type="Texture2D" uid="uid://c1lduea0jmg4y" path="res://art/animations/Lavender animation/10.png" id="65_wujim"]
-[ext_resource type="Texture2D" uid="uid://c02ywji5mp5vn" path="res://art/animations/Rose petal animation/1.png" id="66_c1s3g"]
-[ext_resource type="Texture2D" uid="uid://cbgexyikymu84" path="res://art/animations/Rose petal animation/2.png" id="67_jsd5l"]
-[ext_resource type="Texture2D" uid="uid://6nq7nk1fmyp5" path="res://art/animations/Rose petal animation/3.png" id="68_3gfaf"]
-[ext_resource type="Texture2D" uid="uid://bho0tpn1sb8gk" path="res://art/animations/Rose petal animation/4.png" id="69_itlej"]
-[ext_resource type="Texture2D" uid="uid://c7d4h1xwitplq" path="res://art/animations/Rose petal animation/5.png" id="70_7iyom"]
-[ext_resource type="Texture2D" uid="uid://bosjr0eww1fjp" path="res://art/animations/Rose petal animation/6.png" id="71_niyy2"]
-[ext_resource type="Texture2D" uid="uid://cdoyc46m6ti0g" path="res://art/animations/Rose petal animation/7.png" id="72_mmt38"]
-[ext_resource type="Texture2D" uid="uid://cgglmpjy6d71t" path="res://art/animations/Rose petal animation/8.png" id="73_tenoy"]
-[ext_resource type="Texture2D" uid="uid://c6hidyaffbogk" path="res://art/animations/Rose petal animation/9.png" id="74_qfy5t"]
-[ext_resource type="Texture2D" uid="uid://7rbbb3rh1cr4" path="res://art/animations/Rose petal animation/10.png" id="75_pqhwo"]
-[ext_resource type="Texture2D" uid="uid://wn0oe5voajkv" path="res://art/animations/Spearmint animation/1.png" id="76_2tp3j"]
-[ext_resource type="Texture2D" uid="uid://bycea6hpnf5f1" path="res://art/animations/Spearmint animation/2.png" id="77_yf68p"]
-[ext_resource type="Texture2D" uid="uid://ceye32yy7fx7f" path="res://art/animations/Spearmint animation/3.png" id="78_re38p"]
-[ext_resource type="Texture2D" uid="uid://dhlaiyq51y3q3" path="res://art/animations/Spearmint animation/4.png" id="79_8gqa4"]
-[ext_resource type="Texture2D" uid="uid://56f2a5ybo3rt" path="res://art/animations/Spearmint animation/5.png" id="80_tjbrh"]
-[ext_resource type="Texture2D" uid="uid://cboqvlsny8ryr" path="res://art/animations/Spearmint animation/6.png" id="81_kmg1f"]
-[ext_resource type="Texture2D" uid="uid://bf8q4jc1e6pil" path="res://art/animations/Spearmint animation/7.png" id="82_etexm"]
-[ext_resource type="Texture2D" uid="uid://c6jyxcqymu4v8" path="res://art/animations/Spearmint animation/8.png" id="83_sp3ea"]
-[ext_resource type="Texture2D" uid="uid://bm4s33geortoo" path="res://art/animations/Spearmint animation/9.png" id="84_udhpb"]
-[ext_resource type="Texture2D" uid="uid://byxyq7y6syy6p" path="res://art/animations/Spearmint animation/10.png" id="85_5nhge"]
+[ext_resource type="Texture2D" uid="uid://dcnu6osl0hd34" path="res://art/animations/Lavender-animation/1.png" id="54_osa8j"]
+[ext_resource type="Texture2D" uid="uid://dhlxw6401m6y0" path="res://art/animations/Lavender-animation/2.png" id="55_bdhr6"]
+[ext_resource type="Texture2D" uid="uid://b8oidg0ntvlpj" path="res://art/animations/Lavender-animation/3.png" id="56_feyks"]
+[ext_resource type="Texture2D" uid="uid://c1u3tslmlmv31" path="res://art/animations/Lavender-animation/4.png" id="57_s06r5"]
+[ext_resource type="Texture2D" uid="uid://btblnbeq4qypy" path="res://art/animations/Lavender-animation/5.png" id="58_ia3ns"]
+[ext_resource type="Texture2D" uid="uid://bflco8ow8kjfm" path="res://art/animations/Lavender-animation/6.png" id="59_k5ac0"]
+[ext_resource type="Texture2D" uid="uid://drh4uevc1788j" path="res://art/animations/Lavender-animation/7.png" id="60_ersym"]
+[ext_resource type="Texture2D" uid="uid://m44r130xj05g" path="res://art/animations/Lavender-animation/8.png" id="61_42sn8"]
+[ext_resource type="Texture2D" uid="uid://g17igu7gyo4" path="res://art/animations/Lavender-animation/9.png" id="62_pt7hd"]
+[ext_resource type="Texture2D" uid="uid://c1lduea0jmg4y" path="res://art/animations/Lavender-animation/10.png" id="63_gs2dg"]
+[ext_resource type="Texture2D" uid="uid://dfdmp2sjuosp7" path="res://art/animations/Raspberry-animation/1.png" id="64_osa8j"]
+[ext_resource type="Texture2D" uid="uid://dncfpkkd4h8bm" path="res://art/animations/Raspberry-animation/2.png" id="65_bdhr6"]
+[ext_resource type="Texture2D" uid="uid://bictjhrc5x0kw" path="res://art/animations/Raspberry-animation/3.png" id="66_feyks"]
+[ext_resource type="Texture2D" uid="uid://udn2bxbxssbv" path="res://art/animations/Raspberry-animation/4.png" id="67_s06r5"]
+[ext_resource type="Texture2D" uid="uid://bwwilcpmsw46s" path="res://art/animations/Raspberry-animation/5.png" id="68_ia3ns"]
+[ext_resource type="Texture2D" uid="uid://bqbhxdtvo063t" path="res://art/animations/Raspberry-animation/6.png" id="69_k5ac0"]
+[ext_resource type="Texture2D" uid="uid://0vetitnwa6hh" path="res://art/animations/Raspberry-animation/7.png" id="70_ersym"]
+[ext_resource type="Texture2D" uid="uid://cgk6gje7xh6fu" path="res://art/animations/Raspberry-animation/8.png" id="71_42sn8"]
+[ext_resource type="Texture2D" uid="uid://dw1ggemc8gsd4" path="res://art/animations/Raspberry-animation/9.png" id="72_pt7hd"]
+[ext_resource type="Texture2D" uid="uid://cxrveysdvy7fr" path="res://art/animations/Raspberry-animation/10.png" id="73_gs2dg"]
+[ext_resource type="Texture2D" uid="uid://c02ywji5mp5vn" path="res://art/animations/Rose-petal-animation/1.png" id="74_osa8j"]
+[ext_resource type="Texture2D" uid="uid://cbgexyikymu84" path="res://art/animations/Rose-petal-animation/2.png" id="75_bdhr6"]
+[ext_resource type="Texture2D" uid="uid://6nq7nk1fmyp5" path="res://art/animations/Rose-petal-animation/3.png" id="76_feyks"]
+[ext_resource type="Texture2D" uid="uid://bho0tpn1sb8gk" path="res://art/animations/Rose-petal-animation/4.png" id="77_s06r5"]
+[ext_resource type="Texture2D" uid="uid://c7d4h1xwitplq" path="res://art/animations/Rose-petal-animation/5.png" id="78_ia3ns"]
+[ext_resource type="Texture2D" uid="uid://bosjr0eww1fjp" path="res://art/animations/Rose-petal-animation/6.png" id="79_k5ac0"]
+[ext_resource type="Texture2D" uid="uid://cdoyc46m6ti0g" path="res://art/animations/Rose-petal-animation/7.png" id="80_ersym"]
+[ext_resource type="Texture2D" uid="uid://cgglmpjy6d71t" path="res://art/animations/Rose-petal-animation/8.png" id="81_42sn8"]
+[ext_resource type="Texture2D" uid="uid://c6hidyaffbogk" path="res://art/animations/Rose-petal-animation/9.png" id="82_pt7hd"]
+[ext_resource type="Texture2D" uid="uid://7rbbb3rh1cr4" path="res://art/animations/Rose-petal-animation/10.png" id="83_gs2dg"]
+[ext_resource type="Texture2D" uid="uid://wn0oe5voajkv" path="res://art/animations/Spearmint-animation/1.png" id="84_osa8j"]
+[ext_resource type="Texture2D" uid="uid://bycea6hpnf5f1" path="res://art/animations/Spearmint-animation/2.png" id="85_bdhr6"]
+[ext_resource type="Texture2D" uid="uid://ceye32yy7fx7f" path="res://art/animations/Spearmint-animation/3.png" id="86_feyks"]
 [ext_resource type="Texture2D" uid="uid://og7uvuj31oyr" path="res://art/animations/Strawberry-animation/1.png" id="86_rybrr"]
 [ext_resource type="Texture2D" uid="uid://c6x7f5gdem6ii" path="res://art/animations/Strawberry-animation/2.png" id="87_jdpkn"]
+[ext_resource type="Texture2D" uid="uid://dhlaiyq51y3q3" path="res://art/animations/Spearmint-animation/4.png" id="87_s06r5"]
 [ext_resource type="Texture2D" uid="uid://boefu40eqcoof" path="res://art/animations/Strawberry-animation/3.png" id="88_hjdmq"]
+[ext_resource type="Texture2D" uid="uid://56f2a5ybo3rt" path="res://art/animations/Spearmint-animation/5.png" id="88_ia3ns"]
+[ext_resource type="Texture2D" uid="uid://cboqvlsny8ryr" path="res://art/animations/Spearmint-animation/6.png" id="89_k5ac0"]
 [ext_resource type="Texture2D" uid="uid://dfxu350xl1fgy" path="res://art/animations/Strawberry-animation/4.png" id="89_trgou"]
+[ext_resource type="Texture2D" uid="uid://bf8q4jc1e6pil" path="res://art/animations/Spearmint-animation/7.png" id="90_ersym"]
 [ext_resource type="Texture2D" uid="uid://oaln4vfgfecb" path="res://art/animations/Strawberry-animation/5.png" id="90_ubkd4"]
+[ext_resource type="Texture2D" uid="uid://c6jyxcqymu4v8" path="res://art/animations/Spearmint-animation/8.png" id="91_42sn8"]
 [ext_resource type="Texture2D" uid="uid://c4v0562yoyxjw" path="res://art/animations/Strawberry-animation/6.png" id="91_66qhf"]
 [ext_resource type="Texture2D" uid="uid://xeepx6l54s0f" path="res://art/animations/Strawberry-animation/7.png" id="92_lnbc5"]
+[ext_resource type="Texture2D" uid="uid://bm4s33geortoo" path="res://art/animations/Spearmint-animation/9.png" id="92_pt7hd"]
+[ext_resource type="Texture2D" uid="uid://byxyq7y6syy6p" path="res://art/animations/Spearmint-animation/10.png" id="93_gs2dg"]
 [ext_resource type="Texture2D" uid="uid://cxfqhgexlkbkh" path="res://art/animations/Strawberry-animation/8.png" id="93_j8i8d"]
 [ext_resource type="Texture2D" uid="uid://0dhdjlxsjw00" path="res://art/animations/Strawberry-animation/9.png" id="94_pm73c"]
 [ext_resource type="Texture2D" uid="uid://dsf3s8y2me7m0" path="res://art/animations/Strawberry-animation/10.png" id="95_on6rf"]
-[ext_resource type="Texture2D" uid="uid://b8si84wtnt7x1" path="res://art/animations/Tea-leaves/1.png" id="96_qct0w"]
-[ext_resource type="Texture2D" uid="uid://b5fkkkwwjv4c" path="res://art/animations/Tea-leaves/2.png" id="97_bv2ni"]
-[ext_resource type="Texture2D" uid="uid://ubemt38top1t" path="res://art/animations/Tea-leaves/3.png" id="98_0la3x"]
-[ext_resource type="Texture2D" uid="uid://cxo3ag3ra1ptu" path="res://art/animations/Tea-leaves/4.png" id="99_cxoef"]
-[ext_resource type="Texture2D" uid="uid://cptoo6ca1wga8" path="res://art/animations/Tea-leaves/5.png" id="100_q83go"]
-[ext_resource type="Texture2D" uid="uid://byp0ovfkhhxcx" path="res://art/animations/Tea-leaves/6.png" id="101_squ3p"]
-[ext_resource type="Texture2D" uid="uid://civ3njdild135" path="res://art/animations/Tea-leaves/7.png" id="102_f2iyf"]
-[ext_resource type="Texture2D" uid="uid://cxywnrr4gvqlq" path="res://art/animations/Tea-leaves/8.png" id="103_rrm4d"]
-[ext_resource type="Texture2D" uid="uid://du2st8j1udob0" path="res://art/animations/Tea-leaves/9.png" id="104_wb312"]
-[ext_resource type="Texture2D" uid="uid://c5hafhuhkym8" path="res://art/animations/Tea-leaves/10.png" id="105_gjagn"]
-[ext_resource type="Script" uid="uid://cvgh54k6y3gse" path="res://scenes/pestle.gd" id="117_emdtn"]
+[ext_resource type="Texture2D" uid="uid://b8si84wtnt7x1" path="res://art/animations/Tea-leaves-animation/1.png" id="104_osa8j"]
+[ext_resource type="Texture2D" uid="uid://b5fkkkwwjv4c" path="res://art/animations/Tea-leaves-animation/2.png" id="105_bdhr6"]
+[ext_resource type="Texture2D" uid="uid://ubemt38top1t" path="res://art/animations/Tea-leaves-animation/3.png" id="106_feyks"]
+[ext_resource type="Texture2D" uid="uid://cxo3ag3ra1ptu" path="res://art/animations/Tea-leaves-animation/4.png" id="107_s06r5"]
+[ext_resource type="Texture2D" uid="uid://cptoo6ca1wga8" path="res://art/animations/Tea-leaves-animation/5.png" id="108_ia3ns"]
+[ext_resource type="Texture2D" uid="uid://byp0ovfkhhxcx" path="res://art/animations/Tea-leaves-animation/6.png" id="109_k5ac0"]
+[ext_resource type="Texture2D" uid="uid://civ3njdild135" path="res://art/animations/Tea-leaves-animation/7.png" id="110_ersym"]
+[ext_resource type="Texture2D" uid="uid://cxywnrr4gvqlq" path="res://art/animations/Tea-leaves-animation/8.png" id="111_42sn8"]
+[ext_resource type="Texture2D" uid="uid://du2st8j1udob0" path="res://art/animations/Tea-leaves-animation/9.png" id="112_pt7hd"]
+[ext_resource type="Texture2D" uid="uid://c5hafhuhkym8" path="res://art/animations/Tea-leaves-animation/10.png" id="113_gs2dg"]
 [ext_resource type="AudioStream" uid="uid://b53bwgub3nvpc" path="res://audio/sfx/Mortar And Pestle [2026-04-16 012048].wav" id="118_emdtn"]
 [ext_resource type="AudioStream" uid="uid://xli7bsclb55w" path="res://audio/sfx/Boiling Cauldron.wav" id="119_5qfp7"]
 [ext_resource type="AudioStream" uid="uid://36jts0cdhmk7" path="res://audio/sfx/IngDrop [2026-04-16 020826].wav" id="120_gb475"]
@@ -155,96 +145,147 @@
 [ext_resource type="Texture2D" uid="uid://eda70ug7ces5" path="res://art/animations/Scroll-animation/Untitled_Artwork-15.png" id="136_yf68p"]
 [ext_resource type="Texture2D" uid="uid://dvqgsm1b0oro4" path="res://art/animations/Scroll-animation/Untitled_Artwork-16.png" id="137_re38p"]
 [ext_resource type="Texture2D" uid="uid://bbpet32428lqs" path="res://art/animations/Scroll-animation/Untitled_Artwork-17.png" id="138_8gqa4"]
-[ext_resource type="Texture2D" uid="uid://do8jueu0nebk8" path="res://art/boh/Cauldron liquid/Untitled_Artwork-1.png" id="139_lnbc5"]
+[ext_resource type="Texture2D" path="res://art/boh/Cauldron liquid/Untitled_Artwork-1.png" id="139_lnbc5"]
 [ext_resource type="Texture2D" uid="uid://4ocjf5rw6pcj" path="res://art/animations/Scroll-animation/Untitled_Artwork-18.png" id="139_tjbrh"]
-[ext_resource type="Texture2D" uid="uid://7700s16sionl" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-1.png" id="140_j8i8d"]
 [ext_resource type="Texture2D" uid="uid://d1biijkkkhtqw" path="res://art/animations/Scroll-animation/Untitled_Artwork-19.png" id="140_kmg1f"]
 [ext_resource type="Texture2D" uid="uid://cm6t2gacaejwk" path="res://art/animations/Scroll-animation/Untitled_Artwork-20.png" id="141_etexm"]
-[ext_resource type="Texture2D" uid="uid://dgyin10udafsm" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-2.png" id="141_pm73c"]
-[ext_resource type="Texture2D" uid="uid://gkou2toy5gr0" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-3.png" id="142_on6rf"]
 [ext_resource type="Texture2D" uid="uid://c0jqgmpbgjrjp" path="res://art/boh/Clock/clock_face.png" id="142_sp3ea"]
-[ext_resource type="Texture2D" uid="uid://d0pxyh50u4q32" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-4.png" id="143_qct0w"]
 [ext_resource type="Texture2D" uid="uid://c1openvisyyox" path="res://art/boh/Clock/clock_hour_hand.png" id="143_udhpb"]
 [ext_resource type="Texture2D" uid="uid://boftd58r35lav" path="res://art/boh/Clock/clock_minute_hand.png" id="144_5nhge"]
-[ext_resource type="Texture2D" uid="uid://cj0me4j3tngwq" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-5.png" id="144_bv2ni"]
-[ext_resource type="Texture2D" uid="uid://cmf82dl8qso4b" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-6.png" id="145_0la3x"]
-[ext_resource type="Texture2D" uid="uid://k0f1o5ab2cpq" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-7.png" id="146_cxoef"]
-[ext_resource type="Texture2D" uid="uid://bgsoab8hedicr" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-8.png" id="147_q83go"]
-[ext_resource type="Texture2D" uid="uid://gmgv02g7vehe" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-9.png" id="148_squ3p"]
-[ext_resource type="Texture2D" uid="uid://blmpwkc8jqjrx" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-10.png" id="149_f2iyf"]
+[ext_resource type="Texture2D" uid="uid://dmxfdwjqc5e4p" path="res://art/animations/Espresso-animation/frame_0001.png" id="154_osa8j"]
+[ext_resource type="Texture2D" uid="uid://dwtkc2csy8b2k" path="res://art/animations/Espresso-animation/frame_0002.png" id="155_bdhr6"]
+[ext_resource type="Texture2D" uid="uid://b22l8471mjjqi" path="res://art/animations/Espresso-animation/frame_0003.png" id="156_feyks"]
+[ext_resource type="Texture2D" uid="uid://oivxf5jfwtbv" path="res://art/animations/Espresso-animation/frame_0004.png" id="157_s06r5"]
+[ext_resource type="Texture2D" uid="uid://c1bkebyf70ju6" path="res://art/animations/Espresso-animation/frame_0005.png" id="158_ia3ns"]
+[ext_resource type="Texture2D" uid="uid://tj7tcichtkhn" path="res://art/animations/Espresso-animation/frame_0006.png" id="159_k5ac0"]
+[ext_resource type="Texture2D" uid="uid://bd7uh2d4w8oxl" path="res://art/animations/Espresso-animation/frame_0007.png" id="160_ersym"]
+[ext_resource type="Texture2D" uid="uid://cjtepwccppucc" path="res://art/animations/Espresso-animation/frame_0008.png" id="161_42sn8"]
+[ext_resource type="Texture2D" uid="uid://cx4kvw045uusa" path="res://art/animations/Espresso-animation/frame_0009.png" id="162_pt7hd"]
+[ext_resource type="Texture2D" uid="uid://cp478a0sd6gw" path="res://art/animations/Espresso-animation/frame_0010.png" id="163_gs2dg"]
+[ext_resource type="Texture2D" uid="uid://bgo08t4bknlub" path="res://art/animations/Espresso-animation/frame_0011.png" id="164_dh6ad"]
+[ext_resource type="Texture2D" uid="uid://rkl7ftd2sp2r" path="res://art/animations/Espresso-animation/frame_0012.png" id="165_isefr"]
+[ext_resource type="Texture2D" uid="uid://cb0b4d0yga2n4" path="res://art/animations/Espresso-animation/frame_0013.png" id="166_s2vh5"]
+[ext_resource type="Texture2D" uid="uid://ctbml2lm01qiy" path="res://art/animations/Espresso-animation/frame_0014.png" id="167_4l87u"]
+[ext_resource type="Texture2D" uid="uid://2hodakbp81gn" path="res://art/animations/Espresso-animation/frame_0015.png" id="168_mcmsi"]
+[ext_resource type="Texture2D" uid="uid://ukmbmfwq0ldq" path="res://art/animations/Espresso-animation/frame_0016.png" id="169_aye6e"]
+[ext_resource type="Texture2D" uid="uid://ciyykhdff1iwd" path="res://art/animations/Espresso-animation/frame_0017.png" id="170_l7oqr"]
+[ext_resource type="Texture2D" uid="uid://dvrjq6ugec1gk" path="res://art/animations/Espresso-animation/frame_0018.png" id="171_668ma"]
+[ext_resource type="Texture2D" uid="uid://dyjhbcoocjdeh" path="res://art/animations/Espresso-animation/frame_0019.png" id="172_6yg5r"]
 [ext_resource type="Script" uid="uid://b54fmt21148so" path="res://scenes/espresso_machine.gd" id="173_osa8j"]
-[ext_resource type="Texture2D" uid="uid://dqyhwblmjtis1" path="res://art/animations/ Milk animation/Untitled_Artwork-1.png" id="174_4uh6v"]
-[ext_resource type="Texture2D" uid="uid://dsnt8n61khoyg" path="res://art/animations/ Milk animation/Untitled_Artwork-2.png" id="175_f7anb"]
-[ext_resource type="Texture2D" uid="uid://3b3775m3f8jk" path="res://art/animations/ Milk animation/Untitled_Artwork-3.png" id="176_o3ioa"]
-[ext_resource type="Texture2D" uid="uid://ctv8caje1rmnb" path="res://art/animations/ Milk animation/Untitled_Artwork-4.png" id="177_trk36"]
-[ext_resource type="Texture2D" uid="uid://bo7wgepjwhe4v" path="res://art/animations/ Milk animation/Untitled_Artwork-5.png" id="178_aej4e"]
-[ext_resource type="Texture2D" uid="uid://c2srep62vdrti" path="res://art/animations/ Milk animation/Untitled_Artwork-6.png" id="179_pao8l"]
-[ext_resource type="Texture2D" uid="uid://drxpaguyefxdg" path="res://art/animations/ Milk animation/Untitled_Artwork-7.png" id="180_2wgy6"]
-[ext_resource type="Texture2D" uid="uid://chc7iss3pdhgv" path="res://art/animations/ Milk animation/Untitled_Artwork-8.png" id="181_46xk0"]
-[ext_resource type="Texture2D" uid="uid://6g5tbobbmsfd" path="res://art/animations/ Milk animation/Untitled_Artwork-9.png" id="182_vmvmo"]
-[ext_resource type="Texture2D" uid="uid://twd30s34h3wc" path="res://art/animations/ Milk animation/Untitled_Artwork-10.png" id="183_vhaaj"]
-[ext_resource type="Texture2D" uid="uid://dkey1ednhv68y" path="res://art/animations/ Milk animation/Untitled_Artwork-11.png" id="184_tb4xu"]
-[ext_resource type="Texture2D" uid="uid://cc8l2vpfmy7qs" path="res://art/animations/ Milk animation/Untitled_Artwork-12.png" id="185_ouakb"]
-[ext_resource type="Texture2D" uid="uid://54whu4yc7lj0" path="res://art/animations/ Milk animation/Untitled_Artwork-13.png" id="186_700wd"]
-[ext_resource type="Texture2D" uid="uid://bga2nx2mfrb15" path="res://art/animations/ Milk animation/Untitled_Artwork-14.png" id="187_iyach"]
-[ext_resource type="Texture2D" uid="uid://ctj50i72wv7f5" path="res://art/animations/ Milk animation/Untitled_Artwork-15.png" id="188_68mbr"]
-[ext_resource type="Texture2D" uid="uid://b5algspq4mhw4" path="res://art/animations/ Milk animation/Untitled_Artwork-16.png" id="189_ud83r"]
-[ext_resource type="Texture2D" uid="uid://ds6a7tkd686ff" path="res://art/animations/ Milk animation/Untitled_Artwork-17.png" id="190_osa8j"]
-[ext_resource type="Texture2D" uid="uid://bguv7kq2akliw" path="res://art/animations/ Milk animation/Untitled_Artwork-18.png" id="191_bdhr6"]
-[ext_resource type="Texture2D" uid="uid://cqm0a82rn5k8s" path="res://art/animations/ Milk animation/Untitled_Artwork-19.png" id="192_feyks"]
-[ext_resource type="Texture2D" uid="uid://b6f2l5ls2ryot" path="res://art/animations/Water machine/Untitled_Artwork-1.png" id="193_ud83r"]
-[ext_resource type="Texture2D" uid="uid://dft3yflrh320p" path="res://art/animations/Water machine/Untitled_Artwork-2.png" id="194_osa8j"]
-[ext_resource type="Texture2D" uid="uid://dpsctkra41a77" path="res://art/animations/Water machine/Untitled_Artwork-3.png" id="195_bdhr6"]
-[ext_resource type="Texture2D" uid="uid://bpanuaf3vabrh" path="res://art/animations/Water machine/Untitled_Artwork-4.png" id="196_feyks"]
-[ext_resource type="Texture2D" uid="uid://btr8ueifdcndp" path="res://art/animations/Water machine/Untitled_Artwork-5.png" id="197_s06r5"]
-[ext_resource type="Texture2D" uid="uid://434kspaytt0d" path="res://art/animations/Water machine/Untitled_Artwork-6.png" id="198_ia3ns"]
-[ext_resource type="Texture2D" uid="uid://brtjv1yyga7mf" path="res://art/animations/Water machine/Untitled_Artwork-7.png" id="199_k5ac0"]
-[ext_resource type="Texture2D" uid="uid://yn4pf53rgcd6" path="res://art/animations/Water machine/Untitled_Artwork-10.png" id="200_ersym"]
-[ext_resource type="Texture2D" uid="uid://b465oa7udmfbs" path="res://art/animations/Water machine/Untitled_Artwork-11.png" id="201_42sn8"]
-[ext_resource type="Texture2D" uid="uid://lba8k45yuod" path="res://art/animations/Water machine/Untitled_Artwork-12.png" id="202_pt7hd"]
-[ext_resource type="Texture2D" uid="uid://ce2rmycr5cm0o" path="res://art/animations/Water machine/Untitled_Artwork-13.png" id="203_gs2dg"]
-[ext_resource type="Texture2D" uid="uid://mkg4u7ni6u4a" path="res://art/animations/Water machine/Untitled_Artwork-14.png" id="204_dh6ad"]
-[ext_resource type="Texture2D" uid="uid://cwaam5137j8rg" path="res://art/animations/Water machine/Untitled_Artwork-15.png" id="205_isefr"]
-[ext_resource type="Texture2D" uid="uid://d3th2d7m8ieiq" path="res://art/animations/Water machine/Untitled_Artwork-16.png" id="206_s2vh5"]
-[ext_resource type="Texture2D" uid="uid://docjr3il1cqtu" path="res://art/animations/Water machine/Untitled_Artwork-17.png" id="207_4l87u"]
+[ext_resource type="Texture2D" uid="uid://dqyhwblmjtis1" path="res://art/animations/Milk-animation/Untitled_Artwork-1.png" id="174_osa8j"]
+[ext_resource type="Texture2D" uid="uid://dsnt8n61khoyg" path="res://art/animations/Milk-animation/Untitled_Artwork-2.png" id="175_bdhr6"]
+[ext_resource type="Texture2D" uid="uid://3b3775m3f8jk" path="res://art/animations/Milk-animation/Untitled_Artwork-3.png" id="176_feyks"]
+[ext_resource type="Texture2D" uid="uid://ctv8caje1rmnb" path="res://art/animations/Milk-animation/Untitled_Artwork-4.png" id="177_s06r5"]
+[ext_resource type="Texture2D" uid="uid://bo7wgepjwhe4v" path="res://art/animations/Milk-animation/Untitled_Artwork-5.png" id="178_ia3ns"]
+[ext_resource type="Texture2D" uid="uid://c2srep62vdrti" path="res://art/animations/Milk-animation/Untitled_Artwork-6.png" id="179_k5ac0"]
+[ext_resource type="Texture2D" uid="uid://drxpaguyefxdg" path="res://art/animations/Milk-animation/Untitled_Artwork-7.png" id="180_ersym"]
+[ext_resource type="Texture2D" uid="uid://chc7iss3pdhgv" path="res://art/animations/Milk-animation/Untitled_Artwork-8.png" id="181_42sn8"]
+[ext_resource type="Texture2D" uid="uid://6g5tbobbmsfd" path="res://art/animations/Milk-animation/Untitled_Artwork-9.png" id="182_pt7hd"]
+[ext_resource type="Texture2D" uid="uid://twd30s34h3wc" path="res://art/animations/Milk-animation/Untitled_Artwork-10.png" id="183_gs2dg"]
+[ext_resource type="Texture2D" uid="uid://dkey1ednhv68y" path="res://art/animations/Milk-animation/Untitled_Artwork-11.png" id="184_dh6ad"]
+[ext_resource type="Texture2D" uid="uid://cc8l2vpfmy7qs" path="res://art/animations/Milk-animation/Untitled_Artwork-12.png" id="185_isefr"]
+[ext_resource type="Texture2D" uid="uid://54whu4yc7lj0" path="res://art/animations/Milk-animation/Untitled_Artwork-13.png" id="186_s2vh5"]
+[ext_resource type="Texture2D" uid="uid://bga2nx2mfrb15" path="res://art/animations/Milk-animation/Untitled_Artwork-14.png" id="187_4l87u"]
+[ext_resource type="Texture2D" uid="uid://ctj50i72wv7f5" path="res://art/animations/Milk-animation/Untitled_Artwork-15.png" id="188_mcmsi"]
+[ext_resource type="Texture2D" uid="uid://b5algspq4mhw4" path="res://art/animations/Milk-animation/Untitled_Artwork-16.png" id="189_aye6e"]
+[ext_resource type="Texture2D" uid="uid://ds6a7tkd686ff" path="res://art/animations/Milk-animation/Untitled_Artwork-17.png" id="190_l7oqr"]
+[ext_resource type="Texture2D" uid="uid://bguv7kq2akliw" path="res://art/animations/Milk-animation/Untitled_Artwork-18.png" id="191_668ma"]
+[ext_resource type="Texture2D" uid="uid://cqm0a82rn5k8s" path="res://art/animations/Milk-animation/Untitled_Artwork-19.png" id="192_6yg5r"]
+[ext_resource type="Texture2D" uid="uid://b6f2l5ls2ryot" path="res://art/animations/Water-machine/Untitled_Artwork-1.png" id="193_osa8j"]
+[ext_resource type="Texture2D" uid="uid://dft3yflrh320p" path="res://art/animations/Water-machine/Untitled_Artwork-2.png" id="194_bdhr6"]
+[ext_resource type="Texture2D" uid="uid://dpsctkra41a77" path="res://art/animations/Water-machine/Untitled_Artwork-3.png" id="195_feyks"]
+[ext_resource type="Texture2D" uid="uid://bpanuaf3vabrh" path="res://art/animations/Water-machine/Untitled_Artwork-4.png" id="196_s06r5"]
+[ext_resource type="Texture2D" uid="uid://btr8ueifdcndp" path="res://art/animations/Water-machine/Untitled_Artwork-5.png" id="197_ia3ns"]
+[ext_resource type="Texture2D" uid="uid://434kspaytt0d" path="res://art/animations/Water-machine/Untitled_Artwork-6.png" id="198_k5ac0"]
+[ext_resource type="Texture2D" uid="uid://brtjv1yyga7mf" path="res://art/animations/Water-machine/Untitled_Artwork-7.png" id="199_ersym"]
+[ext_resource type="Texture2D" uid="uid://yn4pf53rgcd6" path="res://art/animations/Water-machine/Untitled_Artwork-10.png" id="200_42sn8"]
+[ext_resource type="Texture2D" uid="uid://b465oa7udmfbs" path="res://art/animations/Water-machine/Untitled_Artwork-11.png" id="201_pt7hd"]
+[ext_resource type="Texture2D" uid="uid://lba8k45yuod" path="res://art/animations/Water-machine/Untitled_Artwork-12.png" id="202_gs2dg"]
+[ext_resource type="Texture2D" uid="uid://ce2rmycr5cm0o" path="res://art/animations/Water-machine/Untitled_Artwork-13.png" id="203_dh6ad"]
+[ext_resource type="Texture2D" uid="uid://mkg4u7ni6u4a" path="res://art/animations/Water-machine/Untitled_Artwork-14.png" id="204_isefr"]
+[ext_resource type="Texture2D" uid="uid://cwaam5137j8rg" path="res://art/animations/Water-machine/Untitled_Artwork-15.png" id="205_s2vh5"]
+[ext_resource type="Texture2D" uid="uid://d3th2d7m8ieiq" path="res://art/animations/Water-machine/Untitled_Artwork-16.png" id="206_4l87u"]
+[ext_resource type="Texture2D" uid="uid://docjr3il1cqtu" path="res://art/animations/Water-machine/Untitled_Artwork-17.png" id="207_mcmsi"]
 [ext_resource type="Script" uid="uid://cvytkmpx5p23p" path="res://scenes/liquid_machine.gd" id="207_ud83r"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_wn065"]
-diffuse_texture = ExtResource("6_nd1li")
-normal_texture = ExtResource("11_ltld3")
+diffuse_texture = ExtResource("10_ud83r")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rrm4d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_ud83r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_bdhr6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_feyks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_s06r5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ia3ns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_k5ac0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ersym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_42sn8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_pt7hd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_gs2dg")
+}],
+"loop": true,
+"name": &"bubbles",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fifae"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("46_wlgjh")
+"texture": ExtResource("14_osa8j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("47_vps6e")
+"texture": ExtResource("15_bdhr6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("48_eevi7")
+"texture": ExtResource("16_feyks")
 }, {
 "duration": 1.0,
-"texture": ExtResource("49_y5568")
+"texture": ExtResource("17_s06r5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("50_w3ptr")
+"texture": ExtResource("18_ia3ns")
 }, {
 "duration": 1.0,
-"texture": ExtResource("51_apjfa")
+"texture": ExtResource("19_k5ac0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("52_nlqnh")
+"texture": ExtResource("20_ersym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("53_cbgpi")
+"texture": ExtResource("21_42sn8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("54_2jny8")
+"texture": ExtResource("22_pt7hd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("55_ewxd8")
+"texture": ExtResource("23_gs2dg")
 }],
 "loop": true,
 "name": &"beans",
@@ -252,34 +293,34 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("17_jje3m")
+"texture": ExtResource("24_osa8j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_bnb44")
+"texture": ExtResource("25_bdhr6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_ex7wc")
+"texture": ExtResource("26_feyks")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_8yoy0")
+"texture": ExtResource("27_s06r5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_t78ih")
+"texture": ExtResource("28_ia3ns")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_p5bfc")
+"texture": ExtResource("29_k5ac0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_yqjsq")
+"texture": ExtResource("30_ersym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_wb23n")
+"texture": ExtResource("31_42sn8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_akp21")
+"texture": ExtResource("32_pt7hd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_72cht")
+"texture": ExtResource("33_gs2dg")
 }],
 "loop": false,
 "name": &"blueberry",
@@ -287,34 +328,34 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("26_jgwrg")
+"texture": ExtResource("34_osa8j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_0le2n")
+"texture": ExtResource("35_bdhr6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_q070u")
+"texture": ExtResource("36_feyks")
 }, {
 "duration": 1.0,
-"texture": ExtResource("29_oy0ww")
+"texture": ExtResource("37_s06r5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_ggbhr")
+"texture": ExtResource("38_ia3ns")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_l6coo")
+"texture": ExtResource("39_k5ac0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_gtywu")
+"texture": ExtResource("40_ersym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_f0itl")
+"texture": ExtResource("41_42sn8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_jk583")
+"texture": ExtResource("42_pt7hd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_pkcfp")
+"texture": ExtResource("43_gs2dg")
 }],
 "loop": true,
 "name": &"cherry",
@@ -362,34 +403,34 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("56_modyp")
+"texture": ExtResource("54_osa8j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("57_emdtn")
+"texture": ExtResource("55_bdhr6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("58_5qfp7")
+"texture": ExtResource("56_feyks")
 }, {
 "duration": 1.0,
-"texture": ExtResource("59_84nid")
+"texture": ExtResource("57_s06r5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("60_gb475")
+"texture": ExtResource("58_ia3ns")
 }, {
 "duration": 1.0,
-"texture": ExtResource("61_2nifm")
+"texture": ExtResource("59_k5ac0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("62_ri6o4")
+"texture": ExtResource("60_ersym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("63_2ero8")
+"texture": ExtResource("61_42sn8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("64_l41w6")
+"texture": ExtResource("62_pt7hd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("65_wujim")
+"texture": ExtResource("63_gs2dg")
 }],
 "loop": true,
 "name": &"lavender",
@@ -397,34 +438,34 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("56_k8j5u")
+"texture": ExtResource("64_osa8j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("57_hymgb")
+"texture": ExtResource("65_bdhr6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("58_uy1us")
+"texture": ExtResource("66_feyks")
 }, {
 "duration": 1.0,
-"texture": ExtResource("59_8qlrx")
+"texture": ExtResource("67_s06r5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("60_8idyw")
+"texture": ExtResource("68_ia3ns")
 }, {
 "duration": 1.0,
-"texture": ExtResource("61_2anqc")
+"texture": ExtResource("69_k5ac0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("62_u520v")
+"texture": ExtResource("70_ersym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("63_vylts")
+"texture": ExtResource("71_42sn8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("64_08q6q")
+"texture": ExtResource("72_pt7hd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("65_dhpby")
+"texture": ExtResource("73_gs2dg")
 }],
 "loop": true,
 "name": &"raspberry",
@@ -432,34 +473,34 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("66_c1s3g")
+"texture": ExtResource("74_osa8j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("67_jsd5l")
+"texture": ExtResource("75_bdhr6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("68_3gfaf")
+"texture": ExtResource("76_feyks")
 }, {
 "duration": 1.0,
-"texture": ExtResource("69_itlej")
+"texture": ExtResource("77_s06r5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("70_7iyom")
+"texture": ExtResource("78_ia3ns")
 }, {
 "duration": 1.0,
-"texture": ExtResource("71_niyy2")
+"texture": ExtResource("79_k5ac0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("72_mmt38")
+"texture": ExtResource("80_ersym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("73_tenoy")
+"texture": ExtResource("81_42sn8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("74_qfy5t")
+"texture": ExtResource("82_pt7hd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("75_pqhwo")
+"texture": ExtResource("83_gs2dg")
 }],
 "loop": true,
 "name": &"rose",
@@ -467,34 +508,34 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("76_2tp3j")
+"texture": ExtResource("84_osa8j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("77_yf68p")
+"texture": ExtResource("85_bdhr6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("78_re38p")
+"texture": ExtResource("86_feyks")
 }, {
 "duration": 1.0,
-"texture": ExtResource("79_8gqa4")
+"texture": ExtResource("87_s06r5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("80_tjbrh")
+"texture": ExtResource("88_ia3ns")
 }, {
 "duration": 1.0,
-"texture": ExtResource("81_kmg1f")
+"texture": ExtResource("89_k5ac0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("82_etexm")
+"texture": ExtResource("90_ersym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("83_sp3ea")
+"texture": ExtResource("91_42sn8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("84_udhpb")
+"texture": ExtResource("92_pt7hd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("85_5nhge")
+"texture": ExtResource("93_gs2dg")
 }],
 "loop": true,
 "name": &"spearmint",
@@ -537,34 +578,34 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("96_qct0w")
+"texture": ExtResource("104_osa8j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("97_bv2ni")
+"texture": ExtResource("105_bdhr6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("98_0la3x")
+"texture": ExtResource("106_feyks")
 }, {
 "duration": 1.0,
-"texture": ExtResource("99_cxoef")
+"texture": ExtResource("107_s06r5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("100_q83go")
+"texture": ExtResource("108_ia3ns")
 }, {
 "duration": 1.0,
-"texture": ExtResource("101_squ3p")
+"texture": ExtResource("109_k5ac0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("102_f2iyf")
+"texture": ExtResource("110_ersym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("103_rrm4d")
+"texture": ExtResource("111_42sn8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("104_wb312")
+"texture": ExtResource("112_pt7hd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("105_gjagn")
+"texture": ExtResource("113_gs2dg")
 }],
 "loop": true,
 "name": &"tea",
@@ -658,49 +699,6 @@ _data = {
 &"mortar_and_pestle": SubResource("Animation_ltld3")
 }
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_rrm4d"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("140_j8i8d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("141_pm73c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("142_on6rf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("143_qct0w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("144_bv2ni")
-}, {
-"duration": 1.0,
-"texture": ExtResource("145_0la3x")
-}, {
-"duration": 1.0,
-"texture": ExtResource("146_cxoef")
-}, {
-"duration": 1.0,
-"texture": ExtResource("147_q83go")
-}, {
-"duration": 1.0,
-"texture": ExtResource("148_squ3p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("149_f2iyf")
-}],
-"loop": true,
-"name": &"bubbles",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_rybrr"]
 animations = [{
 "frames": [],
@@ -774,6 +772,67 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_ud83r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("HourHand:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-3.0490901]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MinuteHand:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0995574]
+}
+
+[sub_resource type="Animation" id="Animation_osa8j"]
+resource_name = "game_timer"
+length = 180.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("HourHand:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 180),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-3.0490901, 1.0838494]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MinuteHand:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 180),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0995574287564276, 51.36503988619312]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bdhr6"]
+_data = {
+&"RESET": SubResource("Animation_ud83r"),
+&"game_timer": SubResource("Animation_osa8j")
+}
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_q83go"]
 animations = [{
 "frames": [],
@@ -783,61 +842,61 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_kmg1f")
+"texture": ExtResource("154_osa8j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_etexm")
+"texture": ExtResource("155_bdhr6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_sp3ea")
+"texture": ExtResource("156_feyks")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_udhpb")
+"texture": ExtResource("157_s06r5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_5nhge")
+"texture": ExtResource("158_ia3ns")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_rybrr")
+"texture": ExtResource("159_k5ac0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_jdpkn")
+"texture": ExtResource("160_ersym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_hjdmq")
+"texture": ExtResource("161_42sn8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_trgou")
+"texture": ExtResource("162_pt7hd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_ubkd4")
+"texture": ExtResource("163_gs2dg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_66qhf")
+"texture": ExtResource("164_dh6ad")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_lnbc5")
+"texture": ExtResource("165_isefr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_j8i8d")
+"texture": ExtResource("166_s2vh5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_pm73c")
+"texture": ExtResource("167_4l87u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_on6rf")
+"texture": ExtResource("168_mcmsi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_qct0w")
+"texture": ExtResource("169_aye6e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_bv2ni")
+"texture": ExtResource("170_l7oqr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_0la3x")
+"texture": ExtResource("171_668ma")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_cxoef")
+"texture": ExtResource("172_6yg5r")
 }],
 "loop": false,
 "name": &"espresso",
@@ -853,61 +912,61 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("174_4uh6v")
+"texture": ExtResource("174_osa8j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("175_f7anb")
+"texture": ExtResource("175_bdhr6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("176_o3ioa")
+"texture": ExtResource("176_feyks")
 }, {
 "duration": 1.0,
-"texture": ExtResource("177_trk36")
+"texture": ExtResource("177_s06r5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("178_aej4e")
+"texture": ExtResource("178_ia3ns")
 }, {
 "duration": 1.0,
-"texture": ExtResource("179_pao8l")
+"texture": ExtResource("179_k5ac0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("180_2wgy6")
+"texture": ExtResource("180_ersym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("181_46xk0")
+"texture": ExtResource("181_42sn8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("182_vmvmo")
+"texture": ExtResource("182_pt7hd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("183_vhaaj")
+"texture": ExtResource("183_gs2dg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("184_tb4xu")
+"texture": ExtResource("184_dh6ad")
 }, {
 "duration": 1.0,
-"texture": ExtResource("185_ouakb")
+"texture": ExtResource("185_isefr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("186_700wd")
+"texture": ExtResource("186_s2vh5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("187_iyach")
+"texture": ExtResource("187_4l87u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("188_68mbr")
+"texture": ExtResource("188_mcmsi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("189_ud83r")
+"texture": ExtResource("189_aye6e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("190_osa8j")
+"texture": ExtResource("190_l7oqr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("191_bdhr6")
+"texture": ExtResource("191_668ma")
 }, {
 "duration": 1.0,
-"texture": ExtResource("192_feyks")
+"texture": ExtResource("192_6yg5r")
 }],
 "loop": false,
 "name": &"milk",
@@ -915,49 +974,49 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("193_ud83r")
+"texture": ExtResource("193_osa8j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("194_osa8j")
+"texture": ExtResource("194_bdhr6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("195_bdhr6")
+"texture": ExtResource("195_feyks")
 }, {
 "duration": 1.0,
-"texture": ExtResource("196_feyks")
+"texture": ExtResource("196_s06r5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("197_s06r5")
+"texture": ExtResource("197_ia3ns")
 }, {
 "duration": 1.0,
-"texture": ExtResource("198_ia3ns")
+"texture": ExtResource("198_k5ac0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("199_k5ac0")
+"texture": ExtResource("199_ersym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("200_ersym")
+"texture": ExtResource("200_42sn8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("201_42sn8")
+"texture": ExtResource("201_pt7hd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("202_pt7hd")
+"texture": ExtResource("202_gs2dg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("203_gs2dg")
+"texture": ExtResource("203_dh6ad")
 }, {
 "duration": 1.0,
-"texture": ExtResource("204_dh6ad")
+"texture": ExtResource("204_isefr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("205_isefr")
+"texture": ExtResource("205_s2vh5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("206_s2vh5")
+"texture": ExtResource("206_4l87u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("207_4l87u")
+"texture": ExtResource("207_mcmsi")
 }],
 "loop": false,
 "name": &"water",
@@ -1154,6 +1213,24 @@ text = "Rose Petals"
 position = Vector2(813, 819)
 texture = SubResource("CanvasTexture_wn065")
 
+[node name="Liquid" type="Sprite2D" parent="Cauldron" unique_id=2031024136]
+modulate = Color(0.34117648, 0.18039216, 0.03529412, 1)
+position = Vector2(7, -147)
+texture = ExtResource("139_lnbc5")
+
+[node name="Bubbles" type="AnimatedSprite2D" parent="Cauldron" unique_id=2101217209]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(22, -183)
+scale = Vector2(1.130808, 1.1944445)
+sprite_frames = SubResource("SpriteFrames_rrm4d")
+animation = &"bubbles"
+frame_progress = 0.41733202
+
+[node name="Sprite2D" type="Sprite2D" parent="Cauldron" unique_id=278886647]
+show_behind_parent = true
+position = Vector2(2, -140)
+texture = ExtResource("22_osa8j")
+
 [node name="Mortar" type="Sprite2D" parent="." unique_id=1663867063]
 position = Vector2(1373, 885)
 texture = ExtResource("12_2q3yk")
@@ -1163,16 +1240,15 @@ script = ExtResource("15_bnb44")
 position = Vector2(-10.0000515, -9.999974)
 scale = Vector2(1.5159997, 1.0477767)
 sprite_frames = SubResource("SpriteFrames_fifae")
-animation = &"beans"
+animation = &"strawberry"
 frame = 9
 
 [node name="Pestle" type="Sprite2D" parent="Mortar" unique_id=1655578716]
 position = Vector2(56, -35)
 texture = ExtResource("13_ltld3")
-script = ExtResource("117_emdtn")
 
 [node name="MortarBottom" type="Sprite2D" parent="Mortar" unique_id=55249500]
-position = Vector2(-6, 30)
+position = Vector2(-5, 31)
 texture = ExtResource("15_wn065")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Mortar" unique_id=1211670601]
@@ -1188,19 +1264,6 @@ bus = &"SFX"
 stream = ExtResource("120_gb475")
 volume_db = 6.958
 
-[node name="Liquid" type="Sprite2D" parent="Mortar" unique_id=2031024136]
-modulate = Color(0, 1, 0, 1)
-position = Vector2(-536, -237)
-texture = ExtResource("139_lnbc5")
-
-[node name="Bubbles" type="AnimatedSprite2D" parent="Mortar" unique_id=2101217209]
-position = Vector2(-524, -284)
-scale = Vector2(1.130808, 1.1944445)
-sprite_frames = SubResource("SpriteFrames_rrm4d")
-animation = &"bubbles"
-autoplay = "bubbles"
-frame_progress = 0.41733202
-
 [node name="BoilingCauldron" type="AudioStreamPlayer" parent="." unique_id=688932083]
 stream = ExtResource("119_5qfp7")
 bus = &"Background Noise"
@@ -1210,7 +1273,7 @@ stream = ExtResource("8_84nid")
 bus = &"SFX"
 
 [node name="Scroll" type="AnimatedSprite2D" parent="." unique_id=1755022971]
-position = Vector2(249, 463)
+position = Vector2(2558, 405)
 sprite_frames = SubResource("SpriteFrames_rybrr")
 animation = &"scrolling"
 
@@ -1235,12 +1298,16 @@ texture = ExtResource("142_sp3ea")
 
 [node name="HourHand" type="Sprite2D" parent="Clock" unique_id=1144935852]
 position = Vector2(-1, 1)
-rotation = -1.3962634
+rotation = -3.0490901
 texture = ExtResource("143_udhpb")
 
 [node name="MinuteHand" type="Sprite2D" parent="Clock" unique_id=500566100]
 position = Vector2(-1, 1)
+rotation = 1.0995574
 texture = ExtResource("144_5nhge")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Clock" unique_id=1212329297]
+libraries/ = SubResource("AnimationLibrary_bdhr6")
 
 [node name="EspressoMachine" type="AnimatedSprite2D" parent="." unique_id=963389051]
 light_mask = 2
@@ -1267,7 +1334,7 @@ ingredient_type = "espresso"
 [node name="LiquidMachine" type="AnimatedSprite2D" parent="." unique_id=1027388817]
 position = Vector2(1677, 308)
 sprite_frames = SubResource("SpriteFrames_wb312")
-animation = &"milk"
+animation = &"water"
 script = ExtResource("207_ud83r")
 metadata/_edit_lock_ = true
 
@@ -1308,7 +1375,8 @@ ingredient_type = "milk"
 [connection signal="pressed" from="IngredientRack/IngredientBins/Spearmint" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="IngredientRack/IngredientBins/Lavender" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="placed" from="Cauldron" to="." method="_on_cauldron_placed"]
-[connection signal="pestle" from="Mortar/Pestle" to="Mortar" method="_on_pestle_pestle"]
+[connection signal="mortar" from="Mortar" to="." method="_on_mortar_mortar"]
+[connection signal="animation_finished" from="Mortar/MortarIngredient" to="." method="_on_mortar_ingredient_animation_finished"]
 [connection signal="pressed" from="EspressoMachine/Button" to="EspressoMachine" method="_on_button_pressed"]
 [connection signal="pressed" from="EspressoMachine/Espresso" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="LiquidMachine/WaterButton" to="LiquidMachine" method="_on_water_button_pressed"]
