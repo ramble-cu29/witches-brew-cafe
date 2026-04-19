@@ -36,7 +36,7 @@ func _process(delta: float) -> void:
 	if "tea" in Globals.recipe_record:
 		$Liquid.modulate=Color("1f2b20ff")
 		$Bubbles.modulate=Color("4d725dff")
-   elif "beans" in Globals.recipe_record:
+	elif "beans" in Globals.recipe_record:
 		$Liquid.modulate=Color(0.34,0.18,0.03,1)
 		$Bubbles.modulate=Color("d37b2fff")
 

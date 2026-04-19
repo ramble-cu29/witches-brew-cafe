@@ -1,10 +1,20 @@
 extends Node
 
 var ingredient: Node = preload("res://scenes/ingredient.tscn").instantiate()
+@onready var catnoise_player: AudioStreamPlayer =$CatNoises
+@export var sounds: Array[AudioStream] = [
+	preload("res://audio/sfx/Cat Purring 1.wav"),
+	preload("res://audio/sfx/Meow1.wav"),
+	preload("res://audio/sfx/Meow2.wav"),
+	preload("res://audio/sfx/Meow3.wav")
+]
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$FireCrackle.play()
+	randomize()
+	play_random_loop()
 	pass # Replace with function body.
 
 	Globals.recipe_builder()
@@ -57,4 +67,16 @@ func _on_button_pressed() -> void:
 func _on_coffee_cup_coffee_cup() -> void:
 	create_ingredient()
 	$CoffeeCup.global_position=Vector2(-100,750)
+	
+func play_random_loop() -> void:
+	while true:
+		var wait_time: float = randf_range(30.0, 60.0)
+		await get_tree().create_timer(wait_time).timeout
+		
+		if sounds.size() > 0:
+			var sound: AudioStream = sounds.pick_random()
+			catnoise_player.stream = sound
+			catnoise_player.play()
+			
+			
 	

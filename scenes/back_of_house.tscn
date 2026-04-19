@@ -149,7 +149,6 @@
 [ext_resource type="Texture2D" uid="uid://eda70ug7ces5" path="res://art/animations/Scroll-animation/Untitled_Artwork-15.png" id="136_yf68p"]
 [ext_resource type="Texture2D" uid="uid://dvqgsm1b0oro4" path="res://art/animations/Scroll-animation/Untitled_Artwork-16.png" id="137_re38p"]
 [ext_resource type="Texture2D" uid="uid://bbpet32428lqs" path="res://art/animations/Scroll-animation/Untitled_Artwork-17.png" id="138_8gqa4"]
-[ext_resource type="Texture2D" uid="uid://do8jueu0nebk8" path="res://art/boh/Cauldron-liquid/Untitled_Artwork-1.png" id="139_lnbc5"]
 [ext_resource type="Texture2D" uid="uid://4ocjf5rw6pcj" path="res://art/animations/Scroll-animation/Untitled_Artwork-18.png" id="139_tjbrh"]
 [ext_resource type="Texture2D" uid="uid://d1biijkkkhtqw" path="res://art/animations/Scroll-animation/Untitled_Artwork-19.png" id="140_kmg1f"]
 [ext_resource type="Texture2D" uid="uid://cm6t2gacaejwk" path="res://art/animations/Scroll-animation/Untitled_Artwork-20.png" id="141_etexm"]
@@ -220,6 +219,7 @@
 [ext_resource type="Script" uid="uid://4gghhducwh46" path="res://scenes/ladle.gd" id="212_k5ac0"]
 [ext_resource type="Texture2D" uid="uid://3bfako3e8egm" path="res://art/foh/wizard.png" id="215_pt7hd"]
 [ext_resource type="Texture2D" uid="uid://cmahefet3du4s" path="res://art/foh/black_cat.png" id="216_gs2dg"]
+[ext_resource type="AudioStream" uid="uid://d0u24v35mv0qv" path="res://audio/sfx/FIRECrkl_Fire Crackle_SDFIRE0773.wav" id="220_s2vh5"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_wn065"]
 diffuse_texture = ExtResource("10_ud83r")
@@ -1532,6 +1532,7 @@ stream = ExtResource("208_osa8j")
 volume_db = -7.69
 pitch_scale = 0.83
 bus = &"SFX"
+
 [node name="Button" type="Button" parent="." unique_id=99234205]
 offset_left = 1232.0
 offset_top = 599.0
@@ -1558,6 +1559,9 @@ script = ExtResource("212_k5ac0")
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_ersym")
 
+[node name="Pour" type="AudioStreamPlayer" parent="Ladle" unique_id=191456675]
+stream = ExtResource("173_bdhr6")
+
 [node name="Customer" type="Sprite2D" parent="." unique_id=1530885664]
 position = Vector2(144, 783)
 scale = Vector2(-1, 1)
@@ -1566,6 +1570,14 @@ texture = ExtResource("215_pt7hd")
 [node name="BlackCat" type="Sprite2D" parent="." unique_id=265399638]
 position = Vector2(1180, 638)
 texture = ExtResource("216_gs2dg")
+
+[node name="FireCrackle" type="AudioStreamPlayer" parent="." unique_id=1688557215]
+stream = ExtResource("220_s2vh5")
+volume_db = -9.521
+bus = &"Background Noise"
+
+[node name="CatNoises" type="AudioStreamPlayer" parent="." unique_id=340449527]
+volume_db = -6.958
 
 [connection signal="pressed" from="CoffeeJar" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="TeaJar" to="." method="_on_ingredient_bin_pressed"]
