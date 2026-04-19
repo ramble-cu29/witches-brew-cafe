@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://djw1an2ysxeog" path="res://scenes/ingredient_bin.tscn" id="1_of34b"]
 [ext_resource type="Texture2D" uid="uid://p1d78rjeb1hb" path="res://art/boh/background_boh.png" id="2_damgc"]
 [ext_resource type="PackedScene" uid="uid://bsowfk6i20w6x" path="res://scenes/tool.tscn" id="3_2ukpx"]
-[ext_resource type="Theme" uid="uid://l7m6kwciibo0" path="res://theme.tres" id="4_damgc"]
 [ext_resource type="Texture2D" uid="uid://ctf7vckb1afg8" path="res://art/boh/ingredient_rack.png" id="4_nd1li"]
 [ext_resource type="Texture2D" uid="uid://diifumssjpmug" path="res://art/boh/beans_jar.png" id="5_80lrq"]
 [ext_resource type="Texture2D" uid="uid://dqcxbhdtop4hf" path="res://art/boh/tea_jar.png" id="6_21p5d"]
@@ -173,6 +172,7 @@
 [ext_resource type="Texture2D" uid="uid://bgsoab8hedicr" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-8.png" id="147_q83go"]
 [ext_resource type="Texture2D" uid="uid://gmgv02g7vehe" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-9.png" id="148_squ3p"]
 [ext_resource type="Texture2D" uid="uid://blmpwkc8jqjrx" path="res://art/animations/Cauldron bubbling/Untitled_Artwork-10.png" id="149_f2iyf"]
+[ext_resource type="Script" uid="uid://b54fmt21148so" path="res://scenes/espresso_machine.gd" id="173_osa8j"]
 [ext_resource type="Texture2D" uid="uid://dqyhwblmjtis1" path="res://art/animations/ Milk animation/Untitled_Artwork-1.png" id="174_4uh6v"]
 [ext_resource type="Texture2D" uid="uid://dsnt8n61khoyg" path="res://art/animations/ Milk animation/Untitled_Artwork-2.png" id="175_f7anb"]
 [ext_resource type="Texture2D" uid="uid://3b3775m3f8jk" path="res://art/animations/ Milk animation/Untitled_Artwork-3.png" id="176_o3ioa"]
@@ -207,76 +207,7 @@
 [ext_resource type="Texture2D" uid="uid://cwaam5137j8rg" path="res://art/animations/Water machine/Untitled_Artwork-15.png" id="205_isefr"]
 [ext_resource type="Texture2D" uid="uid://d3th2d7m8ieiq" path="res://art/animations/Water machine/Untitled_Artwork-16.png" id="206_s2vh5"]
 [ext_resource type="Texture2D" uid="uid://docjr3il1cqtu" path="res://art/animations/Water machine/Untitled_Artwork-17.png" id="207_4l87u"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_q83go"]
-animations = [{
-"frames": [],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("9_kmg1f")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_etexm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_sp3ea")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_udhpb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_5nhge")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_rybrr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_jdpkn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_hjdmq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_trgou")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_ubkd4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_66qhf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_lnbc5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_j8i8d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_pm73c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_on6rf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_qct0w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_bv2ni")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_0la3x")
-}, {
-"duration": 1.0,
-"texture": ExtResource("27_cxoef")
-}],
-"loop": true,
-"name": &"espresso",
-"speed": 20.0
-}]
+[ext_resource type="Script" uid="uid://cvytkmpx5p23p" path="res://scenes/liquid_machine.gd" id="207_ud83r"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_wn065"]
 diffuse_texture = ExtResource("6_nd1li")
@@ -843,6 +774,76 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_q83go"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_kmg1f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_etexm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_sp3ea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_udhpb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_5nhge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_rybrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_jdpkn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_hjdmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_trgou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ubkd4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_66qhf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_lnbc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_j8i8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_pm73c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_on6rf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_qct0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_bv2ni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_0la3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_cxoef")
+}],
+"loop": false,
+"name": &"espresso",
+"speed": 20.0
+}]
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_wb312"]
 animations = [{
 "frames": [],
@@ -908,7 +909,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("192_feyks")
 }],
-"loop": true,
+"loop": false,
 "name": &"milk",
 "speed": 20.0
 }, {
@@ -958,7 +959,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("207_4l87u")
 }],
-"loop": true,
+"loop": false,
 "name": &"water",
 "speed": 20.0
 }]
@@ -1008,6 +1009,7 @@ text = "Tea Leaves"
 [node name="IngredientRack" type="Sprite2D" parent="." unique_id=1215840954]
 position = Vector2(820, 288)
 texture = ExtResource("4_nd1li")
+metadata/_edit_lock_ = true
 
 [node name="IngredientBins" type="Node2D" parent="IngredientRack" unique_id=1181412459]
 position = Vector2(-738, -270)
@@ -1148,57 +1150,6 @@ theme = ExtResource("8_fkpoj")
 theme_override_colors/font_color = Color(0.3557383, 0.20420495, 0.017422946, 1)
 text = "Rose Petals"
 
-[node name="EspressoMachine" type="AnimatedSprite2D" parent="." unique_id=963389051]
-light_mask = 2
-position = Vector2(1394, 299)
-sprite_frames = SubResource("SpriteFrames_q83go")
-animation = &"espresso"
-frame_progress = 0.63530517
-
-[node name="GUI" type="Control" parent="." unique_id=919230612]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Button" type="Button" parent="GUI" unique_id=12919459]
-layout_mode = 0
-offset_left = 1104.0
-offset_top = 1259.0
-offset_right = 1368.0
-offset_bottom = 1358.0
-theme = ExtResource("4_damgc")
-text = "Finish recipe"
-
-[node name="Button2" type="Button" parent="GUI" unique_id=994928799]
-layout_mode = 0
-offset_left = 1075.0
-offset_top = 1403.0
-offset_right = 1386.0
-offset_bottom = 1496.0
-theme = ExtResource("4_damgc")
-text = "Get new recipe"
-
-[node name="Panel" type="Panel" parent="GUI" unique_id=1210580505]
-layout_mode = 0
-offset_left = 91.0
-offset_top = 1245.0
-offset_right = 489.0
-offset_bottom = 1900.0
-
-[node name="RecipeLabel" type="Label" parent="GUI/Panel" unique_id=763714291]
-layout_mode = 0
-offset_left = 94.0
-offset_top = 1.0
-offset_right = 399.0
-offset_bottom = 574.0
-theme = ExtResource("4_damgc")
-text = "Recipe:
-Beans
-Raspberry
-Cherry
-Rose"
-
 [node name="Cauldron" parent="." unique_id=555176367 instance=ExtResource("3_2ukpx")]
 position = Vector2(813, 819)
 texture = SubResource("CanvasTexture_wn065")
@@ -1291,12 +1242,60 @@ texture = ExtResource("143_udhpb")
 position = Vector2(-1, 1)
 texture = ExtResource("144_5nhge")
 
+[node name="EspressoMachine" type="AnimatedSprite2D" parent="." unique_id=963389051]
+light_mask = 2
+position = Vector2(1394, 299)
+sprite_frames = SubResource("SpriteFrames_q83go")
+animation = &"espresso"
+frame_progress = 0.63530517
+script = ExtResource("173_osa8j")
+metadata/_edit_lock_ = true
+
+[node name="Button" type="Button" parent="EspressoMachine" unique_id=833727748]
+modulate = Color(1, 1, 1, 0)
+offset_left = -68.0
+offset_top = -130.0
+offset_right = -35.0
+offset_bottom = -97.0
+
+[node name="Espresso" parent="EspressoMachine" unique_id=1227425438 instance=ExtResource("1_of34b")]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-13.500029, 133)
+scale = Vector2(0.91406226, 0.6875)
+ingredient_type = "espresso"
+
 [node name="LiquidMachine" type="AnimatedSprite2D" parent="." unique_id=1027388817]
 position = Vector2(1677, 308)
 sprite_frames = SubResource("SpriteFrames_wb312")
-animation = &"water"
-frame = 3
-frame_progress = 0.6699328
+animation = &"milk"
+script = ExtResource("207_ud83r")
+metadata/_edit_lock_ = true
+
+[node name="WaterButton" type="Button" parent="LiquidMachine" unique_id=468647839]
+modulate = Color(1, 1, 1, 0)
+offset_left = -95.0
+offset_top = -157.0
+offset_right = -49.0
+offset_bottom = -112.0
+
+[node name="MilkButton" type="Button" parent="LiquidMachine" unique_id=320876098]
+modulate = Color(1, 1, 1, 0)
+offset_left = 74.0
+offset_top = -155.0
+offset_right = 119.0
+offset_bottom = -110.0
+
+[node name="Water" parent="LiquidMachine" unique_id=1942439871 instance=ExtResource("1_of34b")]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-100.99999, 116.000015)
+scale = Vector2(0.9277346, 0.6874998)
+ingredient_type = "water"
+
+[node name="Milk" parent="LiquidMachine" unique_id=354242173 instance=ExtResource("1_of34b")]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(66, 121.24999)
+scale = Vector2(0.921875, 0.6757812)
+ingredient_type = "milk"
 
 [connection signal="pressed" from="CoffeeJar" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="TeaJar" to="." method="_on_ingredient_bin_pressed"]
@@ -1308,7 +1307,11 @@ frame_progress = 0.6699328
 [connection signal="pressed" from="IngredientRack/IngredientBins/Cinnamon" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="IngredientRack/IngredientBins/Spearmint" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="IngredientRack/IngredientBins/Lavender" to="." method="_on_ingredient_bin_pressed"]
-[connection signal="button_up" from="GUI/Button" to="." method="_on_button_button_up"]
-[connection signal="button_up" from="GUI/Button2" to="." method="_on_button_2_button_up"]
 [connection signal="placed" from="Cauldron" to="." method="_on_cauldron_placed"]
 [connection signal="pestle" from="Mortar/Pestle" to="Mortar" method="_on_pestle_pestle"]
+[connection signal="pressed" from="EspressoMachine/Button" to="EspressoMachine" method="_on_button_pressed"]
+[connection signal="pressed" from="EspressoMachine/Espresso" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="LiquidMachine/WaterButton" to="LiquidMachine" method="_on_water_button_pressed"]
+[connection signal="pressed" from="LiquidMachine/MilkButton" to="LiquidMachine" method="_on_milk_button_pressed"]
+[connection signal="pressed" from="LiquidMachine/Water" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="LiquidMachine/Milk" to="." method="_on_ingredient_bin_pressed"]

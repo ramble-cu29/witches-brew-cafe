@@ -26,6 +26,7 @@ func _input(event: InputEvent) -> void:
 			if ingredient.is_inside_tree():
 				remove_child(ingredient)
 				Globals.ingredient_exists = false
+				Globals.liquid_filled = false
 
 # When you get the signal from the ingredient bin that it has been clicked
 # add the ingredient to the tree at the mouse position, set the flag to true, 
@@ -36,6 +37,10 @@ func _on_ingredient_bin_pressed() -> void:
 	ingredient.global_position = get_viewport().get_mouse_position()
 	print(Globals.ingredient_type_global)
 	ingredient.texture = load(Globals.INGR_FILES[Globals.ingredient_type_global])
+	if Globals.liquid_filled == true:
+		#Globals.liquid_filled = false
+		$EspressoMachine.frame = 0
+		$LiquidMachine.frame = 0
 	$Lid.volume_db = 6
 	$Lid.play()
 
@@ -58,7 +63,7 @@ func _on_button_2_button_up() -> void:
 
 
 func _on_cauldron_placed() -> void:
-	pass
+	Globals.current_recipe.append(Globals.ingredient_type_global)
 	#print(str(Globals.ingredient_type_global) + " placed!")
 
 func play_boil_loop() -> void:

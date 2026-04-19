@@ -3,6 +3,8 @@ extends Node
 var ingredient_exists:bool = false 
 var ingredient_type_global:String
 var current_recipe:Array
+var recipe_record:Array
+var liquid_filled:bool=false
 
 enum Actions {
 	NULL,
@@ -40,9 +42,12 @@ const INGR_FILES: Dictionary = {
 	"lavender": "res://art/boh/lavender.png",
 	"beans": "res://art/boh/beans.png",
 	"tea": "res://art/boh/tea_leaves.png",
+	"espresso": "res://art/boh/Liquid icons/espresso_cup.png",
+	"water": "res://art/boh/Liquid icons/water_cup.png",
+	"milk": "res://art/boh/Liquid icons/milk_cup.png"
 }
 
-var recipe_record: Array = []
+
 
 func recipe_builder() -> void:
 	var base_recipes: Dictionary = {
