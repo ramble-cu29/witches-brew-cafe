@@ -145,7 +145,7 @@
 [ext_resource type="Texture2D" uid="uid://eda70ug7ces5" path="res://art/animations/Scroll-animation/Untitled_Artwork-15.png" id="136_yf68p"]
 [ext_resource type="Texture2D" uid="uid://dvqgsm1b0oro4" path="res://art/animations/Scroll-animation/Untitled_Artwork-16.png" id="137_re38p"]
 [ext_resource type="Texture2D" uid="uid://bbpet32428lqs" path="res://art/animations/Scroll-animation/Untitled_Artwork-17.png" id="138_8gqa4"]
-[ext_resource type="Texture2D" path="res://art/boh/Cauldron liquid/Untitled_Artwork-1.png" id="139_lnbc5"]
+[ext_resource type="Texture2D" uid="uid://do8jueu0nebk8" path="res://art/boh/Cauldron-liquid/Untitled_Artwork-1.png" id="139_lnbc5"]
 [ext_resource type="Texture2D" uid="uid://4ocjf5rw6pcj" path="res://art/animations/Scroll-animation/Untitled_Artwork-18.png" id="139_tjbrh"]
 [ext_resource type="Texture2D" uid="uid://d1biijkkkhtqw" path="res://art/animations/Scroll-animation/Untitled_Artwork-19.png" id="140_kmg1f"]
 [ext_resource type="Texture2D" uid="uid://cm6t2gacaejwk" path="res://art/animations/Scroll-animation/Untitled_Artwork-20.png" id="141_etexm"]
@@ -207,6 +207,7 @@
 [ext_resource type="Texture2D" uid="uid://d3th2d7m8ieiq" path="res://art/animations/Water-machine/Untitled_Artwork-16.png" id="206_4l87u"]
 [ext_resource type="Texture2D" uid="uid://docjr3il1cqtu" path="res://art/animations/Water-machine/Untitled_Artwork-17.png" id="207_mcmsi"]
 [ext_resource type="Script" uid="uid://cvytkmpx5p23p" path="res://scenes/liquid_machine.gd" id="207_ud83r"]
+
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_wn065"]
 diffuse_texture = ExtResource("10_ud83r")
