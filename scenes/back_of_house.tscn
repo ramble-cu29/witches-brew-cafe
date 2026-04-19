@@ -210,8 +210,13 @@
 [ext_resource type="Texture2D" uid="uid://d3th2d7m8ieiq" path="res://art/animations/Water-machine/Untitled_Artwork-16.png" id="206_4l87u"]
 [ext_resource type="Texture2D" uid="uid://docjr3il1cqtu" path="res://art/animations/Water-machine/Untitled_Artwork-17.png" id="207_mcmsi"]
 [ext_resource type="Script" uid="uid://cvytkmpx5p23p" path="res://scenes/liquid_machine.gd" id="207_ud83r"]
+[ext_resource type="Texture2D" uid="uid://5q2etnjmqkak" path="res://art/boh/Cup-files/coffee_cup_empty.png" id="211_ersym"]
 [ext_resource type="Texture2D" uid="uid://dvurxmm6abrrc" path="res://art/boh/ladle.png" id="211_ia3ns"]
+[ext_resource type="Texture2D" uid="uid://ce2w4k5kj26tv" path="res://art/boh/Cup-files/lid.png" id="212_42sn8"]
+[ext_resource type="Script" uid="uid://dkhmjfysw5lht" path="res://scenes/coffee_cup.gd" id="212_gs2dg"]
 [ext_resource type="Script" uid="uid://4gghhducwh46" path="res://scenes/ladle.gd" id="212_k5ac0"]
+[ext_resource type="Texture2D" uid="uid://3bfako3e8egm" path="res://art/foh/wizard.png" id="215_pt7hd"]
+[ext_resource type="Texture2D" uid="uid://cmahefet3du4s" path="res://art/foh/black_cat.png" id="216_gs2dg"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_wn065"]
 diffuse_texture = ExtResource("10_ud83r")
@@ -1074,9 +1079,34 @@ tracks/1/keys = {
 "update": 0,
 "values": [-0.34906584]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CoffeeCup:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-100, 750)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CoffeeCup/CoffeeLid:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -180)]
+}
 
 [sub_resource type="Animation" id="Animation_k5ac0"]
 resource_name = "finish"
+length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1084,10 +1114,10 @@ tracks/0/path = NodePath("Ladle:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(470, 331), Vector2(912.00006, 491), Vector2(662, 416.00003)]
+"values": [Vector2(470, 331), Vector2(912.00006, 491), Vector2(662, 416.00003), Vector2(912.00006, 491), Vector2(470, 331)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1096,10 +1126,10 @@ tracks/1/path = NodePath("Ladle:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-0.34906584, -0.8447394, 0.31415927]
+"values": [-0.34906584, -0.8447394, 0.31415927, -0.8447394, -0.34906584]
 }
 tracks/2/type = "method"
 tracks/2/imported = false
@@ -1114,6 +1144,30 @@ tracks/2/keys = {
 "args": [],
 "method": &"clear_record"
 }]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CoffeeCup:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-100, 750), Vector2(837, 750)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CoffeeCup/CoffeeLid:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -1688), Vector2(0, -1676), Vector2(0, -180)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ersym"]
@@ -1329,7 +1383,7 @@ frame_progress = 0.41733202
 position = Vector2(-11, 137)
 sprite_frames = SubResource("SpriteFrames_42sn8")
 autoplay = "default"
-frame_progress = 0.94819057
+frame_progress = 0.007095624
 
 [node name="Mortar" type="Sprite2D" parent="." unique_id=1663867063]
 position = Vector2(1373, 885)
@@ -1465,10 +1519,20 @@ scale = Vector2(0.921875, 0.6757812)
 ingredient_type = "milk"
 
 [node name="Button" type="Button" parent="." unique_id=99234205]
-offset_left = 74.0
-offset_top = 818.0
-offset_right = 326.0
-offset_bottom = 906.0
+offset_left = 1232.0
+offset_top = 599.0
+offset_right = 1484.0
+offset_bottom = 687.0
+
+[node name="CoffeeCup" type="Sprite2D" parent="." unique_id=28417654]
+position = Vector2(-100, 750)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("211_ersym")
+script = ExtResource("212_gs2dg")
+
+[node name="CoffeeLid" type="Sprite2D" parent="CoffeeCup" unique_id=776078462]
+position = Vector2(0, -180)
+texture = ExtResource("212_42sn8")
 
 [node name="Ladle" type="Sprite2D" parent="." unique_id=18971490]
 position = Vector2(470, 331)
@@ -1479,6 +1543,15 @@ script = ExtResource("212_k5ac0")
 [node name="FinishAnimation" type="AnimationPlayer" parent="Ladle" unique_id=686648907]
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_ersym")
+
+[node name="Customer" type="Sprite2D" parent="." unique_id=1530885664]
+position = Vector2(144, 783)
+scale = Vector2(-1, 1)
+texture = ExtResource("215_pt7hd")
+
+[node name="BlackCat" type="Sprite2D" parent="." unique_id=265399638]
+position = Vector2(1180, 638)
+texture = ExtResource("216_gs2dg")
 
 [connection signal="pressed" from="CoffeeJar" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="TeaJar" to="." method="_on_ingredient_bin_pressed"]
@@ -1500,3 +1573,4 @@ libraries/ = SubResource("AnimationLibrary_ersym")
 [connection signal="pressed" from="LiquidMachine/Water" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="LiquidMachine/Milk" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="coffee_cup" from="CoffeeCup" to="." method="_on_coffee_cup_coffee_cup"]

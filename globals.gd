@@ -3,6 +3,7 @@ extends Node
 var ingredient_exists:bool = false 
 var ingredient_type_global:String
 var current_recipe:Array
+var cup_recipe:Array
 var recipe_record:Array
 var liquid_filled:bool=false
 var mortared:bool=false
@@ -21,7 +22,8 @@ const INGREDIENTS:Array[String] = [
 	"tea",
 	"espresso",
 	"water",
-	"milk"
+	"milk",
+	"coffee_cup"
 ]
 
 const INGR_FILES: Dictionary = {
@@ -37,7 +39,8 @@ const INGR_FILES: Dictionary = {
 	"tea": ["res://art/boh/tea_leaves.png","res://art/animations/Tea-leaves-animation/10.png"],
 	"espresso": ["res://art/boh/Liquid-icons/espresso_cup.png",""],
 	"water": ["res://art/boh/Liquid-icons/water_cup.png",""],
-	"milk": ["res://art/boh/Liquid-icons/milk_cup.png",""]
+	"milk": ["res://art/boh/Liquid-icons/milk_cup.png",""],
+	"coffee_cup": ["res://art/boh/Cup-files/coffee_cup_with_lid.png",""]
 }
 
 

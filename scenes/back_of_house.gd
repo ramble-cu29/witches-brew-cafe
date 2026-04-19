@@ -32,7 +32,6 @@ func create_ingredient() -> void:
 	ingredient.global_position = get_viewport().get_mouse_position()
 	print(Globals.ingredient_type_global)
 	
-	
 	# If the liquid has been filled, set the animation in the espresso/liquid machine back to neutral
 	if Globals.liquid_filled == true:
 		#Globals.liquid_filled = false
@@ -66,4 +65,10 @@ func _on_mortar_mortar() -> void:
 
 func _on_button_pressed() -> void:
 	print(Globals.recipe_record)
+	
+
+
+func _on_coffee_cup_coffee_cup() -> void:
+	create_ingredient()
+	$CoffeeCup.global_position=Vector2(-100,750)
 	
