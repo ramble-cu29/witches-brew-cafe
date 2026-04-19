@@ -7,3 +7,4 @@ func _input(event: InputEvent) -> void:
 				Globals.cup_recipe = Globals.current_recipe
 				$Pour.play()
 				$FinishAnimation.play("finish")
+				Globals.finished=true
