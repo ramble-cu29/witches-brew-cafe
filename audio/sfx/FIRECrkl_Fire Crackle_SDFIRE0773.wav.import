@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d0u24v35mv0qv"
+path="res://.godot/imported/FIRECrkl_Fire Crackle_SDFIRE0773.wav-e54bed5277be74423676638f3b1e7bab.sample"
+
+[deps]
+
+source_file="res://audio/sfx/FIRECrkl_Fire Crackle_SDFIRE0773.wav"
+dest_files=["res://.godot/imported/FIRECrkl_Fire Crackle_SDFIRE0773.wav-e54bed5277be74423676638f3b1e7bab.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

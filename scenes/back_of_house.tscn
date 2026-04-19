@@ -219,6 +219,7 @@
 [ext_resource type="Script" uid="uid://4gghhducwh46" path="res://scenes/ladle.gd" id="212_k5ac0"]
 [ext_resource type="Texture2D" uid="uid://3bfako3e8egm" path="res://art/foh/wizard.png" id="215_pt7hd"]
 [ext_resource type="Texture2D" uid="uid://cmahefet3du4s" path="res://art/foh/black_cat.png" id="216_gs2dg"]
+[ext_resource type="AudioStream" uid="uid://d0u24v35mv0qv" path="res://audio/sfx/FIRECrkl_Fire Crackle_SDFIRE0773.wav" id="220_s2vh5"]
 [ext_resource type="Texture2D" uid="uid://c3pinndqursx1" path="res://art/boh/speech_bubble.png" id="219_4l87u"]
 [ext_resource type="Script" uid="uid://cig7s87yv6mhg" path="res://scenes/customer.gd" id="219_mcmsi"]
 [ext_resource type="Texture2D" uid="uid://dpouskqkj6s2k" path="res://art/boh/beans.png" id="220_mcmsi"]
@@ -1606,6 +1607,9 @@ script = ExtResource("212_k5ac0")
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_ersym")
 
+[node name="Pour" type="AudioStreamPlayer" parent="Ladle" unique_id=191456675]
+stream = ExtResource("173_bdhr6")
+
 [node name="Customer" type="Sprite2D" parent="." unique_id=1530885664]
 position = Vector2(144, 783)
 scale = Vector2(-1, 1)
@@ -1643,6 +1647,14 @@ libraries/ = SubResource("AnimationLibrary_l7oqr")
 [node name="BlackCat" type="Sprite2D" parent="." unique_id=265399638]
 position = Vector2(1180, 638)
 texture = ExtResource("216_gs2dg")
+
+[node name="FireCrackle" type="AudioStreamPlayer" parent="." unique_id=1688557215]
+stream = ExtResource("220_s2vh5")
+volume_db = -9.521
+bus = &"Background Noise"
+
+[node name="CatNoises" type="AudioStreamPlayer" parent="." unique_id=340449527]
+volume_db = -6.958
 
 [connection signal="pressed" from="CoffeeJar" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="TeaJar" to="." method="_on_ingredient_bin_pressed"]
