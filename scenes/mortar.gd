@@ -23,3 +23,4 @@ func _input(event: InputEvent) -> void:
 				Globals.mortared=true
 			if Globals.mortared==true:
 				mortar.emit()
+ 

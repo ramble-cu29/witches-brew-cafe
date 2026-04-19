@@ -12,11 +12,13 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_water_button_pressed() -> void:
+	$Pour.play()
 	play("water")
 	await animation_finished
 	Globals.liquid_filled = true
 	
 
 func _on_milk_button_pressed() -> void:
+	$Pour.play()
 	play("milk")
 	Globals.liquid_filled = true

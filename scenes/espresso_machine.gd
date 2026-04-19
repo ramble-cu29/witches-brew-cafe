@@ -12,5 +12,6 @@ func _process(delta: float) -> void:
 
 
 func _on_button_pressed() -> void:
+	$Pour.play()
 	play("espresso")
 	Globals.liquid_filled = true
