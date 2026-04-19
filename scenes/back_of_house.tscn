@@ -149,6 +149,7 @@
 [ext_resource type="Texture2D" uid="uid://eda70ug7ces5" path="res://art/animations/Scroll-animation/Untitled_Artwork-15.png" id="136_yf68p"]
 [ext_resource type="Texture2D" uid="uid://dvqgsm1b0oro4" path="res://art/animations/Scroll-animation/Untitled_Artwork-16.png" id="137_re38p"]
 [ext_resource type="Texture2D" uid="uid://bbpet32428lqs" path="res://art/animations/Scroll-animation/Untitled_Artwork-17.png" id="138_8gqa4"]
+[ext_resource type="Texture2D" uid="uid://do8jueu0nebk8" path="res://art/boh/Cauldron-liquid/Untitled_Artwork-1.png" id="139_lnbc5"]
 [ext_resource type="Texture2D" uid="uid://4ocjf5rw6pcj" path="res://art/animations/Scroll-animation/Untitled_Artwork-18.png" id="139_tjbrh"]
 [ext_resource type="Texture2D" uid="uid://d1biijkkkhtqw" path="res://art/animations/Scroll-animation/Untitled_Artwork-19.png" id="140_kmg1f"]
 [ext_resource type="Texture2D" uid="uid://cm6t2gacaejwk" path="res://art/animations/Scroll-animation/Untitled_Artwork-20.png" id="141_etexm"]
@@ -174,6 +175,7 @@
 [ext_resource type="Texture2D" uid="uid://ciyykhdff1iwd" path="res://art/animations/Espresso-animation/frame_0017.png" id="170_l7oqr"]
 [ext_resource type="Texture2D" uid="uid://dvrjq6ugec1gk" path="res://art/animations/Espresso-animation/frame_0018.png" id="171_668ma"]
 [ext_resource type="Texture2D" uid="uid://dyjhbcoocjdeh" path="res://art/animations/Espresso-animation/frame_0019.png" id="172_6yg5r"]
+[ext_resource type="AudioStream" uid="uid://mgscyd7lcwhe" path="res://audio/sfx/Pour [2026-04-19 072208].wav" id="173_bdhr6"]
 [ext_resource type="Script" uid="uid://b54fmt21148so" path="res://scenes/espresso_machine.gd" id="173_osa8j"]
 [ext_resource type="Texture2D" uid="uid://dqyhwblmjtis1" path="res://art/animations/Milk-animation/Untitled_Artwork-1.png" id="174_osa8j"]
 [ext_resource type="Texture2D" uid="uid://dsnt8n61khoyg" path="res://art/animations/Milk-animation/Untitled_Artwork-2.png" id="175_bdhr6"]
@@ -210,6 +212,7 @@
 [ext_resource type="Texture2D" uid="uid://d3th2d7m8ieiq" path="res://art/animations/Water-machine/Untitled_Artwork-16.png" id="206_4l87u"]
 [ext_resource type="Texture2D" uid="uid://docjr3il1cqtu" path="res://art/animations/Water-machine/Untitled_Artwork-17.png" id="207_mcmsi"]
 [ext_resource type="Script" uid="uid://cvytkmpx5p23p" path="res://scenes/liquid_machine.gd" id="207_ud83r"]
+[ext_resource type="AudioStream" uid="uid://cjey3vrl2bd61" path="res://audio/sfx/Cute_Pop_Bloops_Comic_ODY-1733-83.wav" id="208_osa8j"]
 [ext_resource type="Texture2D" uid="uid://5q2etnjmqkak" path="res://art/boh/Cup-files/coffee_cup_empty.png" id="211_ersym"]
 [ext_resource type="Texture2D" uid="uid://dvurxmm6abrrc" path="res://art/boh/ladle.png" id="211_ia3ns"]
 [ext_resource type="Texture2D" uid="uid://ce2w4k5kj26tv" path="res://art/boh/Cup-files/lid.png" id="212_42sn8"]
@@ -1385,6 +1388,10 @@ sprite_frames = SubResource("SpriteFrames_42sn8")
 autoplay = "default"
 frame_progress = 0.007095624
 
+[node name="BoilingCauldron" type="AudioStreamPlayer" parent="Cauldron" unique_id=688932083]
+stream = ExtResource("119_5qfp7")
+bus = &"Background Noise"
+
 [node name="Mortar" type="Sprite2D" parent="." unique_id=1663867063]
 position = Vector2(1373, 885)
 texture = ExtResource("12_2q3yk")
@@ -1417,10 +1424,6 @@ bus = &"SFX"
 [node name="IngDrop" type="AudioStreamPlayer" parent="Mortar" unique_id=1404501223]
 stream = ExtResource("120_gb475")
 volume_db = 6.958
-
-[node name="BoilingCauldron" type="AudioStreamPlayer" parent="." unique_id=688932083]
-stream = ExtResource("119_5qfp7")
-bus = &"Background Noise"
 
 [node name="Lid" type="AudioStreamPlayer" parent="." unique_id=267259990]
 stream = ExtResource("8_84nid")
@@ -1485,6 +1488,9 @@ position = Vector2(-13.500029, 133)
 scale = Vector2(0.91406226, 0.6875)
 ingredient_type = "espresso"
 
+[node name="Pour" type="AudioStreamPlayer" parent="EspressoMachine" unique_id=1442159134]
+stream = ExtResource("173_bdhr6")
+
 [node name="LiquidMachine" type="AnimatedSprite2D" parent="." unique_id=1027388817]
 position = Vector2(1677, 308)
 sprite_frames = SubResource("SpriteFrames_wb312")
@@ -1518,6 +1524,14 @@ position = Vector2(66, 121.24999)
 scale = Vector2(0.921875, 0.6757812)
 ingredient_type = "milk"
 
+[node name="Pour" type="AudioStreamPlayer" parent="LiquidMachine" unique_id=833992514]
+stream = ExtResource("173_bdhr6")
+
+[node name="CauldronBloop" type="AudioStreamPlayer" parent="." unique_id=159551556]
+stream = ExtResource("208_osa8j")
+volume_db = -7.69
+pitch_scale = 0.83
+bus = &"SFX"
 [node name="Button" type="Button" parent="." unique_id=99234205]
 offset_left = 1232.0
 offset_top = 599.0

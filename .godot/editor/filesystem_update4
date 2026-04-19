@@ -1,1 +1,8 @@
 res://scenes/main.tscn
+res://scenes/back_of_house.tscn
+res://scenes/back_of_house.gd
+res://scenes/mortar.gd
+res://scenes/tool.gd
+res://default_bus_layout.tres
+res://scenes/liquid_machine.gd
+res://scenes/espresso_machine.gd
