@@ -2,11 +2,12 @@ extends Node
 
 var ingredient_exists:bool = false 
 var ingredient_type_global:String
-var current_recipe:Array
-var cup_recipe:Array
-var recipe_record:Array
+var current_recipe:Array # The recipe that you need to make
+var cup_recipe:Array # The recipe that you made, put into the cup
+var recipe_record:Array # The recipe that you made, before you put it into the cup
 var liquid_filled:bool=false
 var mortared:bool=false
+var finished:bool=false
 
 const INGREDIENTS:Array[String] = [
 	"",
@@ -44,18 +45,17 @@ const INGR_FILES: Dictionary = {
 }
 
 
-
 func recipe_builder() -> void:
 	var base_recipes: Dictionary = {
-		"red_eye": ["espresso", "beans"],
-		"americano": ["espresso", "water"],
-		"latte": ["espresso", "milk"],
-		"tea": ["tea", "water"],
+		0: ["espresso", "beans"],
+		1: ["espresso", "water"],
+		2: ["espresso", "milk"],
+		3: ["tea", "water"],
 	}
 	var berries: Array = INGREDIENTS.slice(1, 5)
 	var witchy: Array = INGREDIENTS.slice(5, 9)
 
-	var recipe: Array = base_recipes["red_eye"]
+	var recipe: Array = base_recipes[randi() % 4]
 	
 	recipe.append(berries[randi() % 4])
 	recipe.append(witchy[randi() % 4])

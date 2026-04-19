@@ -32,13 +32,15 @@ func _process(delta: float) -> void:
 			$Liquid.texture=load("res://art/boh/Cauldron-liquid/Untitled_Artwork-2.png")
 		_:
 			$Liquid.texture=load("res://art/boh/Cauldron-liquid/Untitled_Artwork-1.png")
+			$Bubbles.modulate=Color(255,255,25,0)
 	
-	if "tea" in Globals.recipe_record:
-		$Liquid.modulate=Color("1f2b20ff")
-		$Bubbles.modulate=Color("4d725dff")
-   elif "beans" in Globals.recipe_record:
+	if "beans" in Globals.recipe_record or "espresso" in Globals.recipe_record:
 		$Liquid.modulate=Color(0.34,0.18,0.03,1)
 		$Bubbles.modulate=Color("d37b2fff")
+	elif "tea" in Globals.recipe_record:
+		$Liquid.modulate=Color("1f2b20ff")
+		$Bubbles.modulate=Color("4d725dff")
+
 
 func play_boil_loop() -> void:
 		boil.volume_db = boil_start_volume_db
@@ -52,7 +54,5 @@ func play_boil_loop() -> void:
 		)
 		await boil.finished
 
-		
-		
 func clear_record() -> void:
 	Globals.recipe_record = []
