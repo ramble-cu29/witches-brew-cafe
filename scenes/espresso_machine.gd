@@ -13,4 +13,5 @@ func _process(delta: float) -> void:
 
 func _on_button_pressed() -> void:
 	play("espresso")
+	print("espresso filling")
 	Globals.liquid_filled = true

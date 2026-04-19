@@ -45,7 +45,7 @@ func _on_ingredient_bin_pressed() -> void:
 	create_ingredient()
 
 func _on_cauldron_placed() -> void:
-	Globals.current_recipe.append(Globals.ingredient_type_global)
+	#Globals.current_recipe.append(Globals.ingredient_type_global)
 	print(str(Globals.ingredient_type_global) + " placed!")
 
 func play_boil_loop() -> void:
@@ -63,3 +63,7 @@ func play_boil_loop() -> void:
 
 func _on_mortar_mortar() -> void:
 	create_ingredient()
+
+func _on_button_pressed() -> void:
+	print(Globals.recipe_record)
+	

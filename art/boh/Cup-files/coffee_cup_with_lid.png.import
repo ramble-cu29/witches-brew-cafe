@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0s2hoyiew31a"
-path="res://.godot/imported/Untitled_Artwork-4.png-c8f2a1289f1d77dea380cfab5996d1d9.ctex"
+uid="uid://cj8w4vdvi2oit"
+path="res://.godot/imported/coffee_cup_with_lid.png-06a1f68fd61357fbbe3a1ab6d33fbe29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/boh/Cup-files/Untitled_Artwork-4.png"
-dest_files=["res://.godot/imported/Untitled_Artwork-4.png-c8f2a1289f1d77dea380cfab5996d1d9.ctex"]
+source_file="res://art/boh/Cup-files/coffee_cup_with_lid.png"
+dest_files=["res://.godot/imported/coffee_cup_with_lid.png-06a1f68fd61357fbbe3a1ab6d33fbe29.ctex"]
 
 [params]
 

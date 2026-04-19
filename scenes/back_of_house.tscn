@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://d0byjt2pgagrl" path="res://audio/sfx/Lid 4 [2026-04-13 174648].wav" id="8_84nid"]
 [ext_resource type="Theme" uid="uid://c7fehh1qho7pt" path="res://gui_theme.tres" id="8_fkpoj"]
 [ext_resource type="Texture2D" uid="uid://d287nvr2jv3f1" path="res://art/animations/Flame-animation/Cauldron.png" id="10_ud83r"]
+[ext_resource type="Texture2D" uid="uid://mjreug88nhp8" path="res://art/boh/Cauldron-liquid/Untitled_Artwork-4.png" id="11_feyks"]
 [ext_resource type="Texture2D" uid="uid://cwtxqlxw6j5b1" path="res://art/boh/mortar.png" id="12_2q3yk"]
 [ext_resource type="Texture2D" uid="uid://bjs20nryxjbs3" path="res://art/boh/pestle.png" id="13_ltld3"]
 [ext_resource type="Texture2D" uid="uid://7700s16sionl" path="res://art/animations/Cauldron-bubbling/Untitled_Artwork-1.png" id="13_ud83r"]
@@ -32,11 +33,14 @@
 [ext_resource type="Texture2D" uid="uid://dtwrf7h54vt0u" path="res://art/animations/Coffee-beans-animation/8.png" id="21_42sn8"]
 [ext_resource type="Texture2D" uid="uid://gmgv02g7vehe" path="res://art/animations/Cauldron-bubbling/Untitled_Artwork-9.png" id="21_pt7hd"]
 [ext_resource type="Texture2D" uid="uid://blmpwkc8jqjrx" path="res://art/animations/Cauldron-bubbling/Untitled_Artwork-10.png" id="22_gs2dg"]
-[ext_resource type="Texture2D" uid="uid://wkb7n3eld7rr" path="res://art/animations/Flame-animation/Empty cauldron back.png" id="22_osa8j"]
 [ext_resource type="Texture2D" uid="uid://bhqutuwdelvbv" path="res://art/animations/Coffee-beans-animation/9.png" id="22_pt7hd"]
 [ext_resource type="Texture2D" uid="uid://d076m2lpr08r1" path="res://art/animations/Coffee-beans-animation/10.png" id="23_gs2dg"]
+[ext_resource type="Texture2D" uid="uid://mfuwecdqn62j" path="res://art/animations/Flame-animation/Untitled_Artwork-1.png" id="23_s06r5"]
+[ext_resource type="Texture2D" uid="uid://08ocxl3vsneb" path="res://art/animations/Flame-animation/Untitled_Artwork-2.png" id="24_ia3ns"]
 [ext_resource type="Texture2D" uid="uid://bv0toiwvbsevo" path="res://art/animations/Blueberry-animation/1.png" id="24_osa8j"]
 [ext_resource type="Texture2D" uid="uid://b2j2orxrcdv2q" path="res://art/animations/Blueberry-animation/2.png" id="25_bdhr6"]
+[ext_resource type="Texture2D" uid="uid://6ul68lwvoloq" path="res://art/animations/Flame-animation/Untitled_Artwork-3.png" id="25_k5ac0"]
+[ext_resource type="Texture2D" uid="uid://dca4pijvdjtd2" path="res://art/animations/Flame-animation/Untitled_Artwork-4.png" id="26_ersym"]
 [ext_resource type="Texture2D" uid="uid://7cepw0ivvhdh" path="res://art/animations/Blueberry-animation/3.png" id="26_feyks"]
 [ext_resource type="Texture2D" uid="uid://bl31ucq7cd204" path="res://art/animations/Blueberry-animation/4.png" id="27_s06r5"]
 [ext_resource type="Texture2D" uid="uid://55f0nqgjphqf" path="res://art/animations/Blueberry-animation/5.png" id="28_ia3ns"]
@@ -145,7 +149,6 @@
 [ext_resource type="Texture2D" uid="uid://eda70ug7ces5" path="res://art/animations/Scroll-animation/Untitled_Artwork-15.png" id="136_yf68p"]
 [ext_resource type="Texture2D" uid="uid://dvqgsm1b0oro4" path="res://art/animations/Scroll-animation/Untitled_Artwork-16.png" id="137_re38p"]
 [ext_resource type="Texture2D" uid="uid://bbpet32428lqs" path="res://art/animations/Scroll-animation/Untitled_Artwork-17.png" id="138_8gqa4"]
-[ext_resource type="Texture2D" path="res://art/boh/Cauldron liquid/Untitled_Artwork-1.png" id="139_lnbc5"]
 [ext_resource type="Texture2D" uid="uid://4ocjf5rw6pcj" path="res://art/animations/Scroll-animation/Untitled_Artwork-18.png" id="139_tjbrh"]
 [ext_resource type="Texture2D" uid="uid://d1biijkkkhtqw" path="res://art/animations/Scroll-animation/Untitled_Artwork-19.png" id="140_kmg1f"]
 [ext_resource type="Texture2D" uid="uid://cm6t2gacaejwk" path="res://art/animations/Scroll-animation/Untitled_Artwork-20.png" id="141_etexm"]
@@ -207,6 +210,8 @@
 [ext_resource type="Texture2D" uid="uid://d3th2d7m8ieiq" path="res://art/animations/Water-machine/Untitled_Artwork-16.png" id="206_4l87u"]
 [ext_resource type="Texture2D" uid="uid://docjr3il1cqtu" path="res://art/animations/Water-machine/Untitled_Artwork-17.png" id="207_mcmsi"]
 [ext_resource type="Script" uid="uid://cvytkmpx5p23p" path="res://scenes/liquid_machine.gd" id="207_ud83r"]
+[ext_resource type="Texture2D" uid="uid://dvurxmm6abrrc" path="res://art/boh/ladle.png" id="211_ia3ns"]
+[ext_resource type="Script" uid="uid://4gghhducwh46" path="res://scenes/ladle.gd" id="212_k5ac0"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_wn065"]
 diffuse_texture = ExtResource("10_ud83r")
@@ -249,6 +254,26 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_42sn8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_s06r5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ia3ns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_k5ac0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ersym")
+}],
 "loop": true,
 "name": &"default",
 "speed": 5.0
@@ -1023,6 +1048,80 @@ animations = [{
 "speed": 20.0
 }]
 
+[sub_resource type="Animation" id="Animation_ia3ns"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ladle:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(470, 331)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ladle:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.34906584]
+}
+
+[sub_resource type="Animation" id="Animation_k5ac0"]
+resource_name = "finish"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ladle:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(470, 331), Vector2(912.00006, 491), Vector2(662, 416.00003)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ladle:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.34906584, -0.8447394, 0.31415927]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Cauldron")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"clear_record"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ersym"]
+_data = {
+&"RESET": SubResource("Animation_ia3ns"),
+&"finish": SubResource("Animation_k5ac0")
+}
+
 [node name="BackOfHouse" type="Node" unique_id=45676339]
 script = ExtResource("1_io6l6")
 
@@ -1210,26 +1309,27 @@ theme_override_colors/font_color = Color(0.3557383, 0.20420495, 0.017422946, 1)
 text = "Rose Petals"
 
 [node name="Cauldron" parent="." unique_id=555176367 instance=ExtResource("3_2ukpx")]
-position = Vector2(813, 819)
+position = Vector2(824, 773)
 texture = SubResource("CanvasTexture_wn065")
+metadata/_edit_lock_ = true
 
 [node name="Liquid" type="Sprite2D" parent="Cauldron" unique_id=2031024136]
 modulate = Color(0.34117648, 0.18039216, 0.03529412, 1)
-position = Vector2(7, -147)
-texture = ExtResource("139_lnbc5")
+position = Vector2(4, -140.089)
+texture = ExtResource("11_feyks")
 
 [node name="Bubbles" type="AnimatedSprite2D" parent="Cauldron" unique_id=2101217209]
-modulate = Color(1, 1, 1, 0)
-position = Vector2(22, -183)
+position = Vector2(21, -168)
 scale = Vector2(1.130808, 1.1944445)
 sprite_frames = SubResource("SpriteFrames_rrm4d")
 animation = &"bubbles"
 frame_progress = 0.41733202
 
-[node name="Sprite2D" type="Sprite2D" parent="Cauldron" unique_id=278886647]
-show_behind_parent = true
-position = Vector2(2, -140)
-texture = ExtResource("22_osa8j")
+[node name="Flames" type="AnimatedSprite2D" parent="Cauldron" unique_id=1435364437]
+position = Vector2(-11, 137)
+sprite_frames = SubResource("SpriteFrames_42sn8")
+autoplay = "default"
+frame_progress = 0.94819057
 
 [node name="Mortar" type="Sprite2D" parent="." unique_id=1663867063]
 position = Vector2(1373, 885)
@@ -1364,6 +1464,22 @@ position = Vector2(66, 121.24999)
 scale = Vector2(0.921875, 0.6757812)
 ingredient_type = "milk"
 
+[node name="Button" type="Button" parent="." unique_id=99234205]
+offset_left = 74.0
+offset_top = 818.0
+offset_right = 326.0
+offset_bottom = 906.0
+
+[node name="Ladle" type="Sprite2D" parent="." unique_id=18971490]
+position = Vector2(470, 331)
+rotation = -0.34906584
+texture = ExtResource("211_ia3ns")
+script = ExtResource("212_k5ac0")
+
+[node name="FinishAnimation" type="AnimationPlayer" parent="Ladle" unique_id=686648907]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_ersym")
+
 [connection signal="pressed" from="CoffeeJar" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="TeaJar" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="IngredientRack/IngredientBins/Strawberry" to="." method="_on_ingredient_bin_pressed"]
@@ -1383,3 +1499,4 @@ ingredient_type = "milk"
 [connection signal="pressed" from="LiquidMachine/MilkButton" to="LiquidMachine" method="_on_milk_button_pressed"]
 [connection signal="pressed" from="LiquidMachine/Water" to="." method="_on_ingredient_bin_pressed"]
 [connection signal="pressed" from="LiquidMachine/Milk" to="." method="_on_ingredient_bin_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

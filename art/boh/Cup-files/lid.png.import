@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yqj3ejaypwn"
-path="res://.godot/imported/cursor_closed.png-13f04cd578b9d9c553fd01794c8e8900.ctex"
+uid="uid://ce2w4k5kj26tv"
+path="res://.godot/imported/lid.png-764def4973afe1344e13a68a46dd9c9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/staging_area/cursor_closed.png"
-dest_files=["res://.godot/imported/cursor_closed.png-13f04cd578b9d9c553fd01794c8e8900.ctex"]
+source_file="res://art/boh/Cup-files/lid.png"
+dest_files=["res://.godot/imported/lid.png-764def4973afe1344e13a68a46dd9c9c.ctex"]
 
 [params]
 

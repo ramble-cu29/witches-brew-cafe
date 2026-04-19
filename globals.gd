@@ -25,7 +25,7 @@ const INGREDIENTS:Array[String] = [
 ]
 
 const INGR_FILES: Dictionary = {
-	"strawberry": ["res://art/boh/strawberry.png", "res://art/animations/Strawberrry-animation/10.png"],
+	"strawberry": ["res://art/boh/strawberry.png", "res://art/animations/Strawberry-animation/10.png"],
 	"blueberry": ["res://art/boh/blueberry.png", "res://art/animations/Blueberry-animation/10.png"],
 	"raspberry": ["res://art/boh/raspberry.png", "res://art/animations/Raspberry-animation/10.png"],
 	"cherry": ["res://art/boh/cherry.png","res://art/animations/Cherry-animation/10.png"],
